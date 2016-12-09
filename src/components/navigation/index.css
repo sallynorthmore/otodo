@@ -2,6 +2,12 @@
 
 .Navigation {}
 
+.Navigation-items {}
+
+.Navigation-item {}
+
+.Navigation-link {}
+
 .Navigation-burger {
   background: svg-load(burger.svg) no-repeat center center;
   background-size: 21px 17px;
