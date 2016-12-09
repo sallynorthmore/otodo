@@ -1,0 +1,3 @@
+third-party/**
+dist/**
+node_modules/**

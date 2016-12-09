@@ -1,373 +1,150 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+/* Base */
+/* Minimal singular family, multiple weights setup */
+/* Minimal reset that keeps insepector output clean */
+/* stylelint-disable selector-no-universal, selector-no-type */
+*,
+*::before,
+*::after {
+  border: 0;
+  box-shadow: 0 0 0;
+  box-sizing: inherit;
+  font-family: Helvetica, sans-serif;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
 }
+/* stylelint-enable */
+/* Only non-named-colour palette, z-index and font-stacks */
+:root {
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  /* z-index */
 }
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+/* Common breakpoints. However adaptions can happen at component-level */
+/* Components */
+/** @define Embed */
+/**
+ * For use with media embeds – such as videos, slideshows, or images –
+ * that need to retain a specific aspect ratio but adapt to the width of their
+ * containing element. It also mitigates repainting when media embeds load.
+ *
+ * Default is 1:1 (square).
+ *
+ * Based on: http://alistapart.com/article/creating-intrinsic-ratios-for-video
+ */
+.Embed {
+  display: block;
+  overflow: hidden;
+  position: relative
 }
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+.Embed::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
 }
+.Embed-item {
+  border: none;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+  /* stylelint-disable plugin/selector-bem-pattern, selector-no-type, selector-no-universal */
 }
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+.Embed-item * {
+  height: 100%;
+  width: 100%;
 }
-
-textarea {
-    resize: vertical;
+.Embed-item img {
+  height: auto;
+  width: 100%;
 }
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+/**
+ * Modifier: 16:9 aspect ratio
+ */
+.Embed--16by9 {
 }
-
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+.Embed--16by9::before {
+  padding-bottom: 56.25%;
 }
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
+/**
+ * Modifier: 3:2 aspect ratio
+ *
+ * Homepage video
+ */
+.Embed--3by2 {
 }
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
+.Embed--3by2::before {
+  padding-bottom: 66.66%;
 }
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+/**
+ * Modifier: 2:1 aspect ratio
+ *
+ */
+.Embed--2by1 {
 }
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
+.Embed--2by1::before {
+  padding-bottom: 50%;
 }
-
-.title {
-    color: white;
+/** @define Footer */
+.Footer {
+  position: relative;
 }
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+/**
+ * Viewport: medium
+ */
+@media (min-width: 600px) {}
+/**
+ * Viewport: large
+ */
+@media (min-width: 860px) {}
+/** @define Header */
+.Header {}
+@media (min-width: 600px) {}
+@media (min-width: 860px) {}
+/** @define Media */
+.Media-caption {}
+/**
+ * Modifier: landscape
+ *
+ * Displays caption inline with media
+ * on larger breakpoints
+ */
+.Media--landscape {}
+@media (min-width: 600px) {}
+/** @define Navigation */
+.Navigation {}
+.Navigation-burger {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 35'%3E %3Cg%3E %3Crect fill='%23000000' width='42' height='5'/%3E %3Crect y='15' fill='%23000000' width='34' height='5'/%3E %3Crect y='30' fill='%23000000' width='42' height='5'/%3E %3C/g%3E %3C/svg%3E") no-repeat center center;
+  background-size: 21px 17px;
+  border: 0;
+  height: 17px;
+  left: 20px;
+  overflow: hidden;
+  position: absolute;
+  text-decoration: none;
+  text-indent: 100%;
+  top: -38px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  white-space: nowrap;
+  width: 21px;
 }
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+@media (min-width: 600px) {}
+/** @define Page */
+.Page {}
+.Page-inner {}
+.Page-nav {}
+.Page-header {}
+.Page-content {}
+@media (min-width: 600px) {}
+@media (min-width: 860px) {}
+/* Third Party */
+/* @import "third-party/animsition/animsition.min.css"; */
