@@ -1,0 +1,14 @@
+/** @define Media */
+
+.Media-caption {}
+
+/**
+ * Modifier: landscape
+ *
+ * Displays caption inline with media
+ * on larger breakpoints
+ */
+
+.Media--landscape {}
+
+@media (--medium) {}

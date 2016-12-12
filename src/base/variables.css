@@ -1,0 +1,22 @@
+/* Only non-named-colour palette, z-index and font-stacks */
+
+:root {
+  --sans: "Lato", Helvetica, sans-serif;
+
+  /* z-index */
+  --depth-1: 100;
+  --depth-2: 200;
+  --depth-3: 300;
+  --depth-4: 400;
+  --depth-5: 500;
+
+  /* colours */
+  --colour-purpleDark: rgb(27, 28, 57);
+  --colour-purple: rgb(150, 15, 124);
+  --colour-purpleLight: rgb(99, 100, 127);
+}
+
+/* Common breakpoints. However adaptions can happen at component-level */
+@custom-media --medium (min-width: 600px);
+@custom-media --large (min-width: 860px);
+@custom-media --xlarge (min-width: 1440px);

@@ -1,0 +1,26 @@
+/** @define Logo */
+
+.Logo {
+  height: 30px;
+  width: 107px;
+}
+
+.Logo-inner {
+  background: svg-load(logo.svg) no-repeat center center;
+  background-size: contain;
+  border: 0;
+  display: block;
+  font-size: 0;
+  height: 100%;
+  text-decoration: none;
+  text-indent: -2000px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@media (--large) {
+  .Logo {
+    height: 54px;
+    width: 198px;
+  }
+}

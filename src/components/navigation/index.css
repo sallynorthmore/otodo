@@ -1,0 +1,169 @@
+/** @define Navigation */
+
+.Navigation {
+  @nest .has-nav & {
+    background: var(--colour-purpleLight);
+    background: var(--colour-purpleLight);
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.Navigation-burger {
+  background: svg-load(burger.svg) no-repeat center center;
+  background-size: 50%;
+  border: 0;
+  cursor: pointer;
+  height: 40px;
+  margin: 15px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 75px;
+
+  @nest .has-nav & {
+    display: none;
+  }
+}
+
+.Navigation-button {
+  border: 0;
+  cursor: pointer;
+  height: 40px;
+  margin: 15px 0 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 75px;
+
+  @nest .has-nav & {
+    background: svg-load(close.svg) no-repeat center center;
+    background-size: 50%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.Navigation-items {
+  display: none;
+
+  @nest .has-nav & {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.Navigation-item {
+  flex: 1;
+  user-select: none;
+}
+
+.Navigation-link {
+  align-items: center;
+  color: white;
+  display: flex;
+  font: 600 40px/40px var(--sans);
+  height: 100%;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+
+  &.is-active {
+    color: var(--colour-purple);
+  }
+}
+
+.Navigation-link--reserve {
+  background-color: var(--colour-purple);
+}
+
+@media (--large) {
+  .Navigation-burger,
+  .Navigation-button {
+    display: none;
+  }
+
+  .Navigation-items {
+    align-items: baseline;
+    display: flex;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  .Navigation-item {
+    min-width: 87px;
+    text-align: center;
+
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
+  }
+
+  .Navigation-link {
+    display: inline-block;
+    font: 600 18px/18px var(--sans);
+    position: relative;
+    width: auto;
+
+    &::after {
+      background: var(--colour-purple);
+      bottom: -7px;
+      content: "";
+      display: none;
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    &.is-active,
+    &:hover {
+      color: white;
+
+      &::after {
+        display: block;
+      }
+    }
+
+    @nest .Navigation-link--reserve & {
+      align-items: center;
+      background: transparent;
+      border: 3px var(--colour-purple) solid;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+
+      &::after {
+        bottom: 0;
+      }
+
+      /* stylelint-disable */
+      &.is-active,
+      &:hover {
+        background: var(--colour-purple);
+        color: white;
+      }
+      /* stylelint-enable */
+    }
+  }
+
+  .Navigation-link--reserve {
+    background: transparent;
+    height: 42px;
+    min-width: 112px;
+  }
+}

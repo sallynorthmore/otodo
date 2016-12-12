@@ -1,0 +1,26 @@
+/** @define Page */
+
+.Page {
+  background: var(--colour-purpleDark);
+}
+
+.Page-inner {
+  position: relative;
+  z-index: 0;
+}
+
+.Page-header {
+  height: 45px;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: var(--depth-1);
+}
+
+@media (--large) {
+  .Page-header {
+    height: 54px;
+  }
+}
