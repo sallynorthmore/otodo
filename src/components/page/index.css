@@ -1,7 +1,7 @@
 /** @define Page */
 
 .Page {
-  background: var(--colour-darkPurple);
+  background: var(--colour-purpleDark);
 }
 
 .Page-inner {

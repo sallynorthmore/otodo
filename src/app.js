@@ -1,17 +1,23 @@
 var app = {
 
 		'init': function init() {
-			// this.menu();
+			this.menu();
 		},
 
 
 		'menu': function orientation() {
-			var button = $('[data-js="navbutton"]');
-
-			// console.log("nav button is " + button.html());
+			var button = $('[data-js="navbutton"]'),
+					page = $('[data-js="page"]'),
+					open = false;
 
 			button.on('click', function(){
-				console.log("Clicked!");
+				if (open) {
+					page.removeClass("has-nav");
+					open = false;
+				} else {
+					page.addClass("has-nav");
+					open = true;
+				}
 			});
 		},
 };

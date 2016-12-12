@@ -10,11 +10,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+				<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/third-party/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body class="Page">
+    <body class="Page" data-js="page">
 
 			<div class="Page-inner">
         <!--[if lt IE 9]>
@@ -30,30 +31,35 @@
 						</div>
 						<div class="Header-nav">
 <nav class="Navigation">
-
-	<div class="Navigation-button" data-js="navbutton">
-		Site navigation
+	<div class="Navigation-burger" data-js="navbutton">
+		Site nav
 	</div>
 
 	<ul class="Navigation-items">
 		<li class="Navigation-item">
-			<a href="#section01" class="Navigation-link">nav item</a>
+			<div class="Navigation-button" data-js="navbutton">
+				Close
+			</div>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section02" class="Navigation-link">nav item</a>
+			<a href="#section01" class="Navigation-link is-active">Acceuil</a>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section03" class="Navigation-link">nav item</a>
+			<a href="#section02" class="Navigation-link">Le hub</a>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section04" class="Navigation-link">nav item</a>
+			<a href="#section03" class="Navigation-link">En détail</a>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section05" class="Navigation-link">nav item</a>
+			<a href="#section04" class="Navigation-link">Histoire</a>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section06" class="Navigation-link">nav item</a>
+			<a href="#section05" class="Navigation-link">Team</a>
 		</li>
+		<li class="Navigation-item Navigation-link--reserve">
+			<a href="#section06" class="Navigation-link">Reserve</a>
+		</li>
+		<li class="Navigation-item"></li>
 	</ul>
 </nav>
 						</div>
@@ -75,9 +81,10 @@
 				</main>
 			</div>
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-      <script src="js/app.js"></script>
+      
+      <script>window.jQuery || document.write('<script src="js/third-party/jquery/jquery-1.11.3.min.js"><\/script>')</script>
+
+		  <script src="js/app.js"></script>
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
           // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
