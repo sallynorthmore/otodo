@@ -2,19 +2,31 @@
 
 .Social {
   background: black;
+  text-align: center;
 }
 
 .Social-items {
-
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 210px;
 }
 
 .Social-item {
-
+  flex: 0 0 30px;
+  height: 30px;
+  padding: 10px;
+  width: 30px;
 }
 
 .Social-link {
   color: var(--colour-grey);
+  display: block;
+  font-size: 0;
+  height: 100%;
   text-decoration: none;
+  text-indent: -1000px;
+  width: 100%;
 
   &:hover {
     color: white;
@@ -23,6 +35,21 @@
   &:visited {
     color: var(--colour-grey);
   }
+}
+
+.Social-link--twitter {
+  background: svg-load(twitter.svg) no-repeat center center;
+  background-size: 22px;
+}
+
+.Social-link--linkedin {
+  background: svg-load(linkedin.svg) no-repeat center center;
+  background-size: 20px;
+}
+
+.Social-link--facebook {
+  background: svg-load(facebook.svg) no-repeat center center;
+  background-size: 12px;
 }
 
 /**

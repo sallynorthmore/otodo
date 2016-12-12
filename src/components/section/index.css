@@ -10,7 +10,7 @@
 
 .Section-title {
   color: white;
-  font: 600 25px/34px var(--sans);
+  font: 700 25px/34px var(--sans);
   margin: 100px auto 0;
   text-align: center;
 }
@@ -72,7 +72,7 @@
 
   & .Section-title {
     color: white;
-    font: 600 27px/30px var(--sans);
+    font: 700 27px/30px var(--sans);
     margin-top: 0;
 
     & > br { /* stylelint-disable-line */
@@ -118,7 +118,7 @@
 @media (--large) {
   .Section-title {
     color: white;
-    font: 600 60px/70px var(--sans);
+    font: 700 60px/70px var(--sans);
     max-width: 550px;
   }
 
@@ -138,7 +138,7 @@
     & .Section-caption {
       color: white;
       display: block;
-      font: 600 60px/70px var(--sans);
+      font: 700 60px/70px var(--sans);
       margin: 40px auto 0;
       max-width: 650px;
     }
@@ -150,7 +150,7 @@
 
   .Section--02 {
     & .Section-title {
-      font: 600 60px/70px var(--sans);
+      font: 700 60px/70px var(--sans);
       margin-top: 120px;
       max-width: 800px;
 

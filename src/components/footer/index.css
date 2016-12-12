@@ -6,11 +6,17 @@
 }
 
 .Footer-items {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .Footer-item {
   color: var(--colour-grey);
+  font: 700 11px/10px var(--sans);
+
+  &:first-child {
+    font-size: 9px;
+  }
 }
 
 .Footer-link {
