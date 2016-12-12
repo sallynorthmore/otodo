@@ -1,7 +1,22 @@
 /** @define Header */
 
-.Header {}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
 
-@media (--medium) {}
+.Header-logo {
+  margin: 15px;
+}
 
-@media (--large) {}
+@media (--large) {
+  .Header {
+    margin: 0 auto;
+    max-width: 1160px;
+  }
+
+  .Header-logo {
+    margin-top: 20px;
+  }
+}

@@ -1,12 +1,18 @@
 /** @define Section */
 
-.Section {}
+.Section {
+  opacity: 0;
+}
 
 .Section-title {}
 
-.Section-intro {}
+.Section-intro {
 
-.Section-content {}
+}
+
+.Section-content {
+
+}
 
 @media (--medium) {}
 

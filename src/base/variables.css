@@ -1,7 +1,7 @@
 /* Only non-named-colour palette, z-index and font-stacks */
 
 :root {
-  --sans: "Helvetica", Helvetica, sans-serif;
+  --sans: "Lato", Helvetica, sans-serif;
 
   /* z-index */
   --depth-1: 100;
@@ -9,6 +9,11 @@
   --depth-3: 300;
   --depth-4: 400;
   --depth-5: 500;
+
+  /* colours */
+  --colour-purpleDark: rgb(27, 28, 57);
+  --colour-purple: rgb(150, 15, 124);
+  --colour-purpleLight: rgb(99, 100, 127);
 }
 
 /* Common breakpoints. However adaptions can happen at component-level */

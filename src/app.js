@@ -1,12 +1,24 @@
 var app = {
 
 		'init': function init() {
-
+			this.menu();
 		},
 
 
-		'orientation': function orientation() {
+		'menu': function orientation() {
+			var button = $('[data-js="navbutton"]'),
+					page = $('[data-js="page"]'),
+					open = false;
 
+			button.on('click', function(){
+				if (open) {
+					page.removeClass("has-nav");
+					open = false;
+				} else {
+					page.addClass("has-nav");
+					open = true;
+				}
+			});
 		},
 };
 

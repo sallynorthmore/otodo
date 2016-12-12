@@ -1,15 +1,26 @@
 /** @define Page */
 
-.Page {}
+.Page {
+  background: var(--colour-purpleDark);
+}
 
-.Page-inner {}
+.Page-inner {
+  position: relative;
+  z-index: 0;
+}
 
-.Page-nav {}
+.Page-header {
+  height: 45px;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: var(--depth-1);
+}
 
-.Page-header {}
-
-.Page-content {}
-
-@media (--medium) {}
-
-@media (--large) {}
+@media (--large) {
+  .Page-header {
+    height: 54px;
+  }
+}

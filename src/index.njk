@@ -10,11 +10,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+				<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/third-party/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body class="Page">
+    <body class="Page" data-js="page">
 
 			<div class="Page-inner">
         <!--[if lt IE 9]>
@@ -22,21 +23,25 @@
         <![endif]-->
 
         <header class="Page-header">
-					{% include "components/header/_header.njk" %}
+					<div class="Header">
+						<div class="Header-logo">
+							{% include "components/logo/_logo.njk" %}
+						</div>
+						<div class="Header-nav">
+							{% include "components/navigation/_nav.njk" %}
+						</div>
+					</div>
         </header>
-
-				<div class="Page-nav">
-					{% include "components/navigation/_nav.njk" %}
-				</div>
 
 				<main class="Page-content">
 					{% include "components/section/_section01.njk" %}
 				</main>
 			</div>
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-      <script src="js/app.js"></script>
+      {# <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> #}
+      <script>window.jQuery || document.write('<script src="js/third-party/jquery/jquery-1.11.3.min.js"><\/script>')</script>
+
+		  <script src="js/app.js"></script>
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
           // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -1,4 +1,4 @@
 {
 	"proxy": "otodo.l",
-	"files": ["dist/*"]
+	"files": ["dist/*", "dist/**/*"]
 }
