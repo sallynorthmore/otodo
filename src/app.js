@@ -8,6 +8,7 @@ var app = {
 		'menu': function orientation() {
 			var button = $('[data-js="navbutton"]'),
 					page = $('[data-js="page"]'),
+					link = $('[data-js="navlink"]'),
 					open = false;
 
 			button.on('click', function(){
@@ -18,6 +19,11 @@ var app = {
 					page.addClass("has-nav");
 					open = true;
 				}
+			});
+
+			link.on('click', function(){
+					page.removeClass("has-nav");
+					open = false;
 			});
 		},
 };
