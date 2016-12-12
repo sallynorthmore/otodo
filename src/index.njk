@@ -22,12 +22,15 @@
         <![endif]-->
 
         <header class="Page-header">
-					{% include "components/logo/_logo.njk" %}
+					<div class="Header">
+						<div class="Header-logo">
+							{% include "components/logo/_logo.njk" %}
+						</div>
+						<div class="Header-nav">
+							{% include "components/navigation/_nav.njk" %}
+						</div>
+					</div>
         </header>
-
-				<div class="Page-nav">
-					{% include "components/navigation/_nav.njk" %}
-				</div>
 
 				<main class="Page-content">
 					{% include "components/section/_section01.njk" %}

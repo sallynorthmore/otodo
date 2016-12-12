@@ -1,6 +1,17 @@
 /** @define Header */
 
-.Header {}
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header-logo {
+  margin: 15px;
+}
+
+.Header-nav {
+
+}
 
 @media (--medium) {}
 

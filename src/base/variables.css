@@ -9,6 +9,9 @@
   --depth-3: 300;
   --depth-4: 400;
   --depth-5: 500;
+
+  /* colours */
+  --colour-darkPurple: rgb(27, 28, 57);
 }
 
 /* Common breakpoints. However adaptions can happen at component-level */

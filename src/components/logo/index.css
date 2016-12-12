@@ -1,7 +1,8 @@
 /** @define Logo */
 
 .Logo {
-  background-color: black;
+  height: 30px;
+  width: 107px;
 }
 
 .Logo-inner {
@@ -9,9 +10,9 @@
   background-size: contain;
   border: 0;
   display: block;
-  height: 100px;
+  height: 100%;
   text-decoration: none;
   text-indent: 100%;
   white-space: nowrap;
-  width: 400px;
+  width: 100%;
 }

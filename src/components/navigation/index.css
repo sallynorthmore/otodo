@@ -2,26 +2,25 @@
 
 .Navigation {}
 
-.Navigation-items {}
+.Navigation-items {
+  display: none;
+}
 
 .Navigation-item {}
 
 .Navigation-link {}
 
-.Navigation-burger {
+.Navigation-button {
   background: svg-load(burger.svg) no-repeat center center;
-  background-size: 21px 17px;
+  background-size: 50%;
   border: 0;
-  height: 17px;
-  left: 20px;
+  height: 40px;
+  margin: 15px 0 0 0;
   overflow: hidden;
-  position: absolute;
   text-decoration: none;
   text-indent: 100%;
-  top: -38px;
-  transform: scale(0.9);
   white-space: nowrap;
-  width: 21px;
+  width: 75px;
 }
 
 @media (--medium) {}

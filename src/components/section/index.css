@@ -4,7 +4,9 @@
 
 .Section-title {}
 
-.Section-intro {}
+.Section-intro {
+  font-size: 50px;
+}
 
 .Section-content {}
 
