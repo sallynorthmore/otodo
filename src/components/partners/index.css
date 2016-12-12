@@ -1,0 +1,47 @@
+/** @define Partners */
+
+.Partners {
+  margin-top: 50px;
+}
+
+.Partners-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 0 -10px;
+}
+
+.Partners-item {
+  flex: 0 0 46%;
+  padding: 30px 0 0 10px;
+}
+
+.Partners-image {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+@media (--medium) {
+  .Partners-item {
+    flex: 0 0 160px;
+    padding: 60px 0 0 20px;
+  }
+}
+
+@media (--large) {
+  .Partners-items {
+    margin-top: 100px;
+    margin: 25vh auto 0;
+    max-width: 1260px;
+  }
+
+  .Partners-item {
+    flex: 0 0 160px;
+    padding: 60px 0 0 30px;
+  }
+
+  .Partners-image {
+    max-width: 157px;
+  }
+}
