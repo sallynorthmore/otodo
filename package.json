@@ -14,7 +14,6 @@
     "build": "run-p build:*",
     "watch:css": "postcss -c .postcssrc.json -w --poll",
     "watch:js": "babel src/ --watch --out-dir dist/js --source-maps inline",
-    "watch:nunjucks": "nunjucks -w *.njk -p src -o dist",
     "watch": "run-p watch:*",
     "wiredep": "wiredep -s src/app.css",
     "serve": "browser-sync start --config '.browsersyncrc.json'",

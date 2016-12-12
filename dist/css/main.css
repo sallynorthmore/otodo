@@ -206,7 +206,7 @@
 }
 @media (min-width: 860px) {
   .Page-header {
-
+    height: 54px;
   }
 }
 /** @define Section */

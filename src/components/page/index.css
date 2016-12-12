@@ -21,6 +21,6 @@
 
 @media (--large) {
   .Page-header {
-
+    height: 54px;
   }
 }

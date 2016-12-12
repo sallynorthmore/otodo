@@ -1,12 +1,18 @@
 var app = {
 
 		'init': function init() {
-
+			// this.menu();
 		},
 
 
-		'orientation': function orientation() {
+		'menu': function orientation() {
+			var button = $('[data-js="navbutton"]');
 
+			// console.log("nav button is " + button.html());
+
+			button.on('click', function(){
+				console.log("Clicked!");
+			});
 		},
 };
 
