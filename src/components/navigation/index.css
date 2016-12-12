@@ -23,4 +23,8 @@
   width: 75px;
 }
 
-@media (--medium) {}
+@media (--large) {
+  .Navigation-button {
+    display: none;
+  }
+}

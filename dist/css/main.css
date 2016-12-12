@@ -115,15 +115,21 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: left;
 }
 .Header-logo {
   margin: 15px;
 }
-.Header-nav {
+@media (min-width: 860px) {
+  .Header {
+    margin: 0 auto;
+    max-width: 1160px;
+  }
 
+  .Header-logo {
+    margin-top: 20px;
+  }
 }
-@media (min-width: 600px) {}
-@media (min-width: 860px) {}
 /** @define Logo */
 .Logo {
   height: 30px;
@@ -134,11 +140,18 @@
   background-size: contain;
   border: 0;
   display: block;
+  font-size: 0;
   height: 100%;
   text-decoration: none;
-  text-indent: 100%;
+  text-indent: -2000px;
   white-space: nowrap;
   width: 100%;
+}
+@media (min-width: 860px) {
+  .Logo {
+    height: 54px;
+    width: 198px;
+  }
 }
 /** @define Media */
 .Media-caption {}
@@ -169,7 +182,11 @@
   white-space: nowrap;
   width: 75px;
 }
-@media (min-width: 600px) {}
+@media (min-width: 860px) {
+  .Navigation-button {
+    display: none;
+  }
+}
 /** @define Page */
 .Page {
   background: rgb(27, 28, 57);
@@ -182,20 +199,27 @@
   height: 45px;
   left: 0;
   position: fixed;
+  text-align: center;
   top: 0;
   width: 100%;
   z-index: 100;
 }
-.Page-content {}
-@media (min-width: 600px) {}
-@media (min-width: 860px) {}
+@media (min-width: 860px) {
+  .Page-header {
+
+  }
+}
 /** @define Section */
-.Section {}
+.Section {
+  opacity: 0;
+}
 .Section-title {}
 .Section-intro {
-  font-size: 50px;
+
 }
-.Section-content {}
+.Section-content {
+
+}
 @media (min-width: 600px) {}
 @media (min-width: 860px) {}
 /* Third Party */
