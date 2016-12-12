@@ -433,6 +433,7 @@
 }
 .Section-intro {
   color: white;
+  font: 300 14px/18px "Lato", Helvetica, sans-serif;
   text-align: center;
 }
 .Section-content {
@@ -466,6 +467,16 @@
 }
 /* Entrer Page */
 .Section--02 {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgb(27, 28, 57);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+.Section--02 .Section-inner {
+  margin: auto;
 }
 .Section--02 .Section-title {
   color: white;

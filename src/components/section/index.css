@@ -17,6 +17,7 @@
 
 .Section-intro {
   color: white;
+  font: 300 14px/18px var(--sans);
   text-align: center;
 }
 
@@ -57,6 +58,14 @@
 
 /* Entrer Page */
 .Section--02 {
+  align-items: center;
+  background: var(--colour-purpleDark);
+  display: flex;
+
+  & .Section-inner {
+    margin: auto;
+  }
+
   & .Section-title {
     color: white;
     font: 600 27px/30px var(--sans);
