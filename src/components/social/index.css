@@ -53,13 +53,34 @@
 }
 
 /**
- * Viewport: medium
- */
-
-@media (--medium) {}
-
-/**
  * Viewport: large
  */
 
-@media (--large) {}
+@media (--large) {
+  .Social {
+    position: relative;
+  }
+
+  .Social-items {
+    left: 0;
+    top: -22px;
+    position: absolute;
+    right: 0;
+    width: 240px;
+  }
+
+  .Social-link--twitter {
+    background: svg-load(twitter.svg) no-repeat center center;
+    background-size: 26px;
+  }
+
+  .Social-link--linkedin {
+    background: svg-load(linkedin.svg) no-repeat center center;
+    background-size: 24px;
+  }
+
+  .Social-link--facebook {
+    background: svg-load(facebook.svg) no-repeat center center;
+    background-size: 12px;
+  }
+}

@@ -52,6 +52,21 @@
  */
 
 @media (--large) {
+  .Footer {
+    height: 35px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .Footer-inner {
+    margin: 0 auto;
+    max-width: 1160px;
+  }
+
+  .Footer-items {
+    margin-top: 10px;
+  }
+
   .Footer-item {
     &:nth-child(2) {
       margin: 0 10px 0 auto;
