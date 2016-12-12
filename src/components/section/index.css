@@ -36,6 +36,10 @@
     position: relative;
   }
 
+  & .Section-caption {
+    display: none;
+  }
+
   & .Section-image {
     background: svg-load(house.svg) no-repeat center center;
     background-size: contain;
@@ -69,6 +73,7 @@
   & .Section-title {
     color: white;
     font: 600 27px/30px var(--sans);
+    margin-top: 0;
   }
 
   & .Section-intro {
@@ -106,7 +111,32 @@
   background: white;
 }
 
+@media (--large) {
+  .Section-title {
+    color: white;
+    font: 600 60px/70px var(--sans);
+    max-width: 550px;
+  }
 
-@media (--medium) {}
+  .Section--01 {
+    & .Section-title {
+      display: none;
+    }
 
-@media (--large) {}
+    & .Section-image {
+      margin-top: 140px;
+    }
+
+    & .Section-caption {
+      color: white;
+      display: block;
+      font: 600 60px/70px var(--sans);
+      margin: 40px auto 0;
+      max-width: 650px;
+    }
+
+    & .Section-nav {
+      bottom: 50px
+    }
+  }
+}

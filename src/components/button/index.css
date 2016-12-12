@@ -51,3 +51,23 @@
   padding: 0;
   width: 30px;
 }
+
+@media (--large) {
+  .Button {
+    align-items: center;
+    border-radius: 6px;
+    display: flex;
+    font: 600 25px/25px var(--sans);
+    height: 67px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 200px;
+  }
+
+  .Button--arrow {
+    height: 34px;
+    padding: 0;
+    width: 60px;
+  }
+}
