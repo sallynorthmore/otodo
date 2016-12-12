@@ -175,7 +175,24 @@
 }
 /** @define Footer */
 .Footer {
-  position: relative;
+  background: black;
+  padding: 10px 15px;
+}
+.Footer-items {
+
+}
+.Footer-item {
+  color: rgb(184, 184, 184);
+}
+.Footer-link {
+  color: rgb(184, 184, 184);
+  text-decoration: none
+}
+.Footer-link:hover {
+  color: white;
+}
+.Footer-link:visited {
+  color: rgb(184, 184, 184);
 }
 /**
  * Viewport: medium
@@ -652,5 +669,33 @@
     width: 50%;
   }
 }
+/** @define Social */
+.Social {
+  background: black;
+}
+.Social-items {
+
+}
+.Social-item {
+
+}
+.Social-link {
+  color: rgb(184, 184, 184);
+  text-decoration: none
+}
+.Social-link:hover {
+  color: white;
+}
+.Social-link:visited {
+  color: rgb(184, 184, 184);
+}
+/**
+ * Viewport: medium
+ */
+@media (min-width: 600px) {}
+/**
+ * Viewport: large
+ */
+@media (min-width: 860px) {}
 /* Third Party */
 /* @import "third-party/animsition/animsition.min.css"; */
