@@ -16,6 +16,7 @@
   --colour-purpleLight: rgb(99, 100, 127);
   --colour-lilac: rgb(155, 92, 144);
   --colour-periwinkle: rgb(79, 81, 127);
+  --colour-grey: rgb(184, 184, 184);
 }
 
 /* Common breakpoints. However adaptions can happen at component-level */

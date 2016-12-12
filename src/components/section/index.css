@@ -10,7 +10,7 @@
 
 .Section-title {
   color: white;
-  font: 600 25px/34px var(--sans);
+  font: 700 25px/34px var(--sans);
   margin: 100px auto 0;
   text-align: center;
 }
@@ -72,7 +72,7 @@
 
   & .Section-title {
     color: white;
-    font: 600 27px/30px var(--sans);
+    font: 700 27px/30px var(--sans);
     margin-top: 0;
 
     & > br { /* stylelint-disable-line */
@@ -115,10 +115,44 @@
   background: white;
 }
 
+/* Reserve page */
+.Section--07 {
+  background: var(--colour-purpleDark);
+  min-height: 0;
+
+  & .Section-title {
+    font: 700 27px/34px var(--sans);
+    letter-spacing: 0.1px;
+    max-width: 250px;
+  }
+
+  & .Section-intro {
+    margin: 0 auto;
+    max-width: 265px;
+
+    & p { /* stylelint-disable-line */
+      font: 300 14px/18px var(--sans);
+      line-height: 18px;
+      margin-top: 20px;
+    }
+  }
+
+  & .Section-button {
+    height: 77px;
+    margin: 30px auto 0;
+  }
+
+  & .Section-body {
+    font: 300 10px/20px var(--sans);
+    margin: 8px auto 0;
+    max-width: 250px;
+  }
+}
+
 @media (--large) {
   .Section-title {
     color: white;
-    font: 600 60px/70px var(--sans);
+    font: 700 60px/70px var(--sans);
     max-width: 550px;
   }
 
@@ -138,7 +172,7 @@
     & .Section-caption {
       color: white;
       display: block;
-      font: 600 60px/70px var(--sans);
+      font: 700 60px/70px var(--sans);
       margin: 40px auto 0;
       max-width: 650px;
     }
@@ -150,7 +184,7 @@
 
   .Section--02 {
     & .Section-title {
-      font: 600 60px/70px var(--sans);
+      font: 700 60px/70px var(--sans);
       margin-top: 120px;
       max-width: 800px;
 
@@ -167,6 +201,42 @@
       height: 366px;
       margin-top: 20px;
       width: 50%;
+    }
+  }
+
+  /* Reserve page */
+  .Section--07 {
+    min-height: 90vh;
+
+    & .Section-title {
+      color: white;
+      font: 700 60px/70px var(--sans);
+      margin-top: 170px;
+      max-width: none;
+    }
+
+    & .Section-intro {
+      font: 300 20px/30px var(--sans);
+      max-width: 560px;
+
+      & p { /* stylelint-disable-line */
+        font: 300 20px/30px var(--sans);
+        margin: 26px auto 0;
+      }
+
+      & p:first-child { /* stylelint-disable-line */
+        max-width: none;
+      }
+    }
+
+    & .Section-button {
+      margin-top: 50px;
+    }
+
+    & .Section-body {
+      font: 300 15px/20px var(--sans);
+      margin: 26px auto 0;
+      max-width: 385px;
     }
   }
 }
