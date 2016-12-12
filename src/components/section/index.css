@@ -16,6 +16,7 @@
 }
 
 .Section-intro {
+  color: white;
   text-align: center;
 }
 
@@ -36,7 +37,7 @@
 
   & .Section-image {
     background: svg-load(house.svg) no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     height: 176px;
     margin: 16px auto 0;
     width: 150px;
@@ -51,6 +52,28 @@
     left: 0;
     position: absolute;
     width: 100%;
+  }
+}
+
+/* Entrer Page */
+.Section--02 {
+  & .Section-title {
+    color: white;
+    font: 600 27px/30px var(--sans);
+  }
+
+  & .Section-intro {
+    font: 300 14px/18px var(--sans);
+    margin: 30px auto 0;
+    padding: 0 10px;
+  }
+
+  & .Section-image {
+    background: svg-load(house-w-icons.svg) no-repeat center center;
+    background-size: contain;
+    height: 213px;
+    margin: 30px auto 0;
+    width: 274px;
   }
 }
 
