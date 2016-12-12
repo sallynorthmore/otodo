@@ -87,6 +87,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +125,12 @@
     height: 34px;
     padding: 0;
     width: 60px;
+  }
+
+  .Button--reserve {
+    margin: 0 auto;
+    position: static;
+    width: 262px;
   }
 }
 /** @define Embed */
@@ -756,6 +763,36 @@
     height: 366px;
     margin-top: 20px;
     width: 50%;
+  }
+
+  /* Reserve page */
+  .Section--07 {
+    min-height: 90vh
+  }
+  .Section--07 .Section-title {
+    color: white;
+    font: 700 60px/70px "Lato", Helvetica, sans-serif;
+    margin-top: 170px;
+    max-width: none;
+  }
+  .Section--07 .Section-intro {
+    font: 300 20px/30px "Lato", Helvetica, sans-serif;
+    max-width: 560px;
+  }
+  .Section--07 .Section-intro p {/* stylelint-disable-line */
+    font: 300 20px/30px "Lato", Helvetica, sans-serif;
+    margin: 26px auto 0;
+  }
+  .Section--07 .Section-intro p:first-child {/* stylelint-disable-line */
+    max-width: none;
+  }
+  .Section--07 .Section-button {
+    margin-top: 50px;
+  }
+  .Section--07 .Section-body {
+    font: 300 15px/20px "Lato", Helvetica, sans-serif;
+    margin: 26px auto 0;
+    max-width: 385px;
   }
 }
 /** @define Social */

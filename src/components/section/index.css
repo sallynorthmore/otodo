@@ -203,4 +203,40 @@
       width: 50%;
     }
   }
+
+  /* Reserve page */
+  .Section--07 {
+    min-height: 90vh;
+
+    & .Section-title {
+      color: white;
+      font: 700 60px/70px var(--sans);
+      margin-top: 170px;
+      max-width: none;
+    }
+
+    & .Section-intro {
+      font: 300 20px/30px var(--sans);
+      max-width: 560px;
+
+      & p { /* stylelint-disable-line */
+        font: 300 20px/30px var(--sans);
+        margin: 26px auto 0;
+      }
+
+      & p:first-child { /* stylelint-disable-line */
+        max-width: none;
+      }
+    }
+
+    & .Section-button {
+      margin-top: 50px;
+    }
+
+    & .Section-body {
+      font: 300 15px/20px var(--sans);
+      margin: 26px auto 0;
+      max-width: 385px;
+    }
+  }
 }
