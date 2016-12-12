@@ -511,9 +511,12 @@
   font: 600 27px/30px "Lato", Helvetica, sans-serif;
   margin-top: 0;
 }
+.Section--02 .Section-title > br {/* stylelint-disable-line */
+  display: none;
+}
 .Section--02 .Section-intro {
-  font: 300 14px/18px "Lato", Helvetica, sans-serif;
   margin: 30px auto 0;
+  max-width: 550px;
   padding: 0 10px;
 }
 .Section--02 .Section-image {
@@ -546,6 +549,10 @@
     max-width: 550px;
   }
 
+  .Section-intro {
+    font: 300 20px/30px "Lato", Helvetica, sans-serif;
+  }
+
   .Section--01 {
   }
 
@@ -567,6 +574,29 @@
 
   .Section--01 .Section-nav {
     bottom: 50px;
+  }
+
+  .Section--02 {
+  }
+
+  .Section--02 .Section-title {
+    font: 600 60px/70px "Lato", Helvetica, sans-serif;
+    margin-top: 120px;
+    max-width: 800px;
+  }
+
+  .Section--02 .Section-title > br {/* stylelint-disable-line */
+    display: block;
+  }
+
+  .Section--02 .Section-intro {
+    margin-top: 40px;
+  }
+
+  .Section--02 .Section-image {
+    height: 366px;
+    margin-top: 20px;
+    width: 50%;
   }
 }
 /* Third Party */
