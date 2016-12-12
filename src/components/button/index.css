@@ -1,0 +1,53 @@
+/** @define Button */
+
+.Button {
+  background: var(--colour-purple);
+  border: 0 transparent;
+  border-radius: 6px;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font: 600 21px/21px var(--sans);
+  outline: none;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+
+  /* Remove excess padding and border in Firefox 4+ */
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0 transparent;
+    box-shadow: none;
+  }
+
+  /**
+   * Work around a Firefox/IE bug where the transparent `button` background
+   * results in a loss of the default `button` focus styles.
+   */
+  &:focus {
+    border: 0 transparent;
+    box-shadow: none;
+    outline: 0 dotted;
+  }
+}
+
+/**
+ * Modifier: arrow
+ */
+
+.Button--arrow {
+  background: transparent svg-load(arrow-down.svg) no-repeat center center;
+  background-size: contain;
+  border-radius: 0;
+  height: 30px;
+  padding: 0;
+  width: 30px;
+}
