@@ -115,6 +115,40 @@
   background: white;
 }
 
+/* Reserve page */
+.Section--07 {
+  background: var(--colour-purpleDark);
+  min-height: 0;
+
+  & .Section-title {
+    font: 700 27px/34px var(--sans);
+    letter-spacing: 0.1px;
+    max-width: 250px;
+  }
+
+  & .Section-intro {
+    margin: 0 auto;
+    max-width: 265px;
+
+    & p { /* stylelint-disable-line */
+      font: 300 14px/18px var(--sans);
+      line-height: 18px;
+      margin-top: 20px;
+    }
+  }
+
+  & .Section-button {
+    height: 77px;
+    margin: 30px auto 0;
+  }
+
+  & .Section-body {
+    font: 300 10px/20px var(--sans);
+    margin: 8px auto 0;
+    max-width: 250px;
+  }
+}
+
 @media (--large) {
   .Section-title {
     color: white;

@@ -80,6 +80,27 @@
   padding: 0;
   width: 30px;
 }
+/**
+ * Modifier: reserve
+ */
+.Button--reserve {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 77px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  max-width: none;
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+}
 @media (min-width: 860px) {
   .Button {
     -webkit-align-items: center;
@@ -176,6 +197,7 @@
 /** @define Footer */
 .Footer {
   background: black;
+  margin-top: 30px;
   padding: 10px 15px 15px;
 }
 .Footer-items {
@@ -651,6 +673,34 @@
 .Section--06 {
   background: white;
 }
+/* Reserve page */
+.Section--07 {
+  background: rgb(27, 28, 57);
+  min-height: 0
+}
+.Section--07 .Section-title {
+  font: 700 27px/34px "Lato", Helvetica, sans-serif;
+  letter-spacing: 0.1px;
+  max-width: 250px;
+}
+.Section--07 .Section-intro {
+  margin: 0 auto;
+  max-width: 265px;
+}
+.Section--07 .Section-intro p {/* stylelint-disable-line */
+  font: 300 14px/18px "Lato", Helvetica, sans-serif;
+  line-height: 18px;
+  margin-top: 20px;
+}
+.Section--07 .Section-button {
+  height: 77px;
+  margin: 30px auto 0;
+}
+.Section--07 .Section-body {
+  font: 300 10px/20px "Lato", Helvetica, sans-serif;
+  margin: 8px auto 0;
+  max-width: 250px;
+}
 @media (min-width: 860px) {
   .Section-title {
     color: white;
@@ -768,9 +818,9 @@
 
   .Social-items {
     left: 0;
-    top: -22px;
     position: absolute;
     right: 0;
+    top: -22px;
     width: 240px;
   }
 

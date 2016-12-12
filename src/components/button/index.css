@@ -52,6 +52,23 @@
   width: 30px;
 }
 
+/**
+ * Modifier: reserve
+ */
+
+.Button--reserve {
+  align-items: center;
+  display: flex;
+  height: 77px;
+  justify-content: center;
+  left: 0;
+  max-width: none;
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+}
+
 @media (--large) {
   .Button {
     align-items: center;
