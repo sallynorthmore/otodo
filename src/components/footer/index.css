@@ -2,12 +2,13 @@
 
 .Footer {
   background: black;
-  padding: 10px 15px;
+  padding: 10px 15px 15px;
 }
 
 .Footer-items {
   display: flex;
   justify-content: space-between;
+  margin: 30px 0 0;
 }
 
 .Footer-item {
@@ -36,10 +37,24 @@
  * Viewport: medium
  */
 
-@media (--medium) {}
+@media (--medium) {
+  .Footer-item {
+    font: 700 11px/10px var(--sans);
+
+    &:first-child {
+      font-size: 11px;
+    }
+  }
+}
 
 /**
  * Viewport: large
  */
 
-@media (--large) {}
+@media (--large) {
+  .Footer-item {
+    &:nth-child(2) {
+      margin: 0 10px 0 auto;
+    }
+  }
+}
