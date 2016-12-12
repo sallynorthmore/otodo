@@ -86,6 +86,27 @@
   }
 }
 
+/* Avec Page */
+.Section--03 {
+  background: var(--colour-lilac);
+}
+
+/* History Page */
+.Section--04 {
+  background: var(--colour-periwinkle);
+}
+
+/* Team page */
+.Section--05 {
+  background: var(--colour-purpleLight);
+}
+
+/* Logo page */
+.Section--06 {
+  background: white;
+}
+
+
 @media (--medium) {}
 
 @media (--large) {}

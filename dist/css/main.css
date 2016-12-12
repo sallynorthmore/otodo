@@ -494,6 +494,22 @@
   margin: 30px auto 0;
   width: 274px;
 }
+/* Avec Page */
+.Section--03 {
+  background: rgb(155, 92, 144);
+}
+/* History Page */
+.Section--04 {
+  background: rgb(79, 81, 127);
+}
+/* Team page */
+.Section--05 {
+  background: rgb(99, 100, 127);
+}
+/* Logo page */
+.Section--06 {
+  background: white;
+}
 @media (min-width: 600px) {}
 @media (min-width: 860px) {}
 /* Third Party */
