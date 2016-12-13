@@ -3,8 +3,13 @@ var app = {
 		'init': function init() {
 			this.menu();
 
-			// Initialise scroll on desktop
+			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
+				$("<link/>", {
+				   rel: "stylesheet",
+				   type: "text/css",
+				   href: "/css/onepage-scroll.css"
+				}).appendTo("head");
 				this.onepage();
 			}
 		},

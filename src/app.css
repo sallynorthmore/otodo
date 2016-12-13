@@ -9,13 +9,9 @@
 @import "components/header/index.css";
 @import "components/logo/index.css";
 @import "components/navigation/index.css";
-
 @import "components/section/index.css";
 @import "components/partners/index.css";
-
 @import "components/page/index.css";
 @import "components/social/index.css";
 
 /* Third Party */
-
-@import "third-party/onepage-scroll/onepage-scroll.css";
