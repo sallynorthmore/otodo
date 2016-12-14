@@ -230,6 +230,35 @@
     }
   }
 
+  /* Team page */
+  .Section--05 {
+    background: var(--colour-purpleLight);
+
+    & .Section-title {
+      font: 700 60px/60px var(--sans);
+      margin: 120px auto 0;
+    }
+
+    & .Section-intro {
+      font: 400 20px/30px var(--sans);
+      margin: 30px auto 0 120px;
+      max-width: 550px;
+      text-align: left;
+    }
+
+    & .Section-body {
+      font: 400 20px/30px var(--sans);
+      margin: 30px auto 0 120px;
+      max-width: 550px;
+      text-align: left;
+
+      & strong { /* stylelint-disable-line */
+        color: var(--colour-greyDark);
+        font-weight: 700;
+      }
+    }
+  }
+
   /* Reserve page */
   .Section--07 {
     min-height: 90vh;
