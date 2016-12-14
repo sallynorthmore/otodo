@@ -13,7 +13,7 @@
   /* colours */
   --colour-purpleDark: rgb(27, 28, 57);
   --colour-purple: rgb(150, 15, 124);
-  --colour-purpleLight: rgb(99, 100, 127);
+  --colour-purpleLight: rgba(99, 100, 127, 0.24);
   --colour-lilac: rgb(155, 92, 144);
   --colour-periwinkle: rgb(79, 81, 127);
   --colour-grey: rgb(184, 184, 184);

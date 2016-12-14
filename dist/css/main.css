@@ -211,6 +211,25 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: left;
+  transition: background 0.2s 0.3s ease-out
+}
+.Header.is-2 {
+  background: rgb(27, 28, 57);
+}
+.Header.is-3 {
+  background: rgb(155, 92, 144);
+}
+.Header.is-4 {
+  background: rgb(79, 81, 127);
+}
+.Header.is-5 {
+  background: rgba(99, 100, 127, 0.24);
+}
+.Header.is-6 {
+  background: rgba(99, 100, 127, 0.24);
+}
+.Header.is-7 {
+  background: rgb(27, 28, 57);
 }
 .Header-logo {
   margin: 15px;
@@ -252,8 +271,8 @@
 .Navigation {
 }
 .has-nav .Navigation {
-  background: rgb(99, 100, 127);
-  background: rgb(99, 100, 127);
+  background: rgba(99, 100, 127, 0.24);
+  background: rgba(99, 100, 127, 0.24);
   display: block;
   height: 100%;
   left: 0;
@@ -521,7 +540,7 @@
 }
 /* Team page */
 .Section--05 {
-  background: rgb(99, 100, 127);
+  background: rgba(99, 100, 127, 0.24);
 }
 /* Logo page */
 .Section--06 {
@@ -697,7 +716,7 @@
 }
 /** @define Page */
 .Page {
-  background: rgb(27, 28, 57);
+  background: white;
 }
 .Page-inner {
   position: relative;
