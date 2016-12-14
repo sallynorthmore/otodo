@@ -14,23 +14,63 @@
 
 .Carousel-header {
   border-bottom: 1px solid var(--colour-grey);
-  letter-spacing: 0.05px;
   margin: 38px 0 0;
   padding: 0 0 8px;
+  position: relative;
 }
 
 .Carousel-headerTitle {
+  align-items: flex-end;
+  display: flex;
   font: 700 15px/23px var(--sans);
+  letter-spacing: 0.05px;
   text-transform: uppercase;
 }
 
 .Carousel-headerIcon {
-  margin: 0 5px;
+  display: inline-block;
+  height: 44px;
+  margin: 0 5px 0 10px;
+  width: 24px;
 }
 
-.Carousel-headerButton {}
+.Carousel-headerIcon--pilot {
+  background: svg-load(icon-pilot.svg) no-repeat center center;
+  background-size: contain;
+}
 
-.Carousel-content {}
+.Carousel-headerIcon--power {
+  background: svg-load(icon-power.svg) no-repeat center center;
+  background-size: contain;
+  height: 27px;
+  width: 24px;
+}
+
+.Carousel-headerIcon--security {
+  background: svg-load(icon-security.svg) no-repeat center center;
+  background-size: contain;
+  height: 30px;
+  width: 24px;
+}
+
+.Carousel-headerButton {
+  background: svg-load(arrow-down.svg) no-repeat center center;
+  background-size: contain;
+  bottom: 14px;
+  display: block;
+  height: 7px;
+  position: absolute;
+  right: 10px;
+  width: 16px;
+
+  @nest .is-open & {
+    transform: rotate(180deg);
+  }
+}
+
+.Carousel-content {
+  display: none;
+}
 
 .Carousel-contentTitle {
   font: 700 15px/20px var(--sans);
