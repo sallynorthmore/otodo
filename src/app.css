@@ -13,6 +13,7 @@
 @import "components/partners/index.css";
 @import "components/page/index.css";
 @import "components/social/index.css";
+@import "components/team/index.css";
 
 /* Third Party */
 @import "third-party/onepage-scroll/override.css";

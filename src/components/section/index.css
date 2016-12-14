@@ -108,6 +108,32 @@
 /* Team page */
 .Section--05 {
   background: var(--colour-purpleLight);
+
+  & .Section-title {
+    color: var(--colour-greyDark);
+    font: 700 27px/27px var(--sans);
+    letter-spacing: 0.1px;
+    margin: 82px auto 0;
+  }
+
+  & .Section-intro {
+    color: var(--colour-greyDark);
+    font: 300 14px/18px var(--sans);
+    letter-spacing: 0.05px;
+    margin: 30px auto 0;
+  }
+
+  & .Section-body {
+    color: var(--colour-greyDark);
+    font: 400 14px/18px var(--sans);
+    letter-spacing: 0.05px;
+    margin: 30px auto 0;
+
+    & strong { /* stylelint-disable-line */
+      color: var(--colour-greyDark);
+      font-weight: 700;
+    }
+  }
 }
 
 /* Logo page */
@@ -201,6 +227,35 @@
       height: 366px;
       margin-top: 20px;
       width: 50%;
+    }
+  }
+
+  /* Team page */
+  .Section--05 {
+    background: var(--colour-purpleLight);
+
+    & .Section-title {
+      font: 700 60px/60px var(--sans);
+      margin: 120px auto 0;
+    }
+
+    & .Section-intro {
+      font: 400 20px/30px var(--sans);
+      margin: 30px auto 0 120px;
+      max-width: 550px;
+      text-align: left;
+    }
+
+    & .Section-body {
+      font: 400 20px/30px var(--sans);
+      margin: 30px auto 0 120px;
+      max-width: 550px;
+      text-align: left;
+
+      & strong { /* stylelint-disable-line */
+        color: var(--colour-greyDark);
+        font-weight: 700;
+      }
     }
   }
 
