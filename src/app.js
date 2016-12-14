@@ -6,13 +6,34 @@ var app = {
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
+				// Add one-page scroll css & js
 				$("<link/>", {
 				   rel: "stylesheet",
 				   type: "text/css",
 				   href: "/css/onepage-scroll.css"
 				}).appendTo("head");
 				this.onepage();
+
+				// initialise slickjs
+				this.carousel();
 			}
+		},
+
+		'carousel': function carousel() {
+			var $carousel = $('[data-js="carousel"]'),
+					$carouselNav = $('[data-js="carousel-nav"]');
+
+			$carousel.slick({
+				arrows: false
+			});
+
+			$carouselNav.children().on('click', function(){
+				var index = $(this).index();
+
+				$carouselNav.children().removeClass('is-active');
+				$(this).addClass('is-active');
+				$carousel.slick('slickGoTo', index);
+			});
 		},
 
 		'expander': function expander(){

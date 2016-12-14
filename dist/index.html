@@ -11,8 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 				<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/third-party/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+				<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+				<link rel="stylesheet" href="css/main.css">
+				<script src="js/third-party/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	  </head>
     <body class="Page" data-js="page">
 
@@ -109,7 +110,7 @@
 		</div>
 		<div class="Section-content">
 			<div class="Carousel">
-				<div class="Carousel-nav">
+				<div class="Carousel-nav" data-js="carousel-nav">
 					<div class="Carousel-navItem">
 						Pilotez tous les objets
 					</div>
@@ -120,7 +121,7 @@
 						Sécurité absolue
 					</div>
 				</div>
-				<div class="Carousel-items">
+				<div class="Carousel-items" data-js="carousel">
 					<div class="Carousel-item" data-js="expander">
 						<div class="Carousel-header" data-js="expanderTrigger">
 							<span class="Carousel-headerButton"></span>
@@ -410,6 +411,7 @@
 
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			<script>window.jQuery || document.write('<script src="js/third-party/jquery/jquery-1.11.3.min.js"><\/script>')</script>
+			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 			<script type="text/javascript" src="js/third-party/onepage-scroll/jquery.onepage-scroll.js"></script>
 			<script type="text/javascript" src="js/third-party/device/device.js"></script>
 			<script src="js/app.js"></script>

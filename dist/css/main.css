@@ -240,12 +240,14 @@
     margin: 40px auto 0;
     max-width: 920px;
     padding: 0 20px 14px;
+    position: relative;
   }
 
   .Carousel-navItem {
     color: rgb(184, 184, 184);
     cursor: pointer;
     font: 700 17px/23px "Lato", Helvetica, sans-serif;
+    position: relative;
     text-transform: uppercase;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -253,8 +255,24 @@
             user-select: none
   }
 
+  .Carousel-navItem::after {
+    background: white;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    left: -10%;
+    opacity: 0;
+    position: absolute;
+    top: 37px;
+    width: 120%;
+  }
+
   .Carousel-navItem.is-active {
     color: white;
+  }
+
+  .Carousel-navItem.is-active::after {
+    opacity: 1;
   }
 
   .Carousel-navItem:hover {

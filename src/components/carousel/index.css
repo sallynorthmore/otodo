@@ -111,17 +111,35 @@
     margin: 40px auto 0;
     max-width: 920px;
     padding: 0 20px 14px;
+    position: relative;
   }
 
   .Carousel-navItem {
     color: var(--colour-grey);
     cursor: pointer;
     font: 700 17px/23px var(--sans);
+    position: relative;
     text-transform: uppercase;
     user-select: none;
 
+    &::after {
+      background: white;
+      content: "";
+      display: inline-block;
+      height: 4px;
+      left: -10%;
+      opacity: 0;
+      position: absolute;
+      top: 37px;
+      width: 120%;
+    }
+
     &.is-active {
       color: white;
+
+      &::after {
+        opacity: 1;
+      }
     }
 
     &:hover {
