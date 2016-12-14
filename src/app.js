@@ -2,6 +2,7 @@ var app = {
 
 		'init': function init() {
 			this.menu();
+			this.expander();
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
@@ -12,6 +13,16 @@ var app = {
 				}).appendTo("head");
 				this.onepage();
 			}
+		},
+
+		'expander': function expander(){
+			var $item = $('[data-js="expander"]'),
+					$trigger = $item.find('[data-js="expanderTrigger"]'),
+					$content = $item.find('[data-js="expanderContent"]');
+
+			$trigger.on('click', function(){
+				$(this).parent().toggleClass("is-expanded");
+			});
 		},
 
 		'menu': function menu() {

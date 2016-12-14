@@ -14,9 +14,11 @@
 
 .Carousel-header {
   border-bottom: 1px solid var(--colour-grey);
+  cursor: pointer;
   margin: 38px 0 0;
   padding: 0 0 8px;
   position: relative;
+  user-select: none;
 }
 
 .Carousel-headerTitle {
@@ -63,13 +65,19 @@
   right: 10px;
   width: 16px;
 
-  @nest .is-open & {
+  @nest .is-expanded & {
     transform: rotate(180deg);
   }
 }
 
 .Carousel-content {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+
+  @nest .is-expanded & {
+    max-height: 300px;
+  }
 }
 
 .Carousel-contentTitle {

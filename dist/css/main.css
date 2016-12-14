@@ -145,9 +145,14 @@
 }
 .Carousel-header {
   border-bottom: 1px solid rgb(184, 184, 184);
+  cursor: pointer;
   margin: 38px 0 0;
   padding: 0 0 8px;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .Carousel-headerTitle {
   -webkit-align-items: flex-end;
@@ -192,12 +197,17 @@
   right: 10px;
   width: 16px
 }
-.is-open .Carousel-headerButton {
+.is-expanded .Carousel-headerButton {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 .Carousel-content {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s ease-out
+}
+.is-expanded .Carousel-content {
+  max-height: 300px;
 }
 .Carousel-contentTitle {
   font: 700 15px/20px "Lato", Helvetica, sans-serif;
