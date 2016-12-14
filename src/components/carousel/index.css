@@ -97,10 +97,16 @@
 }
 
 .Carousel-contentLink {
+  cursor: pointer;
   font: 400 16px/24px var(--sans);
   letter-spacing: 0.05px;
   margin: 16px 0 0;
   text-decoration: underline;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 @media (--large) {

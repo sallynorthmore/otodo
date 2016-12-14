@@ -3,16 +3,17 @@ var app = {
 		'init': function init() {
 			this.menu();
 			this.expander();
+			this.overlay();
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
 				// Add one-page scroll css & js
-				$("<link/>", {
-				   rel: "stylesheet",
-				   type: "text/css",
-				   href: "/css/onepage-scroll.css"
-				}).appendTo("head");
-				this.onepage();
+				// $("<link/>", {
+				//    rel: "stylesheet",
+				//    type: "text/css",
+				//    href: "/css/onepage-scroll.css"
+				// }).appendTo("head");
+				// this.onepage();
 
 				// initialise slickjs
 				this.carousel();
@@ -70,6 +71,21 @@ var app = {
 
 			$trigger.on('click', function(){
 				$(this).parent().toggleClass("is-expanded");
+			});
+		},
+
+		'overlay': function overlay() {
+			var $overlay = $('[data-js="overlay"]'),
+					$overlayTrigger = $('[data-js="overlayTrigger"]'),
+					$overlayClose = $('[data-js="closeOverlay"]');
+
+			$overlayTrigger.on('click', function(){
+				var overlayNumber = $(this).attr('data-overlay');
+				$('[data-overlaynumber='+ overlayNumber +']').addClass('is-active');
+			});
+
+			$overlayClose.on('click', function(){
+				$overlay.removeClass('is-active');
 			});
 		},
 

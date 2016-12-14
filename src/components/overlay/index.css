@@ -1,0 +1,47 @@
+/** @define Overlay */
+
+.Overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: var(--depth-4);
+
+  &.is-active {
+    display: flex;
+  }
+}
+
+.Overlay-inner {
+  background: black;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.Overlay-button {
+  background: svg-load(close.svg) no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 40px;
+}
+
+@media (--large) {
+  .Overlay-inner {
+    height: 95%;
+    max-height: 720px;
+    max-width: 1104px;
+    position: relative;
+    width: 90%;
+  }
+}
