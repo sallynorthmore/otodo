@@ -241,6 +241,21 @@
     }
   }
 
+  /* Avec Page */
+  .Section--03 {
+    & .Section-title {
+      font: 700 72px/72px var(--sans);
+      margin-top: 144px;
+      max-width: none;
+    }
+
+    & .Section-intro {
+      font: 300 20px/20px var(--sans);
+      margin: 35px auto 0;
+      max-width: 425px;
+    }
+  }
+
   /* Team page */
   .Section--05 {
     background: var(--colour-purpleLight);

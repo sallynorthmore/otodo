@@ -1,7 +1,7 @@
 /** @define Carousel */
 
-.Carousel {
-
+.Carousel-nav {
+  display: none;
 }
 
 .Carousel-items {
@@ -73,7 +73,7 @@
 .Carousel-content {
   max-height: 0;
   overflow: hidden;
-  transition: 0.2s ease-out;
+  transition: 0.3s ease-out;
 
   @nest .is-expanded & {
     max-height: 300px;
@@ -101,4 +101,87 @@
   letter-spacing: 0.05px;
   margin: 16px 0 0;
   text-decoration: underline;
+}
+
+@media (--large) {
+  .Carousel-nav {
+    border-bottom: 1px solid rgba(225, 225, 225, 0.5);
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0;
+    max-width: 920px;
+    padding: 0 20px 14px;
+  }
+
+  .Carousel-navItem {
+    color: var(--colour-grey);
+    cursor: pointer;
+    font: 700 17px/23px var(--sans);
+    text-transform: uppercase;
+    user-select: none;
+
+    &.is-active {
+      color: white;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .Carousel-items {
+    margin: 0 auto;
+    max-width: 920px;
+  }
+
+  .Carousel-header {
+    display: none;
+  }
+
+  .Carousel-content {
+    max-height: none;
+    overflow: visible;
+    padding: 0 0 0 42%;
+    transition: 0.3s ease-out;
+
+    @nest .is-expanded & {
+      max-height: none;
+    }
+  }
+
+  .Carousel-content--pilot {
+    background: svg-load(icon-pilot.svg) no-repeat 200px center;
+    background-size: 77px;
+  }
+
+  .Carousel-content--power {
+    background: svg-load(icon-power.svg) no-repeat 170px center;
+    background-size: 135px;
+  }
+
+  .Carousel-content--security {
+    background: svg-load(icon-security.svg) no-repeat 170px center;
+    background-size: 140px;
+  }
+
+  .Carousel-contentTitle {
+    font: 700 24px/24px var(--sans);
+    margin: 50px 0 0;
+    max-width: 450px;
+  }
+
+  .Carousel-contentBody {
+    font: 300 20px/24px var(--sans);
+    margin: 30px 0 0;
+    max-width: 450px;
+
+    & strong { /*stylelint-disable-line */
+      font: 700 20px/24px var(--sans);
+    }
+  }
+
+  .Carousel-contentLink {
+    font: 400 20px/20px var(--sans);
+    margin: 20px 0 0;
+  }
 }
