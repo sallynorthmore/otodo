@@ -2,16 +2,75 @@ var app = {
 
 		'init': function init() {
 			this.menu();
+			this.expander();
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
+				// Add one-page scroll css & js
 				$("<link/>", {
 				   rel: "stylesheet",
 				   type: "text/css",
 				   href: "/css/onepage-scroll.css"
 				}).appendTo("head");
 				this.onepage();
+
+				// initialise slickjs
+				this.carousel();
 			}
+		},
+
+		'carousel': function carousel() {
+				var $carousel = $('[data-js="carousel"]'),
+						$carouselNav = $('[data-js="carousel-nav"]');
+
+				$carousel.slick({
+					arrows: false,
+					responsive: [
+				    {
+				      breakpoint: 860,
+				      settings: "unslick"
+				    },
+					]
+				});
+
+				// Make slides respond to nav
+				$carouselNav.children().on('click', function(){
+					var index = $(this).index();
+
+					$carouselNav.children().removeClass('is-active');
+					$(this).addClass('is-active');
+					$carousel.slick('slickGoTo', index);
+				});
+
+				// Make slick reinit when browser size increased & it isn't already initialized
+				window.onresize = function() {
+
+					if (window.innerWidth >= 860 && !$carousel.hasClass('slick-initialized')) {
+
+						// Destroy and reinit slick
+						$carousel.slick('unslick');
+
+						$carousel.slick({
+							arrows: false,
+							responsive: [
+						    {
+						      breakpoint: 860,
+						      settings: "unslick"
+						    },
+							]
+						});
+					}
+				}
+		},
+
+		'expander': function expander(){
+			var $item = $('[data-js="expander"]'),
+					$trigger = $item.find('[data-js="expanderTrigger"]'),
+					$content = $item.find('[data-js="expanderContent"]');
+
+			$trigger.on('click', function(){
+				$(this).parent().toggleClass("is-expanded");
+			});
 		},
 
 		'menu': function menu() {
