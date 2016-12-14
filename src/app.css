@@ -4,19 +4,17 @@
 @import "base/variables.css";
 
 /* Components */
-
 @import "components/button/index.css";
-@import "components/embed/index.css";
+@import "components/carousel/index.css";
 @import "components/footer/index.css";
 @import "components/header/index.css";
 @import "components/logo/index.css";
-@import "components/media/index.css";
 @import "components/navigation/index.css";
-@import "components/page/index.css";
-@import "components/partners/index.css";
 @import "components/section/index.css";
+@import "components/partners/index.css";
+@import "components/page/index.css";
 @import "components/social/index.css";
+@import "components/team/index.css";
 
 /* Third Party */
-
-/* @import "third-party/animsition/animsition.min.css"; */
+@import "third-party/onepage-scroll/override.css";
