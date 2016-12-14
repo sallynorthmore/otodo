@@ -211,25 +211,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: left;
-  transition: background 0.2s 0.3s ease-out
-}
-.Header.is-2 {
-  background: rgb(27, 28, 57);
-}
-.Header.is-3 {
-  background: rgb(155, 92, 144);
-}
-.Header.is-4 {
-  background: rgb(79, 81, 127);
-}
-.Header.is-5 {
-  background: rgba(99, 100, 127, 0.24);
-}
-.Header.is-6 {
-  background: rgba(99, 100, 127, 0.24);
-}
-.Header.is-7 {
-  background: rgb(27, 28, 57);
 }
 .Header-logo {
   margin: 15px;
@@ -723,17 +704,36 @@
   z-index: 0;
 }
 .Page-header {
-  height: 45px;
+  height: 5px;
   left: 0;
   position: fixed;
   text-align: center;
   top: 0;
+  transition: background 0.2s 0.3s ease-out;
   width: 100%;
-  z-index: 100;
+  z-index: 100
+}
+.Page-header.is-2 {
+  background: rgb(27, 28, 57);
+}
+.Page-header.is-3 {
+  background: rgb(155, 92, 144);
+}
+.Page-header.is-4 {
+  background: rgb(79, 81, 127);
+}
+.Page-header.is-5 {
+  background: rgba(99, 100, 127, 0.24);
+}
+.Page-header.is-6 {
+  background: rgba(99, 100, 127, 0.24);
+}
+.Page-header.is-7 {
+  background: rgb(27, 28, 57);
 }
 @media (min-width: 860px) {
   .Page-header {
-    height: 54px;
+    height: 110px;
   }
 }
 /** @define Social */

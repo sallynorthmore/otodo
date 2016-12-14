@@ -10,17 +10,42 @@
 }
 
 .Page-header {
-  height: 45px;
+  height: 5px;
   left: 0;
   position: fixed;
   text-align: center;
   top: 0;
+  transition: background 0.2s 0.3s ease-out;
   width: 100%;
   z-index: var(--depth-1);
+
+  &.is-2 {
+    background: var(--colour-purpleDark);
+  }
+
+  &.is-3 {
+    background: var(--colour-lilac);
+  }
+
+  &.is-4 {
+    background: var(--colour-periwinkle);
+  }
+
+  &.is-5 {
+    background: var(--colour-purpleLight);
+  }
+
+  &.is-6 {
+    background: var(--colour-purpleLight);
+  }
+
+  &.is-7 {
+    background: var(--colour-purpleDark);
+  }
 }
 
 @media (--large) {
   .Page-header {
-    height: 54px;
+    height: 110px;
   }
 }
