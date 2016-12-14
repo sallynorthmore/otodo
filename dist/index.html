@@ -11,24 +11,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 				<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-				<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-				<link rel="stylesheet" href="css/main.css">
-				<script src="js/third-party/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-	  </head>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/third-party/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
     <body class="Page" data-js="page">
 
-      <!--[if lt IE 9]>
-          <p class="Page-error browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
+			<div class="Page-inner">
+        <!--[if lt IE 9]>
+            <p class="Page-error browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-      <header class="Page-header" data-js="header">
-				<div class="Header">
-					<div class="Header-logo">
+        <header class="Page-header">
+					<div class="Header">
+						<div class="Header-logo">
 <h1 class="Logo">
 	<a href="/" class="Logo-inner">oToDo</a>
 </h1>
-					</div>
-					<div class="Header-nav">
+						</div>
+						<div class="Header-nav">
 <nav class="Navigation">
 	<div class="Navigation-burger" data-js="navbutton">
 		Site nav
@@ -41,32 +42,32 @@
 			</div>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section01" class="Navigation-link" data-js="navlink" data-section="1">Acceuil</a>
+			<a href="#section01" class="Navigation-link" data-js="navlink">Acceuil</a>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section02" class="Navigation-link" data-js="navlink" data-section="2">Le hub</a>
+			<a href="#section02" class="Navigation-link" data-js="navlink">Le hub</a>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section03" class="Navigation-link" data-js="navlink" data-section="3">En détail</a>
+			<a href="#section03" class="Navigation-link" data-js="navlink">En détail</a>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section04" class="Navigation-link" data-js="navlink" data-section="4">Histoire</a>
+			<a href="#section04" class="Navigation-link" data-js="navlink">Histoire</a>
 		</li>
 		<li class="Navigation-item">
-			<a href="#section05" class="Navigation-link" data-js="navlink" data-section="5">Team</a>
+			<a href="#section05" class="Navigation-link" data-js="navlink">Team</a>
 		</li>
 		<li class="Navigation-item Navigation-link--reserve">
-			<a href="#section07" class="Navigation-link" data-js="navlink" data-section="7">Reserve</a>
+			<a href="#section07" class="Navigation-link" data-js="navlink">Reserve</a>
 		</li>
 		<li class="Navigation-item"></li>
 	</ul>
 </nav>
+						</div>
 					</div>
-				</div>
-      </header>
+        </header>
 
-			<main class="Page-content" data-js="scroll">
-<article class="Section Section--01" id="section01" data-js="section">
+				<main class="Page-content">
+<article class="Section Section--01" id="section01">
 	<div class="Section-inner">
 		<h2 class="Section-title">
 			Contrôler tous les objets de la maison !
@@ -77,17 +78,17 @@
 				Contrôler tous les objets de la maison !
 			</h2>
 			<div class="Section-button">
-				<a href="#section02" class="Button" title="Continue" data-js="continue">
+				<a href="#section02" class="Button" title="Continue">
 					En savoir plus
 				</a>
 			</div>
 			<div class="Section-nav">
-				<a href="#section02" class="Button Button--arrow" data-js="continue" title="Continue"></a>
+				<a href="#section02" class="Button Button--arrow" title="Continue"></a>
 			</div>
 		</div>
 	</div>
 </article>
-<article class="Section Section--02" id="section02" data-js="section">
+<article class="Section Section--02" id="section02">
 	<div class="Section-inner">
 		<h2 class="Section-title">
 			Entrez simplement dans<br /> le monde des objets connectés
@@ -100,7 +101,7 @@
 		</div>
 	</div>
 </article>
-<article class="Section Section--03" id="section03" data-js="section">
+<article class="Section Section--03" id="section03">
 	<div class="Section-inner">
 		<h2 class="Section-title">
 			Avec le hub oToDo
@@ -108,83 +109,12 @@
 		<div class="Section-intro">
 			Le lien manquant entre la box de votre opérateur &amp; tous les  objets domestiques
 		</div>
-		<div class="Section-content">
-			<div class="Carousel">
-				<div class="Carousel-nav" data-js="carousel-nav">
-					<div class="Carousel-navItem is-active">
-						Pilotez tous les objets
-					</div>
-					<div class="Carousel-navItem">
-						Prise en main intuitive
-					</div>
-					<div class="Carousel-navItem">
-						Sécurité absolue
-					</div>
-				</div>
-				<div class="Carousel-items" data-js="carousel">
-					<div class="Carousel-item" data-js="expander">
-						<div class="Carousel-header" data-js="expanderTrigger">
-							<span class="Carousel-headerButton"></span>
-							<h3 class="Carousel-headerTitle">
-								<span class="Carousel-headerIcon Carousel-headerIcon--pilot"></span>Pilotez tous les objets
-							</h3>
-						</div>
-						<div class="Carousel-content Carousel-content--pilot" data-js="expanderContent">
-							<h4 class="Carousel-contentTitle">
-								Tous vos objets deviennent connectés
-							</h4>
-							<p class="Carousel-contentBody">
-								Le hub oToDo permet de piloter de <strong>nombreux objets connectés du commerce</strong>, mais également des matériels télécommandables plus anciens (volets roulants, lampes, prises, thermostats, etc)
-							</p>
-							<div class="Carousel-contentLink" data-js="overlay" data-overlay="1">
-								En savoir plus
-							</div>
-						</div>
-					</div>
-					<div class="Carousel-item" data-js="expander">
-						<div class="Carousel-header" data-js="expanderTrigger">
-							<span class="Carousel-headerButton"></span>
-							<h3 class="Carousel-headerTitle">
-								<span class="Carousel-headerIcon Carousel-headerIcon--power"></span>Prise en main intuitive
-							</h3>
-						</div>
-						<div class="Carousel-content Carousel-content--power" data-js="expanderContent">
-							<h4 class="Carousel-contentTitle">
-								Tous vos objets deviennent connectés
-							</h4>
-							<p class="Carousel-contentBody">
-								Le hub oToDo permet de piloter de nombreux objets connectés du commerce, mais également des matériels télécommandables plus anciens (volets roulants, lampes, prises, thermostats, etc)
-							</p>
-							<div class="Carousel-contentLink" data-js="overlay" data-overlay="1">
-								En savoir plus
-							</div>
-						</div>
-					</div>
-					<div class="Carousel-item" data-js="expander">
-						<div class="Carousel-header" data-js="expanderTrigger">
-							<span class="Carousel-headerButton"></span>
-							<h3 class="Carousel-headerTitle">
-								<span class="Carousel-headerIcon Carousel-headerIcon--security"></span>Sécurité absolue
-							</h3>
-						</div>
-						<div class="Carousel-content Carousel-content--security" data-js="expanderContent">
-							<h4 class="Carousel-contentTitle">
-								Tous vos objets deviennent connectés
-							</h4>
-							<p class="Carousel-contentBody">
-								Le hub oToDo permet de piloter de nombreux objets connectés du commerce, mais également des matériels télécommandables plus anciens (volets roulants, lampes, prises, thermostats, etc)
-							</p>
-							<div class="Carousel-contentLink" data-js="overlay" data-overlay="1">
-								En savoir plus
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="Section-content" >
+			<div class="Section-image" alt="Le hub"></div>
 		</div>
 	</div>
 </article>
-<article class="Section Section--04" id="section04" data-js="section">
+<article class="Section Section--04" id="section04">
 	<div class="Section-inner">
 		<h2 class="Section-title">
 			L’histoire
@@ -193,11 +123,11 @@
 			Le début d’une longue aventure !
 		</div>
 		<div class="Section-content" >
-
+			
 		</div>
 	</div>
 </article>
-<article class="Section Section--05" id="section05" data-js="section">
+<article class="Section Section--05" id="section05">
 	<div class="Section-inner">
 		<h2 class="Section-title">
 			Notre équipe
@@ -205,102 +135,12 @@
 		<div class="Section-intro">
 			Une équipe expérimentée issue du monde des Telecoms mêlant des compétences diverses dans les réseaux, la conception hardware et informatique.
 		</div>
-		<div class="Section-content">
-			<p class="Section-body">
-				Des valeurs simples : <strong>Innovation</strong>, <strong>Efficacité</strong>, <strong>Engagement</strong>, <strong>Enthousiasme</strong>
-			</p>
-			<div class="Team">
-				<ul class="Team-items">
-					<li class="Team-item">
-						<div class="Team-image">
-							<span class="Team-imageBg" style="background-image:url(img/face-01.jpg);"></span>
-							<img class="Team-imageInner" src="img/face-01-bw.jpg"  alt="" />
-						</div>
-						<h3 class="Team-title">
-							Éric Denoyer
-						</h3>
-						<p class="Team-subtitle">
-							Direction
-						</p>
-					</li>
-					<li class="Team-item">
-						<div class="Team-image">
-							<span class="Team-imageBg" style="background-image:url(img/face-01.jpg);"></span>
-							<img class="Team-imageInner" src="img/face-01-bw.jpg"  alt="" />
-						</div>
-						<h3 class="Team-title">
-							Éric DENOYER
-						</h3>
-						<p class="Team-subtitle">
-							Direction
-						</p>
-					</li>
-					<li class="Team-item">
-						<div class="Team-image">
-							<span class="Team-imageBg" style="background-image:url(img/face-01.jpg);"></span>
-							<img class="Team-imageInner" src="img/face-01-bw.jpg"  alt="" />
-						</div>
-						<h3 class="Team-title">
-							Éric SOUCHAUD
-						</h3>
-						<p class="Team-subtitle">
-							Direction
-						</p>
-					</li>
-					<li class="Team-item">
-						<div class="Team-image">
-							<span class="Team-imageBg" style="background-image:url(img/face-01.jpg);"></span>
-							<img class="Team-imageInner" src="img/face-01-bw.jpg"  alt="" />
-						</div>
-						<h3 class="Team-title">
-							Alexandre DELHOMME
-						</h3>
-						<p class="Team-subtitle">
-							Marketing
-						</p>
-					</li>
-					<li class="Team-item">
-						<div class="Team-image">
-							<span class="Team-imageBg" style="background-image:url(img/face-01.jpg);"></span>
-							<img class="Team-imageInner" src="img/face-01-bw.jpg"  alt="" />
-						</div>
-						<h3 class="Team-title">
-							Laurent
-						</h3>
-						<p class="Team-subtitle">
-							Technique
-						</p>
-					</li>
-					<li class="Team-item">
-						<div class="Team-image">
-							<span class="Team-imageBg" style="background-image:url(img/face-01.jpg);"></span>
-							<img class="Team-imageInner" src="img/face-01-bw.jpg"  alt="" />
-						</div>
-						<h3 class="Team-title">
-							Wilfred
-						</h3>
-						<p class="Team-subtitle">
-							Technique
-						</p>
-					</li>
-					<li class="Team-item">
-						<div class="Team-image">
-							<span class="Team-imageBg" style="background-image:url(img/face-01.jpg);"></span>
-							<img class="Team-imageInner" src="img/face-01-bw.jpg"  alt="" />
-						</div>
-						<h3 class="Team-title">
-							Julie
-						</h3>
-						<p class="Team-subtitle">
-							Technique
-						</p>
-					</li>
-				</ul>
-			</div>
+		<div class="Section-content" >
+
 		</div>
 	</div>
 </article>
-<article class="Section Section--06" id="section06" data-js="section">
+<article class="Section Section--06" id="section06">
 	<div class="Section-inner">
 		<div class="Section-content" >
 			<div class="Partners">
@@ -343,7 +183,7 @@
 		</div>
 	</div>
 </article>
-<article class="Section Section--07" id="section07" data-js="section">
+<article class="Section Section--07" id="section07">
 	<div class="Section-inner">
 		<h2 class="Section-title">
 			Réserver votre hub dès maintenant !
@@ -367,6 +207,8 @@
 			</p>
 		</div>
 	</div>
+</article>
+				</main>
 <div class="Footer">
   <div class="Footer-inner">
     <div class="Social">
@@ -406,16 +248,12 @@
     </ul>
   </div>
 </div>
-</article>
-			</main>
+			</div>
 
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-			<script>window.jQuery || document.write('<script src="js/third-party/jquery/jquery-1.11.3.min.js"><\/script>')</script>
-			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-			<script type="text/javascript" src="js/third-party/onepage-scroll/jquery.onepage-scroll.js"></script>
-			<script type="text/javascript" src="js/third-party/device/device.js"></script>
-			<script src="js/app.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/third-party/jquery/jquery-1.11.3.min.js"><\/script>')</script>
 
+		  <script src="js/app.js"></script>
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
           // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
