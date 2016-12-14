@@ -20,6 +20,7 @@
 .Overlay-inner {
   background: black;
   height: 100vh;
+  padding: 0 20px;
   position: relative;
   top: 0;
   width: 100%;
@@ -29,11 +30,32 @@
   background: svg-load(close.svg) no-repeat center center;
   background-size: contain;
   cursor: pointer;
-  height: 40px;
+  height: 27px;
   position: absolute;
-  right: 30px;
-  top: 30px;
-  width: 40px;
+  right: 20px;
+  top: 20px;
+  width: 27px;
+}
+
+.Overlay-title {
+  color: var(--colour-purpleModal);
+  font: 700 20px/20px var(--sans);
+  margin: 70px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Overlay-content {
+  color: white;
+  font: 700 14px/18px var(--sans);
+  margin: 60px 0 0;
+  text-align: left;
+
+  & > * { /* stylelint-disable-line */
+    color: white;
+    font: 700 14px/18px var(--sans);
+    margin-top: 40px;
+  }
 }
 
 @media (--large) {
@@ -43,5 +65,12 @@
     max-width: 1104px;
     position: relative;
     width: 90%;
+  }
+
+  .Overlay-button {
+    height: 40px;
+    right: 30px;
+    top: 30px;
+    width: 40px;
   }
 }

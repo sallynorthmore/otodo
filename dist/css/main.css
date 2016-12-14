@@ -660,6 +660,7 @@
 .Overlay-inner {
   background: black;
   height: 100vh;
+  padding: 0 20px;
   position: relative;
   top: 0;
   width: 100%;
@@ -668,11 +669,29 @@
   background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='41px' height='40px' viewBox='1116 65 41 40' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3Cpolygon id='Shape' stroke='none' fill='%23C39FBC' fill-rule='evenodd' points='1153.89672 65.5500031 1156.02281 67.6556859 1138.31256 85.1953109 1156.02281 102.73498 1153.89672 104.84059 1136.18639 87.3009938 1118.47615 104.84059 1116.34998 102.73498 1134.0603 85.1953109 1116.34998 67.6556859 1118.47615 65.5500031 1136.18639 83.0896936'/%3E %3C/svg%3E") no-repeat center center;
   background-size: contain;
   cursor: pointer;
-  height: 40px;
+  height: 27px;
   position: absolute;
-  right: 30px;
-  top: 30px;
-  width: 40px;
+  right: 20px;
+  top: 20px;
+  width: 27px;
+}
+.Overlay-title {
+  color: rgb(97, 100, 204);
+  font: 700 20px/20px "Lato", Helvetica, sans-serif;
+  margin: 70px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Overlay-content {
+  color: white;
+  font: 700 14px/18px "Lato", Helvetica, sans-serif;
+  margin: 60px 0 0;
+  text-align: left
+}
+.Overlay-content > * {/* stylelint-disable-line */
+  color: white;
+  font: 700 14px/18px "Lato", Helvetica, sans-serif;
+  margin-top: 40px;
 }
 @media (min-width: 860px) {
   .Overlay-inner {
@@ -681,6 +700,13 @@
     max-width: 1104px;
     position: relative;
     width: 90%;
+  }
+
+  .Overlay-button {
+    height: 40px;
+    right: 30px;
+    top: 30px;
+    width: 40px;
   }
 }
 /** @define Page */

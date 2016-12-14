@@ -75,17 +75,20 @@ var app = {
 		},
 
 		'overlay': function overlay() {
-			var $overlay = $('[data-js="overlay"]'),
+			var $page = $('[data-js="page"]'),
+					$overlay = $('[data-js="overlay"]'),
 					$overlayTrigger = $('[data-js="overlayTrigger"]'),
 					$overlayClose = $('[data-js="closeOverlay"]');
 
 			$overlayTrigger.on('click', function(){
 				var overlayNumber = $(this).attr('data-overlay');
 				$('[data-overlaynumber='+ overlayNumber +']').addClass('is-active');
+				$page.addClass('is-overlay');
 			});
 
 			$overlayClose.on('click', function(){
 				$overlay.removeClass('is-active');
+				$page.removeClass('is-overlay');
 			});
 		},
 
