@@ -1,0 +1,56 @@
+/** @define Carousel */
+
+.Carousel {
+
+}
+
+.Carousel-items {
+  padding: 0 10px 20px;
+}
+
+.Carousel-item {
+  text-align: left;
+}
+
+.Carousel-header {
+  border-bottom: 1px solid var(--colour-grey);
+  letter-spacing: 0.05px;
+  margin: 38px 0 0;
+  padding: 0 0 8px;
+}
+
+.Carousel-headerTitle {
+  font: 700 15px/23px var(--sans);
+  text-transform: uppercase;
+}
+
+.Carousel-headerIcon {
+  margin: 0 5px;
+}
+
+.Carousel-headerButton {}
+
+.Carousel-content {}
+
+.Carousel-contentTitle {
+  font: 700 15px/20px var(--sans);
+  letter-spacing: 0.05px;
+  margin: 8px 0 0;
+}
+
+.Carousel-contentBody {
+  font: 300 15px/20px var(--sans);
+  letter-spacing: 0.05px;
+  margin: 16px 0 0;
+
+  & strong { /*stylelint-disable-line */
+    font: 700 15px/20px var(--sans);
+  }
+}
+
+.Carousel-contentLink {
+  font: 400 16px/24px var(--sans);
+  letter-spacing: 0.05px;
+  margin: 16px 0 0;
+  text-decoration: underline;
+}

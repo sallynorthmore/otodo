@@ -98,6 +98,17 @@
 /* Avec Page */
 .Section--03 {
   background: var(--colour-lilac);
+
+  & .Section-title {
+    font: 700 27px/30px var(--sans);
+    margin-top: 80px;
+  }
+
+  & .Section-intro {
+    font: 300 14px/18px var(--sans);
+    margin: 24px auto 0;
+    max-width: 265px;
+  }
 }
 
 /* History Page */

@@ -133,6 +133,50 @@
     width: 262px;
   }
 }
+/** @define Carousel */
+.Carousel {
+
+}
+.Carousel-items {
+  padding: 0 10px 20px;
+}
+.Carousel-item {
+  text-align: left;
+}
+.Carousel-header {
+  border-bottom: 1px solid rgb(184, 184, 184);
+  letter-spacing: 0.05px;
+  margin: 38px 0 0;
+  padding: 0 0 8px;
+}
+.Carousel-headerTitle {
+  font: 700 15px/23px "Lato", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.Carousel-headerIcon {
+  margin: 0 5px;
+}
+.Carousel-headerButton {}
+.Carousel-content {}
+.Carousel-contentTitle {
+  font: 700 15px/20px "Lato", Helvetica, sans-serif;
+  letter-spacing: 0.05px;
+  margin: 8px 0 0;
+}
+.Carousel-contentBody {
+  font: 300 15px/20px "Lato", Helvetica, sans-serif;
+  letter-spacing: 0.05px;
+  margin: 16px 0 0
+}
+.Carousel-contentBody strong {/*stylelint-disable-line */
+  font: 700 15px/20px "Lato", Helvetica, sans-serif;
+}
+.Carousel-contentLink {
+  font: 400 16px/24px "Lato", Helvetica, sans-serif;
+  letter-spacing: 0.05px;
+  margin: 16px 0 0;
+  text-decoration: underline;
+}
 /** @define Footer */
 .Footer {
   background: black;
@@ -513,7 +557,16 @@
 }
 /* Avec Page */
 .Section--03 {
-  background: rgb(155, 92, 144);
+  background: rgb(155, 92, 144)
+}
+.Section--03 .Section-title {
+  font: 700 27px/30px "Lato", Helvetica, sans-serif;
+  margin-top: 80px;
+}
+.Section--03 .Section-intro {
+  font: 300 14px/18px "Lato", Helvetica, sans-serif;
+  margin: 24px auto 0;
+  max-width: 265px;
 }
 /* History Page */
 .Section--04 {
