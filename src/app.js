@@ -37,7 +37,11 @@ var app = {
 		},
 
 		'onepage': function onepage() {
-			$('[data-js="scroll"]').onepage_scroll({
+
+			var $container = $('[data-js="scroll"]'),
+					$navLink =$('[data-js="navlink"]');
+
+			$container.onepage_scroll({
 				sectionContainer: '[data-js="section"]',     // sectionContainer accepts any kind of selector in case you don't want to use section
 			   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
 			                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
@@ -53,6 +57,28 @@ var app = {
 			                                    // the browser's width is less than 600, the fallback will kick in.
 			   direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
 			});
+
+			$navLink.on('click', function(event){
+
+				event.preventDefault();
+				var section = $(this).data('section');
+
+				console.log("link clicked ", section);
+				$container.moveTo(section);
+			});
+
+			// Continue button
+			// $('[data-js="continue"]').on('click', function(){
+			// 	console.log("click continue");
+			// 	$container.moveTo(1);
+			// });
+			//
+			// // Menu to triggered
+			// $container.onepage_scroll({
+		  //   afterMove: function(index) {
+		  //
+		  //   }
+		  // });
 		}
 };
 
