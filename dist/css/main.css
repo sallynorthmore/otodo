@@ -931,15 +931,24 @@
 }
 .Overlay-title {
   color: rgb(97, 100, 204);
-  font: 700 20px/20px "Lato", Helvetica, sans-serif;
+  font: 700 20px/30px "Lato", Helvetica, sans-serif;
   margin: 70px 0 0;
+  position: relative;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase
+}
+.Overlay-title::after {
+  background: rgb(197, 199, 255);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 60%;
 }
 .Overlay-content {
   color: white;
   font: 700 14px/18px "Lato", Helvetica, sans-serif;
-  margin: 60px 0 0;
+  margin: 40px 0 0;
   text-align: left
 }
 .Overlay-content > * {/* stylelint-disable-line */

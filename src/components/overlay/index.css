@@ -39,16 +39,26 @@
 
 .Overlay-title {
   color: var(--colour-purpleModal);
-  font: 700 20px/20px var(--sans);
+  font: 700 20px/30px var(--sans);
   margin: 70px 0 0;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
+
+  &::after {
+    background: rgb(197, 199, 255);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 60%;
+  }
 }
 
 .Overlay-content {
   color: white;
   font: 700 14px/18px var(--sans);
-  margin: 60px 0 0;
+  margin: 40px 0 0;
   text-align: left;
 
   & > * { /* stylelint-disable-line */
