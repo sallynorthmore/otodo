@@ -901,6 +901,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   left: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -914,6 +915,7 @@
 .Overlay-inner {
   background: black;
   height: 100vh;
+  overflow: hidden;
   padding: 0 20px;
   position: relative;
   top: 0;
@@ -955,6 +957,20 @@
   color: white;
   font: 700 14px/18px "Lato", Helvetica, sans-serif;
   margin-top: 40px;
+}
+.Overlay-body {
+  font: 300 14px/18px "Lato", Helvetica, sans-serif;
+  margin: 15px 0 0
+}
+.Overlay-body strong {/* stylelint-disable-line */
+  font: 700 14px/18px "Lato", Helvetica, sans-serif;
+}
+.Overlay-list {
+
+}
+.Overlay-listItem {
+  font: 700 14px/18px "Lato", Helvetica, sans-serif;
+  margin: 40px 0 0;
 }
 @media (min-width: 860px) {
   .Overlay-inner {
