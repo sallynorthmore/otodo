@@ -108,7 +108,7 @@ var app = {
 				if ( $('[data-overlaynumber='+ overlayNumber +']').hasClass('is-carousel')) {
 					$overlayCarousel.slick({
 						arrows: true,
-						dots: false,
+						dots: true,
 						responsive: [
 					    {
 					      breakpoint: 860,

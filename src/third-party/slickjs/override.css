@@ -22,4 +22,30 @@
     font-size: 0;
   }
 }
+
+.slick-prev.slick-arrow {
+  background: svg-load(arrow-left.svg) no-repeat center center;
+  background-size: 44px;
+  cursor: pointer;
+  font-size: 0;
+  height: 400px;
+  left: -30px;
+  position: absolute;
+  width: 44px;
+  z-index: var(--depth-2);
+}
+
+.slick-next.slick-arrow {
+  background: svg-load(arrow-left.svg) no-repeat center center;
+  background-size: 44px;
+  cursor: pointer;
+  font-size: 0;
+  height: 400px;
+  right: 30px;
+  top: 0;
+  transform: rotate(180deg);
+  position: absolute;
+  width: 44px;
+  z-index: var(--depth-2);
+}
 /* stylelint-enable */

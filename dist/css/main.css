@@ -1010,6 +1010,16 @@
     width: 267px;
   }
 
+  .Overlay-body {
+    font: 300 21px/23px "Lato", Helvetica, sans-serif;
+    margin: 50px 0 0 50px;
+    max-width: 590px
+  }
+
+  .Overlay-body strong {/* stylelint-disable-line */
+    font: 700 21px/23px "Lato", Helvetica, sans-serif;
+  }
+
   .Overlay--02 {
   }
 
@@ -1767,5 +1777,30 @@
 }
 .slick-dots button {
   font-size: 0;
+}
+.slick-prev.slick-arrow {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='44px' height='165px' viewBox='-1 -2 44 165' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3Cg id='arrow-left' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' transform='translate(0.369071, 0.381615)' stroke-linecap='round' opacity='0.8'%3E %3Cpath d='M37.1548507,0.457088689 L0.998134328,80.4771084' id='Line' stroke='%23C39FBC' stroke-width='3'/%3E %3Cpath d='M39.0578358,159.627345 L0.998134328,80.4771084' id='Line' stroke='%23C39FBC' stroke-width='3'/%3E %3C/g%3E %3C/svg%3E") no-repeat center center;
+  background-size: 44px;
+  cursor: pointer;
+  font-size: 0;
+  height: 400px;
+  left: -30px;
+  position: absolute;
+  width: 44px;
+  z-index: 200;
+}
+.slick-next.slick-arrow {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='44px' height='165px' viewBox='-1 -2 44 165' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3Cg id='arrow-left' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' transform='translate(0.369071, 0.381615)' stroke-linecap='round' opacity='0.8'%3E %3Cpath d='M37.1548507,0.457088689 L0.998134328,80.4771084' id='Line' stroke='%23C39FBC' stroke-width='3'/%3E %3Cpath d='M39.0578358,159.627345 L0.998134328,80.4771084' id='Line' stroke='%23C39FBC' stroke-width='3'/%3E %3C/g%3E %3C/svg%3E") no-repeat center center;
+  background-size: 44px;
+  cursor: pointer;
+  font-size: 0;
+  height: 400px;
+  right: 30px;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  width: 44px;
+  z-index: 200;
 }
 /* stylelint-enable */

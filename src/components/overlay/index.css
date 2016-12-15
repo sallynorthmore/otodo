@@ -126,6 +126,16 @@
     }
   }
 
+  .Overlay-body {
+    font: 300 21px/23px var(--sans);
+    margin: 50px 0 0 50px;
+    max-width: 590px;
+
+    & strong { /* stylelint-disable-line */
+      font: 700 21px/23px var(--sans);
+    }
+  }
+
   .Overlay--02 {
     & .Overlay-inner {
       background: url("/img/background-overlay-02.jpg") no-repeat center center;
