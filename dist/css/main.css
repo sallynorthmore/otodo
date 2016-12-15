@@ -423,6 +423,7 @@
  */
 @media (min-width: 860px) {
   .Footer {
+    margin-top: 0;
     height: 35px;
     padding: 30px;
     text-align: center;
@@ -1484,7 +1485,7 @@
 
   /* Reserve page */
   .Section--07 {
-    min-height: 90vh
+    min-height: 100vh
   }
   .Section--07 .Section-title {
     color: white;

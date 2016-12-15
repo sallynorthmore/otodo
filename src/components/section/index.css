@@ -310,7 +310,7 @@
 
   /* Reserve page */
   .Section--07 {
-    min-height: 90vh;
+    min-height: 100vh;
 
     & .Section-title {
       color: white;

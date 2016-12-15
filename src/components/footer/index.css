@@ -54,6 +54,7 @@
 
 @media (--large) {
   .Footer {
+    margin-top: 0;
     height: 35px;
     padding: 30px;
     text-align: center;
