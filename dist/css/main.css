@@ -482,8 +482,7 @@
 .Navigation {
 }
 .has-nav .Navigation {
-  background: rgba(99, 100, 127, 0.24);
-  background: rgba(99, 100, 127, 0.24);
+  background: rgb(99, 100, 127);
   display: block;
   height: 100%;
   left: 0;
@@ -763,7 +762,7 @@
   background: rgba(99, 100, 127, 0.24);
 }
 .Page-header.is-6 {
-  background: rgba(99, 100, 127, 0.24);
+  background: rgb(99, 100, 127);
 }
 .Page-header.is-7 {
   background: rgb(27, 28, 57);
@@ -1081,7 +1080,7 @@
 
   /* Team page */
   .Section--05 {
-    background: rgba(99, 100, 127, 0.24)
+    background: rgb(99, 100, 127)
   }
   .Section--05 .Section-title {
     font: 700 60px/60px "Lato", Helvetica, sans-serif;
