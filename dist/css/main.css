@@ -551,6 +551,85 @@
   opacity: 0.1;
   width: 250px;
 }
+@media (min-width: 860px) {
+  .History-items {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 200px;
+    position: relative
+
+    /* Connector Line */
+  }
+  .History-items::before {
+    background: white;
+    content: "";
+    display: block;
+    height: 25px;
+    left: 0;
+    margin-top: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .History-item {
+    margin: 0
+  }
+
+  .History-item.is-small {
+    border: 5px solid rgba(197, 199, 255, 1);
+    cursor: pointer;
+    height: 77px;
+    width: 77px;
+  }
+
+  .History-item::before {
+    display: none;
+  }
+
+  .History-itemInner {
+  }
+
+  .is-small .History-itemInner {
+    padding: 0;
+  }
+
+  .History-date {
+    font-size: 17px;
+  }
+
+  .History-title {
+  }
+
+  .is-small .History-title {
+    display: none;
+  }
+
+  .History-body {
+    font-size: 14px
+  }
+
+  .is-small .History-body {
+    display: none;
+  }
+
+  .History-item--participate {
+    border-color: rgb(150, 15, 124)
+  }
+
+  .History-item--participate.is-small {
+    border-color: rgb(150, 15, 124);
+  }
+
+  .History-item--participate.is-small .History-title {/* stylelint-disable-line */
+    display: block;
+  }
+}
 /** @define Logo */
 .Logo {
   height: 30px;
@@ -1233,9 +1312,20 @@
     max-width: 425px;
   }
 
+  /* History Page */
+  .Section--04 {
+  }
+  .Section--04 .Section-title {
+    font-size: 60px;
+  }
+  .Section--04 .Section-intro {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
   /* Team page */
   .Section--05 {
-    background: rgb(99, 100, 127)
+    background: rgba(99, 100, 127, 0.24)
   }
   .Section--05 .Section-title {
     font: 700 60px/60px "Lato", Helvetica, sans-serif;

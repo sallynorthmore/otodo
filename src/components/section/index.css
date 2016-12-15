@@ -267,9 +267,21 @@
     }
   }
 
+  /* History Page */
+  .Section--04 {
+    & .Section-title {
+      font-size: 60px;
+    }
+
+    & .Section-intro {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
   /* Team page */
   .Section--05 {
-    background: var(--colour-purpleLight);
+    background: var(--colour-purpleLightest);
 
     & .Section-title {
       font: 700 60px/60px var(--sans);

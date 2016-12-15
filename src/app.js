@@ -17,6 +17,7 @@ var app = {
 
 				// initialise slickjs
 				this.carousel();
+				this.history();
 			}
 		},
 
@@ -72,6 +73,23 @@ var app = {
 			$trigger.on('click', function(){
 				$(this).parent().toggleClass("is-expanded");
 			});
+		},
+
+		'history': function history() {
+			var $history = $('[data-js="history-items"]'),
+					$historyItem = $('[data-js="history-item"]');
+
+			$history.children().addClass('is-small');
+
+			$historyItem.on('click', function(){
+				if ( $(this).hasClass('is-small') ) {
+					$history.children().addClass('is-small');
+					$(this).removeClass('is-small');
+				} else {
+					$(this).addClass('is-small');
+				}
+			});
+
 		},
 
 		'overlay': function overlay() {
