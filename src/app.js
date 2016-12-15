@@ -95,12 +95,22 @@ var app = {
 			var $page = $('[data-js="page"]'),
 					$overlay = $('[data-js="overlay"]'),
 					$overlayTrigger = $('[data-js="overlayTrigger"]'),
-					$overlayClose = $('[data-js="closeOverlay"]');
+					$overlayClose = $('[data-js="closeOverlay"]'),
+					$overlayCarousel = $('[data-js="overlay-carousel"]');
+
 
 			$overlayTrigger.on('click', function(){
 				var overlayNumber = $(this).attr('data-overlay');
 				$('[data-overlaynumber='+ overlayNumber +']').addClass('is-active');
 				$page.addClass('is-overlay');
+
+				// Init carousel if it has one
+				if ( $('[data-overlaynumber='+ overlayNumber +']').hasClass('is-carousel')) {
+					$overlayCarousel.slick({
+						arrows: true,
+						dots: true
+					});
+				}
 			});
 
 			$overlayClose.on('click', function(){
