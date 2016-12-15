@@ -81,15 +81,14 @@ var app = {
 
 			$history.children().addClass('is-small');
 
-			$historyItem.on('click', function(){
-				if ( $(this).hasClass('is-small') ) {
-					$history.children().addClass('is-small');
-					$(this).removeClass('is-small');
+			$historyItem.on('click mouseenter', function(){
+				if ( !$(this).hasClass('is-large') ) {
+					$history.children().removeClass('is-large');
+					$(this).addClass('is-large');
 				} else {
-					$(this).addClass('is-small');
+					$(this).removeClass('is-large');
 				}
 			});
-
 		},
 
 		'overlay': function overlay() {

@@ -552,6 +552,27 @@
   width: 250px;
 }
 @media (min-width: 860px) {
+  .History {
+    left: 0;
+    margin-top: 200px;
+    position: absolute;
+    width: 100%
+
+    /* Connector Line */
+  }
+  .History::before {
+    background: white;
+    content: "";
+    display: block;
+    height: 25px;
+    left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 100;
+  }
+
   .History-items {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -559,44 +580,51 @@
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 200px;
-    position: relative
-
-    /* Connector Line */
-  }
-  .History-items::before {
-    background: white;
-    content: "";
-    display: block;
-    height: 25px;
-    left: 0;
-    margin-top: -5px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    z-index: 100;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1160px;
+    position: relative;
   }
 
   .History-item {
-    margin: 0
+    border: 6px solid rgba(197, 199, 255, 1);
+    cursor: pointer;
+    -webkit-flex: 0 0 83px;
+        -ms-flex: 0 0 83px;
+            flex: 0 0 83px;
+    height: 83px;
+    margin: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    transition: 0.2s ease-out;
+    width: 83px
+
+    /* Shadow */
   }
 
-  .History-item.is-small {
-    border: 5px solid rgba(197, 199, 255, 1);
-    cursor: pointer;
-    height: 77px;
-    width: 77px;
+  .History-item.is-large {
+    border: 6px solid rgba(197, 199, 255, 0);
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    z-index: 300;
   }
 
   .History-item::before {
     display: none;
   }
 
-  .History-itemInner {
+  .History-item::after {
+    display: none;
   }
 
-  .is-small .History-itemInner {
-    padding: 0;
+  .History-itemInner {
+    padding: 0
+  }
+
+  .is-large .History-itemInner {
+    padding: inherit;
   }
 
   .History-date {
@@ -604,30 +632,32 @@
   }
 
   .History-title {
+    display: none
   }
 
-  .is-small .History-title {
-    display: none;
+  .is-large .History-title {
+    display: block;
   }
 
   .History-body {
+    display: none;
     font-size: 14px
   }
 
-  .is-small .History-body {
-    display: none;
+  .is-large .History-body {
+    display: block;
   }
 
   .History-item--participate {
     border-color: rgb(150, 15, 124)
   }
 
-  .History-item--participate.is-small {
-    border-color: rgb(150, 15, 124);
+  .History-item--participate .History-title {
+    display: block;
   }
 
-  .History-item--participate.is-small .History-title {/* stylelint-disable-line */
-    display: block;
+  .History-item--participate.is-large {
+    border-color: rgb(150, 15, 124);
   }
 }
 /** @define Logo */

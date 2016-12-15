@@ -98,11 +98,11 @@
 }
 
 @media (--large) {
-  .History-items {
-    display: flex;
-    justify-content: space-between;
+  .History {
+    left: 0;
     margin-top: 200px;
-    position: relative;
+    position: absolute;
+    width: 100%;
 
     /* Connector Line */
     &::before {
@@ -111,7 +111,7 @@
       display: block;
       height: 25px;
       left: 0;
-      margin-top: -5px;
+      margin-top: 0;
       position: absolute;
       top: 50%;
       width: 100%;
@@ -119,24 +119,47 @@
     }
   }
 
-  .History-item {
-    margin: 0;
+  .History-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1160px;
+    position: relative;
+  }
 
-    &.is-small {
-      border: 5px solid rgba(197, 199, 255, 1);
-      cursor: pointer;
-      height: 77px;
-      width: 77px;
+  .History-item {
+    border: 6px solid rgba(197, 199, 255, 1);
+    cursor: pointer;
+    flex: 0 0 83px;
+    height: 83px;
+    margin: 0;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: 0.2s ease-out;
+    width: 83px;
+
+    &.is-large {
+      border: 6px solid rgba(197, 199, 255, 0);
+      transform: scale(3);
+      z-index: var(--depth-3);
     }
 
     &::before {
       display: none;
     }
+
+    /* Shadow */
+    &::after {
+      display: none;
+    }
   }
 
   .History-itemInner {
-    @nest .is-small & {
-      padding: 0;
+    padding: 0;
+
+    @nest .is-large & {
+      padding: inherit;
     }
   }
 
@@ -145,28 +168,31 @@
   }
 
   .History-title {
-    @nest .is-small & {
-      display: none;
+    display: none;
+
+    @nest .is-large & {
+      display: block;
     }
   }
 
   .History-body {
+    display: none;
     font-size: 14px;
 
-    @nest .is-small & {
-      display: none;
+    @nest .is-large & {
+      display: block;
     }
   }
 
   .History-item--participate {
     border-color: var(--colour-purple);
 
-    &.is-small {
-      border-color: var(--colour-purple);
+    & .History-title {
+      display: block;
+    }
 
-      & .History-title { /* stylelint-disable-line */
-        display: block;
-      }
+    &.is-large {
+      border-color: var(--colour-purple);
     }
   }
 }
