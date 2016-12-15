@@ -477,11 +477,11 @@
   background: white;
   content: "";
   display: block;
-  height: 100%;
+  height: 98%;
   left: 50%;
   margin-left: -15px;
   position: absolute;
-  top: 0;
+  top: 10px;
   width: 30px;
   z-index: 0;
 }
@@ -497,7 +497,6 @@
 .History-item:first-child {
   margin-top: 0;
 }
-.History-item--participate {}
 .History-itemInner {
   padding: 45px 10px;
 }
@@ -518,6 +517,15 @@
   font: 300 14px/18px "Lato", Helvetica, sans-serif;
   margin: 24px auto 0;
   max-width: 240px;
+}
+.History-item--participate {
+  background: rgb(150, 15, 124);
+  border: 4px solid rgb(150, 15, 124);
+  height: 116px;
+  width: 116px
+}
+.History-item--participate .History-title {
+  color: white;
 }
 /** @define Logo */
 .Logo {
