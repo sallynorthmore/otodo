@@ -638,28 +638,33 @@
   }
 
   .History-title {
-    display: none;
     font-size: 10px;
-    line-height: 1
+    line-height: 1;
+    opacity: 0;
+    transition: all 0 0
   }
 
   .is-large .History-title {
     display: block;
     font-size: 6px;
     margin-top: 3px;
+    opacity: 1;
+    transition: opacity 0.2s 0.1s ease-in;
   }
 
   .History-body {
-    display: none;
-    font-size: 14px
+    font-size: 14px;
+    opacity: 0;
+    transition: all 0 0
   }
 
   .is-large .History-body {
-    display: block;
     font-size: 4px;
     line-height: 1.6;
     margin-top: 10px;
     max-width: 80px;
+    opacity: 1;
+    transition: opacity 0.2s 0.2s ease-in;
   }
 
   .History-item--participate {
@@ -668,6 +673,7 @@
 
   .History-item--participate .History-title {
     display: block;
+    opacity: 1;
   }
 
   .History-item--participate.is-large {
