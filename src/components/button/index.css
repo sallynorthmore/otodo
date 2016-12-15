@@ -70,6 +70,25 @@
   width: 100%;
 }
 
+/**
+ * Modifier: 404
+ */
+
+.Button--404 {
+  align-items: center;
+  border-radius: 0;
+  display: flex;
+  height: 77px;
+  font: 600 21px/28px var(--sans);
+  justify-content: center;
+  left: 0;
+  max-width: none;
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+}
+
 @media (--large) {
   .Button {
     align-items: center;
