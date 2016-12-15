@@ -78,8 +78,8 @@
   align-items: center;
   border-radius: 0;
   display: flex;
-  height: 77px;
   font: 600 21px/28px var(--sans);
+  height: 77px;
   justify-content: center;
   left: 0;
   max-width: none;
@@ -108,9 +108,19 @@
     width: 60px;
   }
 
-  .Button--reserve {
+  .Button--reserve,
+  .Button--404 {
     margin: 0 auto;
     position: static;
     width: 262px;
+  }
+
+  .Button--404 {
+    text-transform: none;
+    width: 372px;
+
+    & > br { /* stylelint-disable-line */
+      display: none;
+    }
   }
 }
