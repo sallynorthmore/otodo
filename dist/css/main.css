@@ -933,8 +933,9 @@
 }
 .Overlay-title {
   color: rgb(97, 100, 204);
+  display: inline-block;
   font: 700 20px/30px "Lato", Helvetica, sans-serif;
-  margin: 70px 0 0;
+  margin: 70px auto 0;
   position: relative;
   text-align: center;
   text-transform: uppercase
@@ -965,9 +966,6 @@
 .Overlay-body strong {/* stylelint-disable-line */
   font: 700 14px/18px "Lato", Helvetica, sans-serif;
 }
-.Overlay-list {
-
-}
 .Overlay-listItem {
   font: 700 14px/18px "Lato", Helvetica, sans-serif;
   margin: 40px 0 0;
@@ -982,7 +980,8 @@
   .Overlay-inner {
     height: 95%;
     max-height: 720px;
-    max-width: 1104px;
+    max-width: 1044px;
+    padding: 0 60px;
     position: relative;
     width: 90%;
   }
@@ -992,6 +991,31 @@
     right: 30px;
     top: 30px;
     width: 40px;
+  }
+
+  .Overlay-title {
+    display: block;
+    font: 700 40px/30px "Lato", Helvetica, sans-serif;
+    margin: 60px 0 0;
+    max-width: 480px;
+    text-align: left
+  }
+
+  .Overlay-title::after {
+    background: rgb(197, 199, 255);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 267px;
+  }
+
+  .Overlay--02 {
+  }
+
+  .Overlay--02 .Overlay-inner {
+    background: url("/img/background-overlay-02.jpg") no-repeat center center;
+    background-size: 110%;
   }
 }
 /** @define Page */
