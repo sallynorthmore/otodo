@@ -7,8 +7,8 @@
   --depth-1: 100;
   --depth-2: 200;
   --depth-3: 300;
-  --depth-4: 400;
-  --depth-5: 500;
+  --depth-4: 400; /* modal */
+  --depth-5: 500; /* nav */
 
   /* colours */
   --colour-purpleDark: rgb(27, 28, 57);

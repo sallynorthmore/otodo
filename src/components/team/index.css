@@ -30,6 +30,7 @@
   padding: 4px;
   position: relative;
   width: 160px;
+  z-index: 0;
 }
 
 .Team-imageBg {
