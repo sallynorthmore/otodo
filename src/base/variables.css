@@ -7,13 +7,14 @@
   --depth-1: 100;
   --depth-2: 200;
   --depth-3: 300;
-  --depth-4: 400;
-  --depth-5: 500;
+  --depth-4: 400; /* modal */
+  --depth-5: 500; /* nav */
 
   /* colours */
   --colour-purpleDark: rgb(27, 28, 57);
   --colour-purple: rgb(150, 15, 124);
-  --colour-purpleLight: rgba(99, 100, 127, 0.24);
+  --colour-purpleLight: rgb(99, 100, 127);
+  --colour-purpleLightest: rgba(99, 100, 127, 0.24);
   --colour-lilac: rgb(155, 92, 144);
   --colour-periwinkle: rgb(79, 81, 127);
   --colour-purpleModal: rgb(97, 100, 204);

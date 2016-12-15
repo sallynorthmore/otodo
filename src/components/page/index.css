@@ -32,7 +32,7 @@
   }
 
   &.is-5 {
-    background: var(--colour-purpleLight);
+    background: var(--colour-purpleLightest);
   }
 
   &.is-6 {
@@ -44,8 +44,88 @@
   }
 }
 
+/**
+ * Modifier: 404 page
+ */
+
+.Page--404 {
+  background: var(--colour-purpleDark) svg-load("404.svg") no-repeat center center;
+  background-size: 70%;
+
+  & .Page-content {
+    margin: auto 0;
+  }
+
+  & .Page-body {
+    font: 300 14px/18px var(--sans);
+    margin: 47vh auto 0;
+    max-width: 265px;
+    text-align: center;
+  }
+
+  & .Page-button {
+    margin: 30px 0 0;
+  }
+
+  & .Page-footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+@media (min-width: 530px) {
+  /**
+   * Modifier: 404 page
+   */
+
+  .Page--404 {
+    background: var(--colour-purpleDark) svg-load("404.svg") no-repeat center 140px;
+    background-size: 40%;
+
+    & .Page-content {
+      margin: auto 0;
+    }
+
+    & .Page-body {
+      font: 300 16px/18px var(--sans);
+      margin: 390px auto 0;
+      max-width: 265px;
+      text-align: center;
+    }
+
+    & .Page-button {
+      margin: 80px 0 0;
+    }
+  }
+}
+
 @media (--large) {
   .Page-header {
     height: 110px;
+  }
+
+  /**
+   * Modifier: 404 page
+   */
+
+  .Page--404 {
+    background: var(--colour-purpleDark) svg-load("404.svg") no-repeat center 124px;
+    background-size: 444px;
+
+    & .Page-content {
+      margin: auto 0;
+    }
+
+    & .Page-body {
+      font: 300 25px/15px var(--sans);
+      margin: 474px auto 0;
+      max-width: none;
+      text-align: center;
+    }
+
+    & .Page-button {
+      margin: 40px 0 0;
+    }
   }
 }

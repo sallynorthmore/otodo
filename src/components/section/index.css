@@ -118,7 +118,7 @@
 
 /* Team page */
 .Section--05 {
-  background: var(--colour-purpleLight);
+  background: var(--colour-purpleLightest);
 
   & .Section-title {
     color: var(--colour-greyDark);

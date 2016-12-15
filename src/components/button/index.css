@@ -70,6 +70,25 @@
   width: 100%;
 }
 
+/**
+ * Modifier: 404
+ */
+
+.Button--404 {
+  align-items: center;
+  border-radius: 0;
+  display: flex;
+  font: 600 21px/28px var(--sans);
+  height: 77px;
+  justify-content: center;
+  left: 0;
+  max-width: none;
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+}
+
 @media (--large) {
   .Button {
     align-items: center;
@@ -89,9 +108,19 @@
     width: 60px;
   }
 
-  .Button--reserve {
+  .Button--reserve,
+  .Button--404 {
     margin: 0 auto;
     position: static;
     width: 262px;
+  }
+
+  .Button--404 {
+    text-transform: none;
+    width: 372px;
+
+    & > br { /* stylelint-disable-line */
+      display: none;
+    }
   }
 }
