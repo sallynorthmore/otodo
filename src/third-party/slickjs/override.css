@@ -1,0 +1,63 @@
+/* stylelint-disable */
+.slick-dots {
+  margin: 34px auto 0;
+  display: flex !important;
+  justify-content: space-around;
+  width: 60px;
+
+  & > li {
+    background: var(--colour-grey);
+    border-radius: 50%;
+    border: 2px solid var(--colour-grey);
+    height: 13px;
+    width: 14px;
+
+    &.slick-active {
+      background: var(--colour-anotherPurple);
+      border-color: var(--colour-anotherPurple);
+    }
+  }
+
+  & button {
+    font-size: 0;
+  }
+}
+
+.slick-prev.slick-arrow {
+  background: svg-load(arrow-left.svg) no-repeat center center;
+  background-size: 44px;
+  cursor: pointer;
+  font-size: 0;
+  height: 400px;
+  left: -30px;
+  outline: none;
+  position: absolute;
+  width: 44px;
+  z-index: var(--depth-2);
+}
+
+.slick-next.slick-arrow {
+  background: svg-load(arrow-left.svg) no-repeat center center;
+  background-size: 44px;
+  cursor: pointer;
+  font-size: 0;
+  height: 400px;
+  outline: none;
+  right: 30px;
+  top: 0;
+  transform: rotate(180deg);
+  position: absolute;
+  width: 44px;
+  z-index: var(--depth-2);
+}
+
+.slick-list {
+  outline: none;
+}
+
+@media (--large) {
+  .slick-dots {
+    margin-top: 60px;
+  }
+}
+/* stylelint-enable */

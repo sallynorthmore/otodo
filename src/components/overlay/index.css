@@ -7,6 +7,7 @@
   height: 100vh;
   justify-content: center;
   left: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -20,6 +21,7 @@
 .Overlay-inner {
   background: black;
   height: 100vh;
+  overflow: hidden;
   padding: 0 20px;
   position: relative;
   top: 0;
@@ -39,16 +41,27 @@
 
 .Overlay-title {
   color: var(--colour-purpleModal);
-  font: 700 20px/20px var(--sans);
-  margin: 70px 0 0;
+  display: inline-block;
+  font: 700 20px/30px var(--sans);
+  margin: 70px auto 0;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
+
+  &::after {
+    background: rgb(197, 199, 255);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 60%;
+  }
 }
 
 .Overlay-content {
   color: white;
   font: 700 14px/18px var(--sans);
-  margin: 60px 0 0;
+  margin: 40px 0 0;
   text-align: left;
 
   & > * { /* stylelint-disable-line */
@@ -58,11 +71,33 @@
   }
 }
 
+.Overlay-body {
+  font: 300 14px/18px var(--sans);
+  margin: 15px 0 0;
+
+  & strong { /* stylelint-disable-line */
+    font: 700 14px/18px var(--sans);
+  }
+}
+
+.Overlay-listItem {
+  font: 700 14px/18px var(--sans);
+  margin: 40px 0 0;
+}
+
+.Overlay--02 {
+  & .Overlay-inner {
+    background: url("/img/background-overlay-02.jpg") no-repeat top center;
+    background-size: cover;
+  }
+}
+
 @media (--large) {
   .Overlay-inner {
     height: 95%;
     max-height: 720px;
-    max-width: 1104px;
+    max-width: 1044px;
+    padding: 0 60px;
     position: relative;
     width: 90%;
   }
@@ -72,5 +107,50 @@
     right: 30px;
     top: 30px;
     width: 40px;
+  }
+
+  .Overlay-title {
+    display: block;
+    font: 700 40px/30px var(--sans);
+    margin: 60px 0 0;
+    max-width: 480px;
+    text-align: left;
+
+    &::after {
+      background: rgb(197, 199, 255);
+      content: "";
+      display: inline-block;
+      height: 2px;
+      position: relative;
+      width: 267px;
+    }
+  }
+
+  .Overlay-body {
+    font: 300 21px/23px var(--sans);
+    margin: 50px 0 0 50px;
+    max-width: 590px;
+
+    & strong { /* stylelint-disable-line */
+      font: 700 21px/23px var(--sans);
+    }
+  }
+
+  .Overlay-list {
+    margin: 55px auto 0;
+    max-width: 540px;
+  }
+
+  .Overlay-listItem {
+    font: 700 26px/28px var(--sans);
+    margin: 40px 0 0;
+    text-align: center;
+  }
+
+  .Overlay--02 {
+    & .Overlay-inner {
+      background: url("/img/background-overlay-02.jpg") no-repeat center center;
+      background-size: 110%;
+    }
   }
 }

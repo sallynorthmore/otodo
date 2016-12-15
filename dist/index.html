@@ -9,7 +9,14 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+				<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+				<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+				<link rel="manifest" href="/manifest.json">
+				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#960f7c">
+				<meta name="theme-color" content="#960f7c">
+
 				<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 				<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 				<link rel="stylesheet" href="css/main.css">
@@ -192,14 +199,42 @@
     </div>
   </div>
 </div>
-<div class="Overlay" data-js="overlay" data-overlaynumber="2">
+<div class="Overlay Overlay--02 is-carousel" data-js="overlay" data-overlaynumber="2">
   <div class="Overlay-inner">
     <div class="Overlay-button" data-js="closeOverlay"></div>
     <h4 class="Overlay-title">
 			En toute simplicité
 		</h4>
     <div class="Overlay-content">
-      Sécurisation des échanges, toutes les données et échanges sont cryptés
+      <div class="Overlay-items" data-js="overlay-carousel">
+				<div class="Overlay-item">
+					<p class="Overlay-body">
+						Les <strong>groupements d’actions</strong> vous permettent rapidement d’agir sur vos objets sans configuration t de scenario.
+					</p>
+					<p class="Overlay-body">
+						La <strong>surveillance</strong> vous permet de suivre dans un seul écran la consommation de votre foyer, la présence ou non de personnes, ou tout autre surveillance que vous souhaitez réaliser.
+					</p>
+					<p class="Overlay-body">
+						Le <strong>confort</strong> vous permet d’agir sur vos systèmes énergétiques à distance immédiatement dans votre appication.
+					</p>
+					<p class="Overlay-body">
+						La <strong>gestion des membres du foyer</strong> se fait finement en autorisant l’accès aux contrôles ou non
+					</p>
+				</div>
+				<div class="Overlay-item">
+					<div class="Overlay-list">
+						<p class="Overlay-listItem">
+							Vous arrivez à votre domicile, oToDo ouvre votre portail automatiquement
+						</p>
+						<p class="Overlay-listItem">
+							Vous quittez votre domicile, vous fermez en un clique les volets de la maison
+						</p>
+						<p class="Overlay-listItem">
+							Votre consommation d’eau, d’électricité, de gaz est excessive, oToDo vous notifie
+						</p>
+					</div>
+				</div>
+			</div>
     </div>
   </div>
 </div>

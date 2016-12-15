@@ -171,9 +171,11 @@
   display: none;
 }
 .Carousel-items {
+  outline: none;
   padding: 0 10px 20px;
 }
 .Carousel-item {
+  outline: none;
   text-align: left;
 }
 .Carousel-header {
@@ -901,6 +903,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   left: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -914,6 +917,7 @@
 .Overlay-inner {
   background: black;
   height: 100vh;
+  overflow: hidden;
   padding: 0 20px;
   position: relative;
   top: 0;
@@ -931,15 +935,25 @@
 }
 .Overlay-title {
   color: rgb(97, 100, 204);
-  font: 700 20px/20px "Lato", Helvetica, sans-serif;
-  margin: 70px 0 0;
+  display: inline-block;
+  font: 700 20px/30px "Lato", Helvetica, sans-serif;
+  margin: 70px auto 0;
+  position: relative;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase
+}
+.Overlay-title::after {
+  background: rgb(197, 199, 255);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 60%;
 }
 .Overlay-content {
   color: white;
   font: 700 14px/18px "Lato", Helvetica, sans-serif;
-  margin: 60px 0 0;
+  margin: 40px 0 0;
   text-align: left
 }
 .Overlay-content > * {/* stylelint-disable-line */
@@ -947,11 +961,29 @@
   font: 700 14px/18px "Lato", Helvetica, sans-serif;
   margin-top: 40px;
 }
+.Overlay-body {
+  font: 300 14px/18px "Lato", Helvetica, sans-serif;
+  margin: 15px 0 0
+}
+.Overlay-body strong {/* stylelint-disable-line */
+  font: 700 14px/18px "Lato", Helvetica, sans-serif;
+}
+.Overlay-listItem {
+  font: 700 14px/18px "Lato", Helvetica, sans-serif;
+  margin: 40px 0 0;
+}
+.Overlay--02 {
+}
+.Overlay--02 .Overlay-inner {
+  background: url("/img/background-overlay-02.jpg") no-repeat top center;
+  background-size: cover;
+}
 @media (min-width: 860px) {
   .Overlay-inner {
     height: 95%;
     max-height: 720px;
-    max-width: 1104px;
+    max-width: 1044px;
+    padding: 0 60px;
     position: relative;
     width: 90%;
   }
@@ -961,6 +993,52 @@
     right: 30px;
     top: 30px;
     width: 40px;
+  }
+
+  .Overlay-title {
+    display: block;
+    font: 700 40px/30px "Lato", Helvetica, sans-serif;
+    margin: 60px 0 0;
+    max-width: 480px;
+    text-align: left
+  }
+
+  .Overlay-title::after {
+    background: rgb(197, 199, 255);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 267px;
+  }
+
+  .Overlay-body {
+    font: 300 21px/23px "Lato", Helvetica, sans-serif;
+    margin: 50px 0 0 50px;
+    max-width: 590px
+  }
+
+  .Overlay-body strong {/* stylelint-disable-line */
+    font: 700 21px/23px "Lato", Helvetica, sans-serif;
+  }
+
+  .Overlay-list {
+    margin: 55px auto 0;
+    max-width: 540px;
+  }
+
+  .Overlay-listItem {
+    font: 700 26px/28px "Lato", Helvetica, sans-serif;
+    margin: 40px 0 0;
+    text-align: center;
+  }
+
+  .Overlay--02 {
+  }
+
+  .Overlay--02 .Overlay-inner {
+    background: url("/img/background-overlay-02.jpg") no-repeat center center;
+    background-size: 110%;
   }
 }
 /** @define Page */
@@ -1587,7 +1665,7 @@
 @media (min-width: 860px) {
   .Team {
     margin: 30px auto 0;
-    padding: 0 0 50px;
+    padding: 0 0 100px;
   }
 
   .Team-items {
@@ -1601,7 +1679,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: -50px auto 0;
-    max-width: 1160px;
+    max-width: 850px;
   }
 
   .Team-item {
@@ -1612,7 +1690,7 @@
     margin: 24px 0 0;
     max-height: 120px;
     max-width: 120px;
-    padding: 50px 2em 0 0;
+    padding: 50px 9em 0 0;
     text-align: center
   }
 
@@ -1688,3 +1766,64 @@
   height: 0;
   width: 0;
 }
+/* stylelint-disable */
+.slick-dots {
+  margin: 34px auto 0;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 60px
+}
+.slick-dots > li {
+  background: rgb(184, 184, 184);
+  border-radius: 50%;
+  border: 2px solid rgb(184, 184, 184);
+  height: 13px;
+  width: 14px;
+}
+.slick-dots > li.slick-active {
+  background: rgb(197, 199, 255);
+  border-color: rgb(197, 199, 255);
+}
+.slick-dots button {
+  font-size: 0;
+}
+.slick-prev.slick-arrow {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='44px' height='165px' viewBox='-1 -2 44 165' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3Cg id='arrow-left' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' transform='translate(0.369071, 0.381615)' stroke-linecap='round' opacity='0.8'%3E %3Cpath d='M37.1548507,0.457088689 L0.998134328,80.4771084' id='Line' stroke='%23C39FBC' stroke-width='3'/%3E %3Cpath d='M39.0578358,159.627345 L0.998134328,80.4771084' id='Line' stroke='%23C39FBC' stroke-width='3'/%3E %3C/g%3E %3C/svg%3E") no-repeat center center;
+  background-size: 44px;
+  cursor: pointer;
+  font-size: 0;
+  height: 400px;
+  left: -30px;
+  outline: none;
+  position: absolute;
+  width: 44px;
+  z-index: 200;
+}
+.slick-next.slick-arrow {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='44px' height='165px' viewBox='-1 -2 44 165' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3Cg id='arrow-left' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' transform='translate(0.369071, 0.381615)' stroke-linecap='round' opacity='0.8'%3E %3Cpath d='M37.1548507,0.457088689 L0.998134328,80.4771084' id='Line' stroke='%23C39FBC' stroke-width='3'/%3E %3Cpath d='M39.0578358,159.627345 L0.998134328,80.4771084' id='Line' stroke='%23C39FBC' stroke-width='3'/%3E %3C/g%3E %3C/svg%3E") no-repeat center center;
+  background-size: 44px;
+  cursor: pointer;
+  font-size: 0;
+  height: 400px;
+  outline: none;
+  right: 30px;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  width: 44px;
+  z-index: 200;
+}
+.slick-list {
+  outline: none;
+}
+@media (min-width: 860px) {
+  .slick-dots {
+    margin-top: 60px;
+  }
+}
+/* stylelint-enable */
