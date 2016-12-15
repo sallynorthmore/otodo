@@ -664,7 +664,7 @@
     margin-top: 10px;
     max-width: 80px;
     opacity: 1;
-    transition: opacity 0.2s 0.2s ease-in;
+    transition: opacity 0.2s 0.15s ease-in;
   }
 
   .History-item--participate {
