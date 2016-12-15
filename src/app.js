@@ -4,6 +4,7 @@ var app = {
 			this.menu();
 			this.expander();
 			this.overlay();
+			this.scrollTo();
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
@@ -192,7 +193,40 @@ var app = {
 				event.preventDefault();
 				$container.moveTo(2);
 			});
+		},
+
+		'scrollTo': function scrollTo() {
+			var $container = $('[data-js="scroll"]'),
+					$navLink =$('[data-js="navlink"]'),
+					header = $('[data-js="header"]'),
+  		 		headerClass = $('[data-js="header"]').attr("class");
+
+			/* Slide to section on nav link click */
+			$navLink.on('click', function(event){
+				event.preventDefault();
+				var section = "#section0" +  $(this).data('section');
+				console.log("nav link click and section is " + section);
+				// $container.moveTo(section);
+				$(window).scrollTo(section, 500, {
+					onAfter: function() {
+				    console.log("after!");
+				  }
+				});
+			});
+
+			/* Continue button */
+			$('[data-js="continue"]').on('click', function(event){
+				event.preventDefault();
+				// $container.moveTo(2);
+				$(window).scrollTo("#section02", 500, {
+					onAfter: function() {
+				    console.log("after!");
+				  }
+				});
+			});
 		}
+
+
 };
 
 
