@@ -108,7 +108,16 @@ var app = {
 				if ( $('[data-overlaynumber='+ overlayNumber +']').hasClass('is-carousel')) {
 					$overlayCarousel.slick({
 						arrows: true,
-						dots: true
+						dots: false,
+						responsive: [
+					    {
+					      breakpoint: 860,
+					      settings: {
+					        arrows: false,
+					        dots: true
+					      }
+					    },
+						]
 					});
 				}
 			});
