@@ -4,6 +4,7 @@ var app = {
 			this.menu();
 			this.expander();
 			this.overlay();
+			this.scrollTo();
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
@@ -192,7 +193,55 @@ var app = {
 				event.preventDefault();
 				$container.moveTo(2);
 			});
+		},
+
+		'scrollTo': function scrollTo() {
+			var $container = $('[data-js="scroll"]'),
+					$navLink =$('[data-js="navlink"]'),
+					header = $('[data-js="header"]'),
+  		 		headerClass = $('[data-js="header"]').attr("class");
+
+			/* Slide to section on nav link click */
+			$navLink.on('click', function(event){
+				event.preventDefault();
+				var index =   $(this).data('section'),
+						section = "#section0" + index;
+
+				// $container.moveTo(section);
+				$(window).scrollTo(section, 500, {
+					onAfter: function() {
+						/* Update nav link class when section active */
+ 					 $('[data-js="navlink"]').removeClass('is-active');
+ 					 $('[data-section="' + index +'"]').addClass('is-active');
+ 					 header.attr('class', headerClass);
+
+ 					 /* Update nav container class when section active */
+ 					 var curClass = headerClass + " is-" + index;
+ 					 header.attr('class', curClass);
+				  }
+				});
+			});
+
+			/* Continue button */
+			$('[data-js="continue"]').on('click', function(event){
+				event.preventDefault();
+
+				$(window).scrollTo("#section02", 500, {
+					onAfter: function() {
+						/* Update nav link class when section active */
+ 					 $('[data-js="navlink"]').removeClass('is-active');
+ 					 $('[data-section="' + index +'"]').addClass('is-active');
+ 					 header.attr('class', headerClass);
+
+ 					 /* Update nav container class when section active */
+ 					 var curClass = headerClass + " is-" + index;
+ 					 header.attr('class', curClass);
+				  }
+				});
+			});
 		}
+
+
 };
 
 
