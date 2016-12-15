@@ -88,6 +88,13 @@
   margin: 40px 0 0;
 }
 
+.Overlay--02 {
+  & .Overlay-inner {
+    background: url("/img/background-overlay-02.jpg") no-repeat top center;
+    background-size: cover;
+  }
+}
+
 @media (--large) {
   .Overlay-inner {
     height: 95%;
