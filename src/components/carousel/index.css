@@ -5,10 +5,12 @@
 }
 
 .Carousel-items {
+  outline: none;
   padding: 0 10px 20px;
 }
 
 .Carousel-item {
+  outline: none;
   text-align: left;
 }
 

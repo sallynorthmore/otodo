@@ -30,6 +30,7 @@
   font-size: 0;
   height: 400px;
   left: -30px;
+  outline: none;
   position: absolute;
   width: 44px;
   z-index: var(--depth-2);
@@ -41,11 +42,16 @@
   cursor: pointer;
   font-size: 0;
   height: 400px;
+  outline: none;
   right: 30px;
   top: 0;
   transform: rotate(180deg);
   position: absolute;
   width: 44px;
   z-index: var(--depth-2);
+}
+
+.slick-list {
+  outline: none;
 }
 /* stylelint-enable */

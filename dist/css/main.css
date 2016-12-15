@@ -171,9 +171,11 @@
   display: none;
 }
 .Carousel-items {
+  outline: none;
   padding: 0 10px 20px;
 }
 .Carousel-item {
+  outline: none;
   text-align: left;
 }
 .Carousel-header {
@@ -1785,6 +1787,7 @@
   font-size: 0;
   height: 400px;
   left: -30px;
+  outline: none;
   position: absolute;
   width: 44px;
   z-index: 200;
@@ -1795,6 +1798,7 @@
   cursor: pointer;
   font-size: 0;
   height: 400px;
+  outline: none;
   right: 30px;
   top: 0;
   -webkit-transform: rotate(180deg);
@@ -1802,5 +1806,8 @@
   position: absolute;
   width: 44px;
   z-index: 200;
+}
+.slick-list {
+  outline: none;
 }
 /* stylelint-enable */
