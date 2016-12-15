@@ -12,6 +12,7 @@
     "build:js": "babel src/ --out-dir dist/js",
     "build:html": "nunjucks *.njk -p src -o dist",
     "build": "run-p build:*",
+		"watch:html": "nunjucks -w *.njk -p src -o dist",
     "watch:css": "postcss -c .postcssrc.json -w --poll",
     "watch:js": "babel src/ --watch --out-dir dist/js --source-maps inline",
     "watch": "run-p watch:*",

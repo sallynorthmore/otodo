@@ -114,6 +114,17 @@
 /* History Page */
 .Section--04 {
   background: var(--colour-periwinkle);
+
+  & .Section-title {
+    font: 700 27px/34px var(--sans);
+    letter-spacing: 0.1px;
+    margin: 82px auto 0;
+  }
+
+  & .Section-intro {
+    margin-top: 30px;
+    text-align: center;
+  }
 }
 
 /* Team page */
@@ -256,9 +267,21 @@
     }
   }
 
+  /* History Page */
+  .Section--04 {
+    & .Section-title {
+      font-size: 60px;
+    }
+
+    & .Section-intro {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
   /* Team page */
   .Section--05 {
-    background: var(--colour-purpleLight);
+    background: var(--colour-purpleLightest);
 
     & .Section-title {
       font: 700 60px/60px var(--sans);
