@@ -1,0 +1,64 @@
+/** @define History */
+
+.History {
+  text-align: center;
+}
+
+.History-items {
+  margin: 25px auto 90px;
+  position: relative;
+
+  &::after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    top: 0;
+    width: 30px;
+    z-index: 0;
+  }
+}
+
+.History-item {
+  background: white;
+  border-radius: 50%;
+  height: 248px;
+  margin: 67px auto 0;
+  position: relative;
+  width: 248px;
+  z-index: var(--depth-1);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.History-item--participate {}
+
+.History-itemInner {
+  padding: 45px 10px;
+}
+
+.History-date {
+  color: rgb(95, 68, 91);
+  font: 700 16px/23px var(--sans);
+  letter-spacing: 0.06px;
+}
+
+.History-title {
+  color: black;
+  font: 700 15px/23px var(--sans);
+  letter-spacing: 0.06px;
+  margin: 5px auto 0;
+  text-transform: uppercase;
+}
+
+.History-body {
+  color: black;
+  font: 300 14px/18px var(--sans);
+  margin: 24px auto 0;
+  max-width: 240px;
+}
