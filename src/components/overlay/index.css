@@ -136,6 +136,17 @@
     }
   }
 
+  .Overlay-list {
+    margin: 55px auto 0;
+    max-width: 540px;
+  }
+
+  .Overlay-listItem {
+    font: 700 26px/28px var(--sans);
+    margin: 40px 0 0;
+    text-align: center;
+  }
+
   .Overlay--02 {
     & .Overlay-inner {
       background: url("/img/background-overlay-02.jpg") no-repeat center center;

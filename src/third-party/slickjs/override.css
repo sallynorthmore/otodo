@@ -54,4 +54,10 @@
 .slick-list {
   outline: none;
 }
+
+@media (--large) {
+  .slick-dots {
+    margin-top: 60px;
+  }
+}
 /* stylelint-enable */

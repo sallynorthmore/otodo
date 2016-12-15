@@ -1022,6 +1022,17 @@
     font: 700 21px/23px "Lato", Helvetica, sans-serif;
   }
 
+  .Overlay-list {
+    margin: 55px auto 0;
+    max-width: 540px;
+  }
+
+  .Overlay-listItem {
+    font: 700 26px/28px "Lato", Helvetica, sans-serif;
+    margin: 40px 0 0;
+    text-align: center;
+  }
+
   .Overlay--02 {
   }
 
@@ -1809,5 +1820,10 @@
 }
 .slick-list {
   outline: none;
+}
+@media (min-width: 860px) {
+  .slick-dots {
+    margin-top: 60px;
+  }
 }
 /* stylelint-enable */
