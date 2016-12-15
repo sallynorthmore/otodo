@@ -213,6 +213,7 @@
 
     &.is-large {
       border-color: var(--colour-purple);
+      transform: scale(2);
 
       & .History-title { /* stylelint-disable-line */
         margin-top: 24px;
