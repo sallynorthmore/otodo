@@ -204,12 +204,20 @@ var app = {
 			/* Slide to section on nav link click */
 			$navLink.on('click', function(event){
 				event.preventDefault();
-				var section = "#section0" +  $(this).data('section');
-				console.log("nav link click and section is " + section);
+				var index =   $(this).data('section'),
+						section = "#section0" + index;
+
 				// $container.moveTo(section);
 				$(window).scrollTo(section, 500, {
 					onAfter: function() {
-				    console.log("after!");
+						/* Update nav link class when section active */
+ 					 $('[data-js="navlink"]').removeClass('is-active');
+ 					 $('[data-section="' + index +'"]').addClass('is-active');
+ 					 header.attr('class', headerClass);
+
+ 					 /* Update nav container class when section active */
+ 					 var curClass = headerClass + " is-" + index;
+ 					 header.attr('class', curClass);
 				  }
 				});
 			});
@@ -217,10 +225,17 @@ var app = {
 			/* Continue button */
 			$('[data-js="continue"]').on('click', function(event){
 				event.preventDefault();
-				// $container.moveTo(2);
+
 				$(window).scrollTo("#section02", 500, {
 					onAfter: function() {
-				    console.log("after!");
+						/* Update nav link class when section active */
+ 					 $('[data-js="navlink"]').removeClass('is-active');
+ 					 $('[data-section="' + index +'"]').addClass('is-active');
+ 					 header.attr('class', headerClass);
+
+ 					 /* Update nav container class when section active */
+ 					 var curClass = headerClass + " is-" + index;
+ 					 header.attr('class', curClass);
 				  }
 				});
 			});
