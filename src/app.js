@@ -86,7 +86,7 @@ var app = {
 					$history.children().removeClass('is-large');
 					$(this).addClass('is-large');
 				} else {
-					$(this).removeClass('is-large');
+					// $(this).removeClass('is-large');
 				}
 			});
 		},
