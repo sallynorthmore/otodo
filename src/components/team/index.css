@@ -75,7 +75,7 @@
 @media (--large) {
   .Team {
     margin: 30px auto 0;
-    padding: 0 0 50px;
+    padding: 0 0 100px;
   }
 
   .Team-items {
@@ -83,7 +83,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: -50px auto 0;
-    max-width: 1160px;
+    max-width: 850px;
   }
 
   .Team-item {
@@ -92,7 +92,7 @@
     margin: 24px 0 0;
     max-height: 120px;
     max-width: 120px;
-    padding: 50px 2em 0 0;
+    padding: 50px 9em 0 0;
     text-align: center;
 
     &:first-child {
