@@ -119,13 +119,19 @@
     overflow: scroll;
   }
 
+  & .Overlay-content {
+    text-align: center;
+  }
+
   & .Overlay-subtitle {
     margin: 15px 0 0;
+    text-align: left;
   }
 
   & .Overlay-body {
     line-height: 1.4;
     margin: 5px 0 0;
+    text-align: left;
   }
 }
 
@@ -215,6 +221,27 @@
     font: 700 26px/28px var(--sans);
     margin: 40px 0 0;
     text-align: center;
+  }
+
+  .Overlay--01 {
+    & .Overlay-title {
+      line-height: 1.2;
+    }
+
+    & .Overlay-content {
+      background: url("../img/overlay-group-02.png") no-repeat top center;
+      background-size: contain;
+      margin: 50px auto 0;
+      max-width: 990px;
+      min-height: 500px;
+      width: 100%;
+    }
+
+    & .Overlay-contentImage,
+    & .Overlay-subtitle,
+    & .Overlay-body {
+      display: none;
+    }
   }
 
   .Overlay--02 {

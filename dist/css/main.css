@@ -1044,12 +1044,17 @@
   max-height: 100vh;
   overflow: scroll;
 }
+.Overlay--01 .Overlay-content {
+  text-align: center;
+}
 .Overlay--01 .Overlay-subtitle {
   margin: 15px 0 0;
+  text-align: left;
 }
 .Overlay--01 .Overlay-body {
   line-height: 1.4;
   margin: 5px 0 0;
+  text-align: left;
 }
 .Overlay--02 {
 }
@@ -1135,6 +1140,28 @@
     font: 700 26px/28px "Lato", Helvetica, sans-serif;
     margin: 40px 0 0;
     text-align: center;
+  }
+
+  .Overlay--01 {
+  }
+
+  .Overlay--01 .Overlay-title {
+    line-height: 1.2;
+  }
+
+  .Overlay--01 .Overlay-content {
+    background: url("../img/overlay-group-02.png") no-repeat top center;
+    background-size: contain;
+    margin: 50px auto 0;
+    max-width: 990px;
+    min-height: 500px;
+    width: 100%;
+  }
+
+  .Overlay--01 .Overlay-contentImage,
+    .Overlay--01 .Overlay-subtitle,
+    .Overlay--01 .Overlay-body {
+    display: none;
   }
 
   .Overlay--02 {
