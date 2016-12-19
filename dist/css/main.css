@@ -1034,15 +1034,15 @@
     height: 40px;
     right: 30px;
     top: 30px;
-    width: 40px;
     -webkit-transform-origin: center;
             transform-origin: center;
-    transition: 0.5s cubic-bezier(0.075, 0.825, 0.165, 1)
+    width: 40px
   }
 
   .Overlay-button:hover {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    transition: 0.5s cubic-bezier(0.075, 0.825, 0.165, 1);
   }
 
   .Overlay-title {
@@ -2063,6 +2063,22 @@
 @media (min-width: 860px) {
   .slick-dots {
     margin-top: 60px;
+  }
+
+  .slick-next.slick-arrow {
+    transition: all 0.2s cubic-bezier(0.46, 0.265, 0.285, 1.635)
+  }
+
+  .slick-next.slick-arrow:hover {
+    right: 20px;
+  }
+
+  .slick-prev.slick-arrow {
+    transition: all 0.2s cubic-bezier(0.46, 0.265, 0.285, 1.635)
+  }
+
+  .slick-prev.slick-arrow:hover {
+    left: -40px;
   }
 }
 /* stylelint-enable */

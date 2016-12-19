@@ -59,5 +59,21 @@
   .slick-dots {
     margin-top: 60px;
   }
+
+  .slick-next.slick-arrow {
+    transition: all var(--transition-arrows);
+
+    &:hover {
+      right: 20px;
+    }
+  }
+
+  .slick-prev.slick-arrow {
+    transition: all var(--transition-arrows);
+
+    &:hover {
+      left: -40px;
+    }
+  }
 }
 /* stylelint-enable */

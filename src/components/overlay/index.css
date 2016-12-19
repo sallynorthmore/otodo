@@ -106,12 +106,12 @@
     height: 40px;
     right: 30px;
     top: 30px;
-    width: 40px;
     transform-origin: center;
-    transition: var(--transition-close);
+    width: 40px;
 
     &:hover {
-      transform: rotate(180deg);
+      transform: rotate(360deg);
+      transition: var(--transition-close);
     }
   }
 
