@@ -1893,7 +1893,7 @@
     margin: 0 0 40px;
     max-height: 110px;
     max-width: 110px;
-    padding: 50px 3em 0;
+    padding: 50px 3.3em 0;
     position: relative;
     text-align: center;
     z-index: 0
@@ -1906,7 +1906,7 @@
     display: block;
     height: 124px;
     left: 0;
-    margin-left: 41px;
+    margin-left: 45px;
     margin-top: 43px;
     position: absolute;
     top: 0;
@@ -1914,9 +1914,9 @@
             transform: scale(0.5);
     -webkit-transform-origin: center;
             transform-origin: center;
-    transition: -webkit-transform 0.2s cubic-bezier(.46, .265, .285, 1.635);
-    transition: transform 0.2s cubic-bezier(.46, .265, .285, 1.635);
-    transition: transform 0.2s cubic-bezier(.46, .265, .285, 1.635), -webkit-transform 0.2s cubic-bezier(.46, .265, .285, 1.635);
+    transition: -webkit-transform 0.2s cubic-bezier(0.46, 0.265, 0.285, 1.635);
+    transition: transform 0.2s cubic-bezier(0.46, 0.265, 0.285, 1.635);
+    transition: transform 0.2s cubic-bezier(0.46, 0.265, 0.285, 1.635), -webkit-transform 0.2s cubic-bezier(0.46, 0.265, 0.285, 1.635);
     width: 124px;
     z-index: 100;
   }
