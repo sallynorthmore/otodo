@@ -104,11 +104,6 @@
   .Navigation-item {
     min-width: 87px;
     text-align: center;
-
-    /*&:first-child,
-    &:last-child {
-      display: none;
-    }*/
   }
 
   .Navigation-link {
@@ -117,7 +112,7 @@
     position: relative;
     width: auto;
 
-    &::after {
+    &::after { /* stylelint-disable-line */
       background: var(--colour-purple);
       bottom: -7px;
       content: "";
@@ -128,7 +123,9 @@
       width: 0%;
     }
 
+    /* stylelint-disable */
     &.is-active,
+    &.active,
     &:hover {
       color: white;
 
@@ -138,6 +135,7 @@
         width: 100%;
       }
     }
+    /* stylelint-enable */
 
     @nest .Navigation-link--reserve & {
       align-items: center;
@@ -150,12 +148,13 @@
       transition: all var(--transition-link);
       width: 100%;
 
-      &::after {
+      &::after { /* stylelint-disable-line */
         bottom: 0;
       }
 
       /* stylelint-disable */
       &.is-active,
+      &.active,
       &:hover {
         background: var(--colour-purple);
         color: white;

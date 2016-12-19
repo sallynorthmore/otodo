@@ -836,11 +836,6 @@
   .Navigation-item {
     min-width: 87px;
     text-align: center;
-
-    /*&:first-child,
-    &:last-child {
-      display: none;
-    }*/
   }
 
   .Navigation-link {
@@ -848,9 +843,12 @@
     font: 600 18px/18px "Lato", Helvetica, sans-serif;
     position: relative;
     width: auto
+
+    /* stylelint-disable */
+    /* stylelint-enable */
   }
 
-  .Navigation-link::after {
+  .Navigation-link::after {/* stylelint-disable-line */
     background: rgb(150, 15, 124);
     bottom: -7px;
     content: "";
@@ -862,11 +860,12 @@
   }
 
   .Navigation-link.is-active,
+    .Navigation-link.active,
     .Navigation-link:hover {
     color: white;
   }
 
-  .Navigation-link.is-active::after, .Navigation-link:hover::after {
+  .Navigation-link.is-active::after, .Navigation-link.active::after, .Navigation-link:hover::after {
     opacity: 1;
     transition: width 0.125s ease-out;
     width: 100%;
@@ -890,11 +889,12 @@
     width: 100%;/* stylelint-disable *//* stylelint-enable */
   }
 
-  .Navigation-link--reserve .Navigation-link::after {
+  .Navigation-link--reserve .Navigation-link::after {/* stylelint-disable-line */
     bottom: 0;
   }
 
   .Navigation-link--reserve .Navigation-link.is-active,
+      .Navigation-link--reserve .Navigation-link.active,
       .Navigation-link--reserve .Navigation-link:hover {
     background: rgb(150, 15, 124);
     color: white;
