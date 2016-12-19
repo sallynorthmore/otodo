@@ -80,7 +80,7 @@
   background: var(--colour-purple);
   border: 4px solid var(--colour-purple);
   height: 116px;
-  width: 116px;
+  width: 118px;
 
   & .History-title {
     color: white;
@@ -96,6 +96,10 @@
     margin-top: -5px;
     opacity: 0.1;
     width: 250px;
+  }
+
+  & a {
+    text-decoration: none;
   }
 }
 
@@ -211,10 +215,6 @@
 
   .History-item--participate {
     border-color: var(--colour-purple);
-
-    & a {
-      text-decoration: none;
-    }
 
     & .History-title {
       display: block;

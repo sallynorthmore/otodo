@@ -552,7 +552,7 @@
   background: rgb(150, 15, 124);
   border: 4px solid rgb(150, 15, 124);
   height: 116px;
-  width: 116px
+  width: 118px
 }
 .History-item--participate .History-title {
   color: white;
@@ -566,6 +566,9 @@
   margin-top: -5px;
   opacity: 0.1;
   width: 250px;
+}
+.History-item--participate a {
+  text-decoration: none;
 }
 @media (min-width: 860px) {
   .History {
@@ -690,10 +693,6 @@
 
   .History-item--participate {
     border-color: rgb(150, 15, 124)
-  }
-
-  .History-item--participate a {
-    text-decoration: none;
   }
 
   .History-item--participate .History-title {
