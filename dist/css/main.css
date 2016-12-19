@@ -365,23 +365,23 @@
   }
 
   .Carousel-contentTitle {
-    font: 700 24px/24px "Lato", Helvetica, sans-serif;
+    font: 700 20px/20px "Lato", Helvetica, sans-serif;
     margin: 50px 0 0;
     max-width: 450px;
   }
 
   .Carousel-contentBody {
-    font: 300 20px/24px "Lato", Helvetica, sans-serif;
+    font: 300 17px/23px "Lato", Helvetica, sans-serif;
     margin: 30px 0 0;
     max-width: 450px
   }
 
   .Carousel-contentBody strong {/*stylelint-disable-line */
-    font: 700 20px/24px "Lato", Helvetica, sans-serif;
+    font: 700 17px/23px "Lato", Helvetica, sans-serif;
   }
 
   .Carousel-contentLink {
-    font: 400 20px/20px "Lato", Helvetica, sans-serif;
+    font: 400 17px/23px "Lato", Helvetica, sans-serif;
     margin: 20px 0 0;
     transition: all 0.125s ease-out;
   }

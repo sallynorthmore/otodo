@@ -192,23 +192,23 @@
   }
 
   .Carousel-contentTitle {
-    font: 700 24px/24px var(--sans);
+    font: 700 20px/20px var(--sans);
     margin: 50px 0 0;
     max-width: 450px;
   }
 
   .Carousel-contentBody {
-    font: 300 20px/24px var(--sans);
+    font: 300 17px/23px var(--sans);
     margin: 30px 0 0;
     max-width: 450px;
 
     & strong { /*stylelint-disable-line */
-      font: 700 20px/24px var(--sans);
+      font: 700 17px/23px var(--sans);
     }
   }
 
   .Carousel-contentLink {
-    font: 400 20px/20px var(--sans);
+    font: 400 17px/23px var(--sans);
     margin: 20px 0 0;
     transition: all var(--transition-link);
   }
