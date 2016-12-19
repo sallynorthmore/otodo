@@ -36,6 +36,10 @@
     position: relative;
   }
 
+  & .Section-title {
+    max-width: 300px;
+  }
+
   & .Section-caption {
     display: none;
   }
@@ -53,9 +57,7 @@
   }
 
   & .Section-nav {
-    bottom: 40px;
-    left: 0;
-    position: absolute;
+    margin-top: 50px;
     width: 100%;
   }
 }
@@ -226,6 +228,12 @@
       display: none;
     }
 
+    & .Section-image {
+      height: 258px;
+      margin-top: 10vh;
+      width: 220px;
+    }
+
     & .Section-caption {
       color: white;
       display: block;
@@ -235,7 +243,7 @@
     }
 
     & .Section-nav {
-      bottom: 50px;
+
     }
   }
 

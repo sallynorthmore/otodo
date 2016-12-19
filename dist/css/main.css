@@ -1264,6 +1264,9 @@
   min-height: 100vh;
   position: relative;
 }
+.Section--01 .Section-title {
+  max-width: 300px;
+}
 .Section--01 .Section-caption {
   display: none;
 }
@@ -1278,9 +1281,7 @@
   margin: 50px auto 0;
 }
 .Section--01 .Section-nav {
-  bottom: 40px;
-  left: 0;
-  position: absolute;
+  margin-top: 50px;
   width: 100%;
 }
 /* Entrer Page */
@@ -1432,6 +1433,12 @@
     display: none;
   }
 
+  .Section--01 .Section-image {
+    height: 258px;
+    margin-top: 10vh;
+    width: 220px;
+  }
+
   .Section--01 .Section-caption {
     color: white;
     display: block;
@@ -1441,7 +1448,6 @@
   }
 
   .Section--01 .Section-nav {
-    bottom: 50px;
   }
 
   .Section--02 {
