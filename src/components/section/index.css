@@ -155,7 +155,7 @@
 
     & strong { /* stylelint-disable-line */
       color: var(--colour-greyDark);
-      font-weight: 700;
+      font: 700 14px/18px var(--sans);
     }
   }
 }
@@ -338,20 +338,20 @@
 
     & .Section-intro {
       font: 400 17px/23px var(--sans);
-      margin: 30px auto 0 0;
+      margin: 20px auto 0 0;
       max-width: 440px;
       text-align: left;
     }
 
     & .Section-body {
       font: 400 17px/23px var(--sans);
-      margin: 30px auto 0 0;
+      margin: 20px auto 0 0;
       max-width: 420px;
       text-align: left;
 
       & strong { /* stylelint-disable-line */
         color: var(--colour-greyDark);
-        font-weight: 700;
+        font: 700 17px/23px var(--sans);
       }
     }
   }
