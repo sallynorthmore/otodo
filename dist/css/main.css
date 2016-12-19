@@ -40,6 +40,7 @@
   font: 600 21px/21px "Lato", Helvetica, sans-serif;
   outline: none;
   padding: 15px 20px;
+  transition: background-color 0.125s ease-out;
   text-align: center;
   text-decoration: none;
   -webkit-user-select: none;
@@ -64,6 +65,9 @@
   border: 0 transparent;
   box-shadow: none;
 }
+.Button:hover {
+  background-color: rgb(186, 18, 152);
+}
 .Button:focus {
   border: 0 transparent;
   box-shadow: none;
@@ -78,7 +82,10 @@
   border-radius: 0;
   height: 30px;
   padding: 0;
-  width: 30px;
+  width: 30px
+}
+.Button--arrow:hover {
+  background-color: transparent;
 }
 /**
  * Modifier: reserve
@@ -1379,31 +1386,38 @@
 @media (min-width: 860px) {
   .Section-title {
     color: white;
-    font: 700 60px/70px "Lato", Helvetica, sans-serif;
+    font: 700 50px/58px "Lato", Helvetica, sans-serif;
     max-width: 550px;
   }
 
   .Section-intro {
-    font: 300 20px/30px "Lato", Helvetica, sans-serif;
+    font: 300 17px/30px "Lato", Helvetica, sans-serif;
   }
 
   .Section--01 {
+  }
+
+  .Section--01 .Section-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+  }
+
+  .Section--01 .Section-content {
+    margin: auto;
   }
 
   .Section--01 .Section-title {
     display: none;
   }
 
-  .Section--01 .Section-image {
-    margin-top: 140px;
-  }
-
   .Section--01 .Section-caption {
     color: white;
     display: block;
-    font: 700 60px/70px "Lato", Helvetica, sans-serif;
+    font: 700 50px/58px "Lato", Helvetica, sans-serif;
     margin: 40px auto 0;
-    max-width: 650px;
+    max-width: 600px;
   }
 
   .Section--01 .Section-nav {
@@ -1512,6 +1526,78 @@
     font: 300 15px/20px "Lato", Helvetica, sans-serif;
     margin: 26px auto 0;
     max-width: 385px;
+  }
+}
+@media (min-width: 1440px) {
+  .Section-title {
+    font: 700 60px/70px "Lato", Helvetica, sans-serif;
+  }
+
+  .Section-intro {
+    font: 300 20px/30px "Lato", Helvetica, sans-serif;
+  }
+
+  .Section--01 {
+  }
+
+  .Section--01 .Section-caption {
+    font: 700 60px/70px "Lato", Helvetica, sans-serif;
+  }
+
+  .Section--02 {
+  }
+
+  .Section--02 .Section-title {
+    font: 700 60px/70px "Lato", Helvetica, sans-serif;
+  }
+
+  /* Avec Page */
+  .Section--03 {
+  }
+  .Section--03 .Section-title {
+    font: 700 72px/72px "Lato", Helvetica, sans-serif;
+  }
+  .Section--03 .Section-intro {
+    font: 300 20px/20px "Lato", Helvetica, sans-serif;
+  }
+
+  /* History Page */
+  .Section--04 {
+  }
+  .Section--04 .Section-title {
+    font-size: 60px;
+  }
+  .Section--04 .Section-intro {
+    font-size: 20px;
+  }
+
+  /* Team page */
+  .Section--05 {
+  }
+  .Section--05 .Section-title {
+    font: 700 60px/60px "Lato", Helvetica, sans-serif;
+  }
+  .Section--05 .Section-intro {
+    font: 400 20px/30px "Lato", Helvetica, sans-serif;
+  }
+  .Section--05 .Section-body {
+    font: 400 20px/30px "Lato", Helvetica, sans-serif;
+  }
+
+  /* Reserve page */
+  .Section--07 {
+  }
+  .Section--07 .Section-title {
+    font: 700 60px/70px "Lato", Helvetica, sans-serif;
+  }
+  .Section--07 .Section-intro {
+    font: 300 20px/30px "Lato", Helvetica, sans-serif;
+  }
+  .Section--07 .Section-intro p {/* stylelint-disable-line */
+    font: 300 20px/30px "Lato", Helvetica, sans-serif;
+  }
+  .Section--07 .Section-body {
+    font: 300 15px/20px "Lato", Helvetica, sans-serif;
   }
 }
 /** @define Social */

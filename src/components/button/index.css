@@ -11,6 +11,7 @@
   font: 600 21px/21px var(--sans);
   outline: none;
   padding: 15px 20px;
+  transition: background-color 0.125s ease-out;
   text-align: center;
   text-decoration: none;
   user-select: none;
@@ -26,6 +27,10 @@
   &:active {
     border: 0 transparent;
     box-shadow: none;
+  }
+
+  &:hover {
+    background-color: color(var(--colour-purple) lightness(40%));
   }
 
   /**
@@ -50,6 +55,10 @@
   height: 30px;
   padding: 0;
   width: 30px;
+
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 /**

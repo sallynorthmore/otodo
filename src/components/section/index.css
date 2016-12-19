@@ -200,29 +200,34 @@
 @media (--large) {
   .Section-title {
     color: white;
-    font: 700 60px/70px var(--sans);
+    font: 700 50px/58px var(--sans);
     max-width: 550px;
   }
 
   .Section-intro {
-    font: 300 20px/30px var(--sans);
+    font: 300 17px/30px var(--sans);
   }
 
   .Section--01 {
-    & .Section-title {
-      display: none;
+    & .Section-inner {
+      display: flex;
+      height: 100vh;
     }
 
-    & .Section-image {
-      margin-top: 140px;
+    & .Section-content {
+      margin: auto;
+    }
+
+    & .Section-title {
+      display: none;
     }
 
     & .Section-caption {
       color: white;
       display: block;
-      font: 700 60px/70px var(--sans);
+      font: 700 50px/58px var(--sans);
       margin: 40px auto 0;
-      max-width: 650px;
+      max-width: 600px;
     }
 
     & .Section-nav {
@@ -342,6 +347,84 @@
       font: 300 15px/20px var(--sans);
       margin: 26px auto 0;
       max-width: 385px;
+    }
+  }
+}
+
+@media (--xlarge) {
+  .Section-title {
+    font: 700 60px/70px var(--sans);
+  }
+
+  .Section-intro {
+    font: 300 20px/30px var(--sans);
+  }
+
+  .Section--01 {
+    & .Section-caption {
+      font: 700 60px/70px var(--sans);
+    }
+  }
+
+  .Section--02 {
+    & .Section-title {
+      font: 700 60px/70px var(--sans);
+    }
+  }
+
+  /* Avec Page */
+  .Section--03 {
+    & .Section-title {
+      font: 700 72px/72px var(--sans);
+    }
+
+    & .Section-intro {
+      font: 300 20px/20px var(--sans);
+    }
+  }
+
+  /* History Page */
+  .Section--04 {
+    & .Section-title {
+      font-size: 60px;
+    }
+
+    & .Section-intro {
+      font-size: 20px;
+    }
+  }
+
+  /* Team page */
+  .Section--05 {
+    & .Section-title {
+      font: 700 60px/60px var(--sans);
+    }
+
+    & .Section-intro {
+      font: 400 20px/30px var(--sans);
+    }
+
+    & .Section-body {
+      font: 400 20px/30px var(--sans);
+    }
+  }
+
+  /* Reserve page */
+  .Section--07 {
+    & .Section-title {
+      font: 700 60px/70px var(--sans);
+    }
+
+    & .Section-intro {
+      font: 300 20px/30px var(--sans);
+
+      & p { /* stylelint-disable-line */
+        font: 300 20px/30px var(--sans);
+      }
+    }
+
+    & .Section-body {
+      font: 300 15px/20px var(--sans);
     }
   }
 }
