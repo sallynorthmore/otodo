@@ -223,7 +223,6 @@ var app = {
 					},
 					onSnapFinish: function($target) {
 						var index = $target.data('panel');
-						console.log('index, ', index);
 
 						if (index == 4) {
 							$('[data-item="1"]').trigger('click');
