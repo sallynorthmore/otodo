@@ -13,6 +13,7 @@
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
+  transition: background-color var(--transition-button);
   user-select: none;
 
   /* Remove excess padding and border in Firefox 4+ */
@@ -26,6 +27,10 @@
   &:active {
     border: 0 transparent;
     box-shadow: none;
+  }
+
+  &:hover {
+    background-color: color(var(--colour-purple) lightness(40%));
   }
 
   /**
@@ -50,6 +55,10 @@
   height: 30px;
   padding: 0;
   width: 30px;
+
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 /**

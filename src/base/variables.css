@@ -11,20 +11,23 @@
   --depth-5: 500; /* nav */
 
   /* colours */
-  --colour-purpleDark: rgb(27, 28, 57);
-  --colour-purple: rgb(150, 15, 124);
-  --colour-purpleLight: rgb(99, 100, 127);
-  --colour-purpleLightest: rgba(99, 100, 127, 0.24);
-  --colour-lilac: rgb(155, 92, 144);
-  --colour-periwinkle: rgb(79, 81, 127);
-  --colour-purpleModal: rgb(97, 100, 204);
   --colour-grey: rgb(184, 184, 184);
   --colour-greyDark: rgb(27, 28, 57);
-
+  --colour-lilac: rgb(155, 92, 144);
+  --colour-periwinkle: rgb(79, 81, 127);
+  --colour-purple: rgb(150, 15, 124);
+  --colour-purpleDark: rgb(27, 28, 57);
+  --colour-purpleLight: rgb(99, 100, 127);
+  --colour-purpleLightest: rgba(99, 100, 127, 0.5);
+  --colour-purpleModal: rgb(97, 100, 204);
   --colour-anotherPurple: rgb(197, 199, 255);
+
+  /* transitions */
+  --transition-button: 0.125s ease-out;
+  --transition-link: 0.125s ease-out;
 }
 
 /* Common breakpoints. However adaptions can happen at component-level */
 @custom-media --medium (min-width: 600px);
 @custom-media --large (min-width: 860px);
-@custom-media --xlarge (min-width: 1440px);
+@custom-media --xlarge (min-width: 1920px);

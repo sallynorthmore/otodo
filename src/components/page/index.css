@@ -2,6 +2,7 @@
 
 .Page {
   background: white;
+  position: relative;
 }
 
 .Page-inner {
@@ -32,7 +33,7 @@
   }
 
   &.is-5 {
-    background: var(--colour-purpleLightest);
+    /* background: var(--colour-purpleLight); */
   }
 
   &.is-6 {
@@ -44,21 +45,34 @@
   }
 }
 
+.Page-footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
 /**
  * Modifier: 404 page
  */
 
 .Page--404 {
-  background: var(--colour-purpleDark) svg-load("404.svg") no-repeat center center;
-  background-size: 70%;
+  background: var(--colour-purpleDark);
+  height: 100vh;
 
   & .Page-content {
     margin: auto 0;
+    text-align: center;
+  }
+
+  & .Page-image {
+    height: auto;
+    margin: 20vh auto 0;
+    width: 215px;
   }
 
   & .Page-body {
     font: 300 14px/18px var(--sans);
-    margin: 47vh auto 0;
+    margin: 10px auto 0;
     max-width: 265px;
     text-align: center;
   }
@@ -80,18 +94,13 @@
    */
 
   .Page--404 {
-    background: var(--colour-purpleDark) svg-load("404.svg") no-repeat center 140px;
-    background-size: 40%;
-
-    & .Page-content {
-      margin: auto 0;
+    & .Page-image {
+      width: 300px;
     }
 
     & .Page-body {
       font: 300 16px/18px var(--sans);
-      margin: 390px auto 0;
       max-width: 265px;
-      text-align: center;
     }
 
     & .Page-button {
@@ -110,22 +119,26 @@
    */
 
   .Page--404 {
-    background: var(--colour-purpleDark) svg-load("404.svg") no-repeat center 124px;
-    background-size: 444px;
+    display: flex;
 
     & .Page-content {
-      margin: auto 0;
+      margin: auto;
+    }
+
+    & .Page-image {
+      margin: 0 auto;
+      width: 440px;
     }
 
     & .Page-body {
       font: 300 25px/15px var(--sans);
-      margin: 474px auto 0;
+      margin-top: 20px;
       max-width: none;
       text-align: center;
     }
 
     & .Page-button {
-      margin: 40px 0 0;
+      margin: 45px 0 0;
     }
   }
 }
