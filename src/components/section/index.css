@@ -197,6 +197,10 @@
   }
 }
 
+/**
+ * Viewport: large
+ */
+
 @media (--large) {
   .Section-title {
     color: white;
@@ -350,6 +354,7 @@
     & .Section-inner {
       display: flex;
       min-height: 100vh;
+      padding-bottom: 0;
     }
 
     & .Section-content {
@@ -390,6 +395,10 @@
     }
   }
 }
+
+/**
+ * Viewport: xlarge
+ */
 
 @media (--xlarge) {
   .Section-title {

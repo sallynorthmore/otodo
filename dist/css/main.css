@@ -434,8 +434,8 @@
  */
 @media (min-width: 860px) {
   .Footer {
-    margin-top: 0;
     height: 35px;
+    margin-top: 0;
     padding: 30px;
     text-align: center;
   }
@@ -1138,8 +1138,18 @@
   }
 }
 @media (min-width: 860px) {
+  .Page {
+    position: relative;
+  }
+
   .Page-header {
     height: 110px;
+  }
+
+  .Page-footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
   }
 
   /**
@@ -1386,6 +1396,9 @@
   margin: 8px auto 0;
   max-width: 250px;
 }
+/**
+ * Viewport: large
+ */
 @media (min-width: 860px) {
   .Section-title {
     color: white;
@@ -1542,6 +1555,7 @@
     display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
+    padding-bottom: 0;
   }
   .Section--07 .Section-content {
     margin: auto;
@@ -1574,7 +1588,10 @@
     max-width: 300px;
   }
 }
-@media (min-width: 1440px) {
+/**
+ * Viewport: xlarge
+ */
+@media (min-width: 1920px) {
   .Section-title {
     font: 700 60px/70px "Lato", Helvetica, sans-serif;
   }

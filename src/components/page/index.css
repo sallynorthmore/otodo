@@ -101,8 +101,18 @@
 }
 
 @media (--large) {
+  .Page {
+    position: relative;
+  }
+
   .Page-header {
     height: 110px;
+  }
+
+  .Page-footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
   }
 
   /**
