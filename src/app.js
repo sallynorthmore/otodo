@@ -4,13 +4,13 @@ var app = {
 			this.menu();
 			this.expander();
 			this.overlay();
-			this.snapTo();
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
 				// initialise carousel & history components
 				this.carousel();
 				this.history();
+				this.snapTo();
 			}
 		},
 
@@ -138,52 +138,10 @@ var app = {
 			});
 
 			link.on('click', function(){
+					link.removeClass("is-active");
+					$(this).addClass("is-active");
 					page.removeClass("has-nav");
 					open = false;
-			});
-		},
-
-		'onepage': function onepage() {
-
-			var $container = $('[data-js="scroll"]'),
-					$navLink =$('[data-js="navlink"]'),
-					header = $('[data-js="header"]'),
-  		 		headerClass = $('[data-js="header"]').attr("class");
-
-
-			$container.onepage_scroll({
-				sectionContainer: '[data-js="section"]',
-			   easing: "ease-out",
-			   animationTime: 500,
-			   pagination: false,
-			   updateURL: false,
-			   beforeMove: function(index) {
-					 /* Update nav link class when section active */
-					 $('[data-js="navlink"]').removeClass('is-active');
-					 $('[data-section="' + index +'"]').addClass('is-active');
-					 header.attr('class', headerClass);
-
-					 /* Update nav container class when section active */
-					 var curClass = headerClass + " is-" + index;
-					 header.attr('class', curClass);
-				 },
-			   loop: false,
-			   keyboard: true,
-			   responsiveFallback: 600,
-			   direction: "vertical"
-			});
-
-			/* Slide to section on nav link click */
-			$navLink.on('click', function(event){
-				event.preventDefault();
-				var section = $(this).data('section');
-				$container.moveTo(section);
-			});
-
-			/* Continue button */
-			$('[data-js="continue"]').on('click', function(event){
-				event.preventDefault();
-				$container.moveTo(2);
 			});
 		},
 
@@ -240,43 +198,42 @@ var app = {
   		 		headerClass = $('[data-js="header"]').attr("class"),
 					$continueBtn = $('[data-js="continue"]');
 
-					var options = {
-							$menu: $('.Navigation-items'),
-				      panelSelector: '.Section',
-				      namespace: '.panelSnap',
-							onSnapStart: function($target) {
-								var index = $target.data('panel');
 
-								/* Update nav link class when section active */
-								$('[data-js="navlink"]').removeClass('is-active');
-								$('[data-section="' + index +'"]').addClass('is-active');
-								header.attr('class', headerClass);
+			var options = {
+					$menu: $('.Navigation-items'),
+					panelSelector: '.Section',
+					namespace: '.panelSnap',
+					onSnapStart: function($target) {
+						var index = $target.data('panel');
 
-								/* Update nav container class when section active */
-								var curClass = headerClass + " is-" + index;
-								header.attr('class', curClass);
+						/* Update nav link class when section active */
+						$('[data-js="navlink"]').removeClass('is-active');
+						$('[data-section="' + index +'"]').addClass('is-active');
+						header.attr('class', headerClass);
 
-		          },
-				      onSnapFinish: function(){},
-				      onActivate: function(){},
-				      directionThreshold: 400,
-				      slideSpeed: 400,
-				      easing: 'swing',
-				      offset: 0,
-				      navigation: {
-								keys: {
-									nextKey: 40,
-									prevKey: 38,
-								},
-				        buttons: {
-				          $nextButton: $continueBtn,
-				          $prevButton: false,
-				        },
-				        wrapAround: false
-				      }
-				    };
+						/* Update nav container class when section active */
+						var curClass = headerClass + " is-" + index;
+						header.attr('class', curClass);
 
-		    $('body').panelSnap(options);
+					},
+					directionThreshold: 400,
+					slideSpeed: 400,
+					easing: 'swing',
+					offset: 0,
+					navigation: {
+						keys: {
+							nextKey: 40,
+							prevKey: 38,
+						},
+						buttons: {
+							$nextButton: $continueBtn,
+							$prevButton: false,
+						},
+						wrapAround: false
+					}
+				};
+
+	    $('body').panelSnap(options);
 
 			/* Slide to section on nav link click */
 			$navLink.on('click', function(event){

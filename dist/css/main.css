@@ -827,7 +827,15 @@
   color: rgb(150, 15, 124);
 }
 .Navigation-link--reserve {
-  background-color: rgb(150, 15, 124);
+  background-color: rgb(150, 15, 124)
+  /* stylelint-disable */
+  /* stylelint-enable */
+}
+.Navigation-link--reserve a {
+  color: white;
+}
+.Navigation-link--reserve a.is-active {
+  color: white;
 }
 @media (min-width: 860px) {
   .Navigation-burger,

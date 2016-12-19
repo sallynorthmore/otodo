@@ -97,6 +97,15 @@
 
 .Navigation-link--reserve {
   background-color: var(--colour-purple);
+  /* stylelint-disable */
+  & a {
+    color: white;
+
+    &.is-active {
+      color: white;
+    }
+  }
+  /* stylelint-enable */
 }
 
 @media (--large) {
