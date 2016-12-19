@@ -1904,7 +1904,7 @@
     border-radius: 50%;
     content: "";
     display: block;
-    height: 125px;
+    height: 124px;
     left: 0;
     margin-left: 41px;
     margin-top: 43px;
@@ -1914,10 +1914,10 @@
             transform: scale(0.5);
     -webkit-transform-origin: center;
             transform-origin: center;
-    transition: -webkit-transform 0.15s ease-in;
-    transition: transform 0.15s ease-in;
-    transition: transform 0.15s ease-in, -webkit-transform 0.15s ease-in;
-    width: 125px;
+    transition: -webkit-transform 0.2s cubic-bezier(.46, .265, .285, 1.635);
+    transition: transform 0.2s cubic-bezier(.46, .265, .285, 1.635);
+    transition: transform 0.2s cubic-bezier(.46, .265, .285, 1.635), -webkit-transform 0.2s cubic-bezier(.46, .265, .285, 1.635);
+    width: 124px;
     z-index: 100;
   }
 

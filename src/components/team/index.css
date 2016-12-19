@@ -102,7 +102,7 @@
       border-radius: 50%;
       content: "";
       display: block;
-      height: 125px;
+      height: 124px;
       left: 0;
       margin-left: 41px;
       margin-top: 43px;
@@ -110,8 +110,8 @@
       top: 0;
       transform: scale(0.5);
       transform-origin: center;
-      transition: transform 0.15s ease-in;
-      width: 125px;
+      transition: transform 0.2s cubic-bezier(.46, .265, .285, 1.635);
+      width: 124px;
       z-index: var(--depth-1);
     }
 
