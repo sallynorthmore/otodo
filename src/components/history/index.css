@@ -1,7 +1,9 @@
 /** @define History */
 
 .History {
+  position: relative;
   text-align: center;
+  z-index: 0;
 }
 
 .History-items {

@@ -481,7 +481,9 @@
 }
 /** @define History */
 .History {
+  position: relative;
   text-align: center;
+  z-index: 0;
 }
 .History-items {
   margin: 25px auto 90px;
@@ -772,6 +774,13 @@
 .Navigation-items {
   display: none
 }
+.Navigation-items::before,
+  .Navigation-items::after {
+  content: "";
+  display: block;
+  height: 70px;
+  width: 100%;
+}
 .has-nav .Navigation-items {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -809,8 +818,12 @@
           justify-content: center;
   text-decoration: none;
   width: 100%
+
+  /* stylelint-disable */
+  /* stylelint-enable */
 }
-.Navigation-link.is-active {
+.Navigation-link.is-active,
+  .Navigation-link.active {
   color: rgb(150, 15, 124);
 }
 .Navigation-link--reserve {
@@ -830,7 +843,13 @@
     display: -ms-flexbox;
     display: flex;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 30px
+  }
+
+  .Navigation-items::before,
+    .Navigation-items::after {
+    content: "";
+    display: none;
   }
 
   .Navigation-item {
