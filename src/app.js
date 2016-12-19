@@ -216,6 +216,14 @@ var app = {
 						header.attr('class', curClass);
 
 					},
+					onSnapFinish: function($target) {
+						var index = $target.data('panel');
+						console.log('index, ', index);
+
+						if (index == 4) {
+							$('[data-item="1"]').trigger('click');
+						}
+					},
 					directionThreshold: 400,
 					slideSpeed: 400,
 					easing: 'swing',

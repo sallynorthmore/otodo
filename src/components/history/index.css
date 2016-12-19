@@ -141,6 +141,10 @@
     transition: 0.2s ease-in;
     width: 83px;
 
+    &:first-child {
+      transform-origin: center left;
+    }
+
     &.is-large {
       border: 6px solid rgba(197, 199, 255, 0);
       transform: scale(3);
@@ -210,16 +214,9 @@
 
     & .History-title {
       display: block;
+      font-size: 10px;
+      line-height: 1;
       opacity: 1;
-    }
-
-    &.is-large {
-      border-color: var(--colour-purple);
-      transform: scale(2);
-
-      & .History-title { /* stylelint-disable-line */
-        margin-top: 24px;
-      }
     }
   }
 }

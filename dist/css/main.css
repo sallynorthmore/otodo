@@ -620,6 +620,11 @@
     /* Shadow */
   }
 
+  .History-item:first-child {
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+  }
+
   .History-item.is-large {
     border: 6px solid rgba(197, 199, 255, 0);
     -webkit-transform: scale(3);
@@ -689,17 +694,9 @@
 
   .History-item--participate .History-title {
     display: block;
+    font-size: 10px;
+    line-height: 1;
     opacity: 1;
-  }
-
-  .History-item--participate.is-large {
-    border-color: rgb(150, 15, 124);
-    -webkit-transform: scale(2);
-            transform: scale(2);
-  }
-
-  .History-item--participate.is-large .History-title {/* stylelint-disable-line */
-    margin-top: 24px;
   }
 }
 /** @define Logo */
