@@ -13,7 +13,7 @@
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.125s ease-out;
+  transition: background-color var(--transition-button);
   user-select: none;
 
   /* Remove excess padding and border in Firefox 4+ */

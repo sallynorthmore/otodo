@@ -205,7 +205,7 @@
   }
 
   .Section-intro {
-    font: 300 17px/30px var(--sans);
+    font: 300 17px/29px var(--sans);
   }
 
   .Section--01 {
@@ -264,16 +264,25 @@
 
   /* Avec Page */
   .Section--03 {
+    & .Section-inner {
+      display: flex;
+      height: 100vh;
+    }
+
+    & .Section-content {
+      margin: auto;
+    }
+
     & .Section-title {
-      font: 700 72px/72px var(--sans);
-      margin-top: 144px;
+      font: 700 50px/58px var(--sans);
+      margin-top: 0;
       max-width: none;
     }
 
     & .Section-intro {
-      font: 300 20px/20px var(--sans);
-      margin: 35px auto 0;
-      max-width: 425px;
+      font: 300 17px/23px var(--sans);
+      margin: 20px auto 0;
+      max-width: 370px;
     }
   }
 

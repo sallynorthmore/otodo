@@ -25,6 +25,8 @@
   /* z-index */ /* modal */ /* nav */
 
   /* colours */
+
+  /* transitions */
 }
 /* Common breakpoints. However adaptions can happen at component-level */
 /* Components */
@@ -296,6 +298,7 @@
     font: 700 17px/23px "Lato", Helvetica, sans-serif;
     position: relative;
     text-transform: uppercase;
+    transition: color 0.125s ease-out;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -380,6 +383,7 @@
   .Carousel-contentLink {
     font: 400 20px/20px "Lato", Helvetica, sans-serif;
     margin: 20px 0 0;
+    transition: all 0.125s ease-out;
   }
 }
 /** @define Footer */
@@ -1391,7 +1395,7 @@
   }
 
   .Section-intro {
-    font: 300 17px/30px "Lato", Helvetica, sans-serif;
+    font: 300 17px/29px "Lato", Helvetica, sans-serif;
   }
 
   .Section--01 {
@@ -1457,15 +1461,24 @@
   /* Avec Page */
   .Section--03 {
   }
+  .Section--03 .Section-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+  }
+  .Section--03 .Section-content {
+    margin: auto;
+  }
   .Section--03 .Section-title {
-    font: 700 72px/72px "Lato", Helvetica, sans-serif;
-    margin-top: 144px;
+    font: 700 50px/58px "Lato", Helvetica, sans-serif;
+    margin-top: 0;
     max-width: none;
   }
   .Section--03 .Section-intro {
-    font: 300 20px/20px "Lato", Helvetica, sans-serif;
-    margin: 35px auto 0;
-    max-width: 425px;
+    font: 300 17px/23px "Lato", Helvetica, sans-serif;
+    margin: 20px auto 0;
+    max-width: 370px;
   }
 
   /* History Page */

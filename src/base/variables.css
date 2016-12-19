@@ -21,6 +21,10 @@
   --colour-purpleLightest: rgba(99, 100, 127, 0.24);
   --colour-purpleModal: rgb(97, 100, 204);
   --colour-anotherPurple: rgb(197, 199, 255);
+
+  /* transitions */
+  --transition-button: 0.125s ease-out;
+  --transition-link: 0.125s ease-out;
 }
 
 /* Common breakpoints. However adaptions can happen at component-level */
