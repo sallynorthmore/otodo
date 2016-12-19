@@ -1081,7 +1081,7 @@
 .Page-header.is-4 {
   background: rgb(79, 81, 127);
 }
-.Page-header.is-5 {/*background: var(--colour-purpleLight);*/
+.Page-header.is-5 {/* background: var(--colour-purpleLight); */
 }
 .Page-header.is-6 {
   background: rgb(99, 100, 127);
@@ -1367,11 +1367,11 @@
 /* Reserve page */
 .Section--07 {
   background: rgb(27, 28, 57)
-  /*min-height: 0;*/
 }
 .Section--07 .Section-title {
   font: 700 27px/34px "Lato", Helvetica, sans-serif;
   letter-spacing: 0.1px;
+  margin-top: 12vh;
   max-width: 250px;
 }
 .Section--07 .Section-intro {
