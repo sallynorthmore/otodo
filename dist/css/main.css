@@ -1056,6 +1056,7 @@
 /** @define Page */
 .Page {
   background: white;
+  position: relative;
 }
 .Page-inner {
   position: relative;
@@ -1087,6 +1088,11 @@
 }
 .Page-header.is-7 {
   background: rgb(27, 28, 57);
+}
+.Page-footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 /**
  * Modifier: 404 page
@@ -1138,18 +1144,8 @@
   }
 }
 @media (min-width: 860px) {
-  .Page {
-    position: relative;
-  }
-
   .Page-header {
     height: 110px;
-  }
-
-  .Page-footer {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
   }
 
   /**
@@ -1370,8 +1366,8 @@
 }
 /* Reserve page */
 .Section--07 {
-  background: rgb(27, 28, 57);
-  min-height: 0
+  background: rgb(27, 28, 57)
+  /*min-height: 0;*/
 }
 .Section--07 .Section-title {
   font: 700 27px/34px "Lato", Helvetica, sans-serif;

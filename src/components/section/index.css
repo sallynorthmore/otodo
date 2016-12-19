@@ -166,7 +166,7 @@
 /* Reserve page */
 .Section--07 {
   background: var(--colour-purpleDark);
-  min-height: 0;
+  /*min-height: 0;*/
 
   & .Section-title {
     font: 700 27px/34px var(--sans);

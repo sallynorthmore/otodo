@@ -2,6 +2,7 @@
 
 .Page {
   background: white;
+  position: relative;
 }
 
 .Page-inner {
@@ -42,6 +43,12 @@
   &.is-7 {
     background: var(--colour-purpleDark);
   }
+}
+
+.Page-footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 /**
@@ -101,18 +108,8 @@
 }
 
 @media (--large) {
-  .Page {
-    position: relative;
-  }
-
   .Page-header {
     height: 110px;
-  }
-
-  .Page-footer {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
   }
 
   /**
