@@ -347,26 +347,35 @@
 
   /* Reserve page */
   .Section--07 {
-    min-height: 100vh;
+    & .Section-inner {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    & .Section-content {
+      margin: auto;
+    }
 
     & .Section-title {
       color: white;
-      font: 700 60px/70px var(--sans);
-      margin-top: 170px;
+      font: 700 50px/58px var(--sans);
+      margin-top: 0;
       max-width: none;
     }
 
     & .Section-intro {
-      font: 300 20px/30px var(--sans);
-      max-width: 560px;
+      font: 300 17px/23px var(--sans);
+      margin: 26px auto 0;
+      max-width: none;
 
       & p { /* stylelint-disable-line */
-        font: 300 20px/30px var(--sans);
+        font: 300 17px/23px var(--sans);
         margin: 26px auto 0;
+        max-width: 280px;
       }
 
-      & p:first-child { /* stylelint-disable-line */
-        max-width: none;
+      & p:last-child { /* stylelint-disable-line */
+        max-width: 480px;
       }
     }
 
@@ -375,9 +384,9 @@
     }
 
     & .Section-body {
-      font: 300 15px/20px var(--sans);
-      margin: 26px auto 0;
-      max-width: 385px;
+      font: 300 12px/16px var(--sans);
+      margin: 18px auto 0;
+      max-width: 300px;
     }
   }
 }

@@ -1536,32 +1536,42 @@
 
   /* Reserve page */
   .Section--07 {
-    min-height: 100vh
+  }
+  .Section--07 .Section-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+  }
+  .Section--07 .Section-content {
+    margin: auto;
   }
   .Section--07 .Section-title {
     color: white;
-    font: 700 60px/70px "Lato", Helvetica, sans-serif;
-    margin-top: 170px;
+    font: 700 50px/58px "Lato", Helvetica, sans-serif;
+    margin-top: 0;
     max-width: none;
   }
   .Section--07 .Section-intro {
-    font: 300 20px/30px "Lato", Helvetica, sans-serif;
-    max-width: 560px;
+    font: 300 17px/23px "Lato", Helvetica, sans-serif;
+    margin: 26px auto 0;
+    max-width: none;
   }
   .Section--07 .Section-intro p {/* stylelint-disable-line */
-    font: 300 20px/30px "Lato", Helvetica, sans-serif;
+    font: 300 17px/23px "Lato", Helvetica, sans-serif;
     margin: 26px auto 0;
+    max-width: 280px;
   }
-  .Section--07 .Section-intro p:first-child {/* stylelint-disable-line */
-    max-width: none;
+  .Section--07 .Section-intro p:last-child {/* stylelint-disable-line */
+    max-width: 480px;
   }
   .Section--07 .Section-button {
     margin-top: 50px;
   }
   .Section--07 .Section-body {
-    font: 300 15px/20px "Lato", Helvetica, sans-serif;
-    margin: 26px auto 0;
-    max-width: 385px;
+    font: 300 12px/16px "Lato", Helvetica, sans-serif;
+    margin: 18px auto 0;
+    max-width: 300px;
   }
 }
 @media (min-width: 1440px) {
