@@ -27,7 +27,7 @@
 
 /* Welcome Page */
 .Section--01 {
-  background: url("../img/background-01.jpg") no-repeat top center;
+  background: url("../img/section01-background-small.jpg") no-repeat top center;
   background-size: cover;
 
   & .Section-inner {
@@ -215,6 +215,9 @@
   }
 
   .Section--01 {
+    background: url("../img/section01-background-large.jpg") no-repeat top center;
+    background-size: cover;
+
     & .Section-inner {
       display: flex;
       height: 100vh;
