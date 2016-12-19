@@ -82,6 +82,10 @@ var app = {
 					// $(this).removeClass('is-large');
 				}
 			});
+
+			$(['data-js="participate"']).on('click', function(e){
+
+			});
 		},
 
 		'overlay': function overlay() {
@@ -196,7 +200,8 @@ var app = {
 					$navLink =$('[data-js="navlink"]'),
 					header = $('[data-js="header"]'),
   		 		headerClass = $('[data-js="header"]').attr("class"),
-					$continueBtn = $('[data-js="continue"]');
+					$continueBtn = $('[data-js="continue"]'),
+					$participateBtn = $('[data-js="participate"]');
 
 
 			var options = {
@@ -242,16 +247,6 @@ var app = {
 				};
 
 	    $('body').panelSnap(options);
-
-			/* Slide to section on nav link click */
-			$navLink.on('click', function(event){
-				// event.preventDefault();
-			});
-
-			/* Continue button */
-			$('[data-js="continue"]').on('click', function(event){
-				// event.preventDefault();
-			});
 		}
 };
 

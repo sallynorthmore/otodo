@@ -212,6 +212,10 @@
   .History-item--participate {
     border-color: var(--colour-purple);
 
+    & a {
+      text-decoration: none;
+    }
+
     & .History-title {
       display: block;
       font-size: 10px;

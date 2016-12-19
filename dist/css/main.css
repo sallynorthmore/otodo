@@ -692,6 +692,10 @@
     border-color: rgb(150, 15, 124)
   }
 
+  .History-item--participate a {
+    text-decoration: none;
+  }
+
   .History-item--participate .History-title {
     display: block;
     font-size: 10px;
