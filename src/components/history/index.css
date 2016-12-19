@@ -142,7 +142,7 @@
     margin: 0;
     transform: scale(1);
     transform-origin: center center;
-    transition: 0.2s ease-in;
+    transition: var(--transition-history);
     width: 83px;
 
     &:first-child {
