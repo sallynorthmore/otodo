@@ -1035,6 +1035,14 @@
     right: 30px;
     top: 30px;
     width: 40px;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    transition: 0.5s cubic-bezier(0.075, 0.825, 0.165, 1)
+  }
+
+  .Overlay-button:hover {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
 
   .Overlay-title {

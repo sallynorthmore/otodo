@@ -27,6 +27,7 @@
   --transition-link: 0.125s ease-out;
   --transition-team: 0.2s cubic-bezier(0.46, 0.265, 0.285, 1.635);
   --transition-history: 0.2s cubic-bezier(0.46, 0.265, 0.285, 1.635);
+  --transition-close: 0.5s cubic-bezier(0.075, 0.825, 0.165, 1);
 }
 
 /* Common breakpoints. However adaptions can happen at component-level */

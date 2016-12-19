@@ -107,6 +107,12 @@
     right: 30px;
     top: 30px;
     width: 40px;
+    transform-origin: center;
+    transition: var(--transition-close);
+
+    &:hover {
+      transform: rotate(180deg);
+    }
   }
 
   .Overlay-title {
