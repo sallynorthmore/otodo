@@ -11,9 +11,9 @@
   font: 600 21px/21px var(--sans);
   outline: none;
   padding: 15px 20px;
-  transition: background-color 0.125s ease-out;
   text-align: center;
   text-decoration: none;
+  transition: background-color 0.125s ease-out;
   user-select: none;
 
   /* Remove excess padding and border in Firefox 4+ */
