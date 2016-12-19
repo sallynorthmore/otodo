@@ -938,8 +938,10 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(0, 0, 0, 0.3);
-  display: none;
+  background: rgba(0, 0, 0, 0);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   height: 100vh;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -949,21 +951,26 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 400
+  z-index: -1
 }
 .Overlay.is-active {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.1s 0s ease-in;
+  z-index: 400;
 }
 .Overlay-inner {
   background: black;
   height: 100vh;
+  opacity: 0;
   overflow: hidden;
   padding: 0 20px;
   position: relative;
   top: 0;
-  width: 100%;
+  width: 100%
+}
+.is-active .Overlay-inner {
+  opacity: 1;
+  transition: opacity 0.15s 0s ease-in;
 }
 .Overlay-button {
   background: url("data:image/svg+xml;charset=utf-8,%3Csvg width='41px' height='40px' viewBox='1116 65 41 40' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3Cpolygon id='Shape' stroke='none' fill='%23C39FBC' fill-rule='evenodd' points='1153.89672 65.5500031 1156.02281 67.6556859 1138.31256 85.1953109 1156.02281 102.73498 1153.89672 104.84059 1136.18639 87.3009938 1118.47615 104.84059 1116.34998 102.73498 1134.0603 85.1953109 1116.34998 67.6556859 1118.47615 65.5500031 1136.18639 83.0896936'/%3E %3C/svg%3E") no-repeat center center;
