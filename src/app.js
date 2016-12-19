@@ -4,7 +4,6 @@ var app = {
 			this.menu();
 			this.expander();
 			this.overlay();
-			// this.scrollTo();
 			this.snapTo();
 
 			// Initialise scroll on desktop & add CSS
@@ -242,12 +241,11 @@ var app = {
 					$continueBtn = $('[data-js="continue"]');
 
 					var options = {
-							$menu: $('[data-js="navitems"]'),
-							menuSelector: '.Navigation-link',
+							$menu: $('.Navigation-items'),
 				      panelSelector: '.Section',
 				      namespace: '.panelSnap',
 							onSnapStart: function($target) {
-								var index = $target.data('section');
+								var index = $target.data('panel');
 
 								/* Update nav link class when section active */
 								$('[data-js="navlink"]').removeClass('is-active');
