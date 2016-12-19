@@ -51,7 +51,7 @@
   color: var(--colour-purpleModal);
   display: inline-block;
   font: 700 20px/30px var(--sans);
-  margin: 70px auto 0;
+  margin: 60px auto 0;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -69,7 +69,7 @@
 .Overlay-content {
   color: white;
   font: 700 14px/18px var(--sans);
-  margin: 40px 0 0;
+  margin: 30px 0 0;
   text-align: left;
 
   & > * { /* stylelint-disable-line */
@@ -77,6 +77,11 @@
     font: 700 14px/18px var(--sans);
     margin-top: 40px;
   }
+}
+
+.Overlay-subtitle {
+  font: 700 10px/12px var(--sans);
+  text-transform: uppercase;
 }
 
 .Overlay-body {
@@ -91,6 +96,37 @@
 .Overlay-listItem {
   font: 700 14px/18px var(--sans);
   margin: 40px 0 0;
+}
+
+.Overlay-contentImage {
+  height: auto;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+}
+
+.Overlay-footer {
+  font: 700 10px/12px var(--sans);
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Overlay--01 {
+  & .Overlay-inner {
+    background: #1B1C39;
+    max-height: 100vh;
+    overflow: scroll;
+  }
+
+  & .Overlay-subtitle {
+    margin: 15px 0 0;
+  }
+
+  & .Overlay-body {
+    margin: 5px 0 0;
+    line-height: 1.4;
+  }
 }
 
 .Overlay--02 {
