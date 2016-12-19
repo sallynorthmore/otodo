@@ -311,22 +311,31 @@
   .Section--05 {
     background: var(--colour-purpleLightest);
 
+    & .Section-inner {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    & .Section-content {
+      margin: auto;
+    }
+
     & .Section-title {
-      font: 700 60px/60px var(--sans);
-      margin: 120px auto 0;
+      font: 700 50px/58px var(--sans);
+      margin-top: 110px;
     }
 
     & .Section-intro {
-      font: 400 20px/30px var(--sans);
-      margin: 30px auto 0 120px;
-      max-width: 550px;
+      font: 400 17px/23px var(--sans);
+      margin: 30px auto 0 0;
+      max-width: 440px;
       text-align: left;
     }
 
     & .Section-body {
-      font: 400 20px/30px var(--sans);
-      margin: 30px auto 0 120px;
-      max-width: 550px;
+      font: 400 17px/23px var(--sans);
+      margin: 30px auto 0 0;
+      max-width: 420px;
       text-align: left;
 
       & strong { /* stylelint-disable-line */

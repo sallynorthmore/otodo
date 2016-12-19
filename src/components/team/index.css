@@ -82,7 +82,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: -50px auto 0;
+    margin: -50px auto 0 120px;
     max-width: 850px;
   }
 

@@ -32,7 +32,7 @@
   }
 
   &.is-5 {
-    background: var(--colour-purpleLightest);
+    /*background: var(--colour-purpleLight);*/
   }
 
   &.is-6 {

@@ -99,7 +99,6 @@
 
 @media (--large) {
   .History {
-    /*height: 400px;*/
     left: 0;
     margin-top: 200px;
     position: absolute;
