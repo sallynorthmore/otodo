@@ -121,11 +121,11 @@
       background: var(--colour-purple);
       bottom: -7px;
       content: "";
-      display: none;
       height: 3px;
       left: 0;
+      opacity: 0;
       position: absolute;
-      width: 100%;
+      width: 0%;
     }
 
     &.is-active,
@@ -133,7 +133,9 @@
       color: white;
 
       &::after {
-        display: block;
+        opacity: 1;
+        transition: width var(--transition-link);
+        width: 100%;
       }
     }
 
@@ -145,6 +147,7 @@
       height: 100%;
       justify-content: center;
       position: relative;
+      transition: all var(--transition-link);
       width: 100%;
 
       &::after {
@@ -156,6 +159,7 @@
       &:hover {
         background: var(--colour-purple);
         color: white;
+
       }
       /* stylelint-enable */
     }
