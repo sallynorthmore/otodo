@@ -40,13 +40,10 @@
 	<div class="Navigation-burger" data-js="navbutton">
 		Site nav
 	</div>
-
-	<ul class="Navigation-items">
-		<li class="Navigation-item">
-			<div class="Navigation-button" data-js="navbutton">
-				Close
-			</div>
-		</li>
+	<div class="Navigation-button" data-js="navbutton">
+		Close
+	</div>
+	<ul class="Navigation-items" data-js="navitems">
 		<li class="Navigation-item">
 			<a href="./#section01" class="Navigation-link" data-js="navlink" data-section="1">Acceuil</a>
 		</li>
@@ -65,7 +62,6 @@
 		<li class="Navigation-item Navigation-link--reserve">
 			<a href="./#section07" class="Navigation-link" data-js="navlink" data-section="7">Reserve</a>
 		</li>
-		<li class="Navigation-item"></li>
 	</ul>
 </nav>
 					</div>
@@ -73,12 +69,12 @@
       </header>
 
 			<main class="Page-content" data-js="scroll">
-<article class="Section Section--01" id="section01" data-js="section">
+<article class="Section Section--01" id="section01" data-js="section" data-section="1">
 	<div class="Section-inner">
-		<h2 class="Section-title">
-			Contrôler tous les objets de la maison !
-		</h2>
 		<div class="Section-content">
+			<h2 class="Section-title">
+				Contrôler tous les objets de la maison !
+			</h2>
 			<div class="Section-image" alt="Le hub"></div>
 			<h2 class="Section-caption">
 				Contrôler tous les objets de la maison !
@@ -94,7 +90,7 @@
 		</div>
 	</div>
 </article>
-<article class="Section Section--02" id="section02" data-js="section">
+<article class="Section Section--02" id="section02" data-js="section" data-section="2">
 	<div class="Section-inner">
 		<div class="Section-content">
 			<h2 class="Section-title">
@@ -107,7 +103,7 @@
 		</div>
 	</div>
 </article>
-<article class="Section Section--03" id="section03" data-js="section">
+<article class="Section Section--03" id="section03" data-js="section" data-section="3">
 	<div class="Section-inner">
 		<div class="Section-content">
 			<h2 class="Section-title">
@@ -252,7 +248,7 @@
 		</div>
 	</div>
 </article>
-<article class="Section Section--04" id="section04" data-js="section">
+<article class="Section Section--04" id="section04" data-js="section" data-section="4">
 	<div class="Section-inner">
 		<div class="Section-content">
 			<h2 class="Section-title">
@@ -352,7 +348,7 @@
 		</div>
 	</div>
 </article>
-<article class="Section Section--05" id="section05" data-js="section">
+<article class="Section Section--05" id="section05" data-js="section" data-section="5">
 	<div class="Section-inner">
 		<div class="Section-content">
 			<h2 class="Section-title">
@@ -455,7 +451,7 @@
 		</div>
 	</div>
 </article>
-<article class="Section Section--07" id="section07" data-js="section">
+<article class="Section Section--07" id="section07" data-js="section" data-section="7">
 	<div class="Section-inner">
 		<div class="Section-content">
 			<h2 class="Section-title">
@@ -522,14 +518,13 @@
     </ul>
   </div>
 </div>
-				
 			</div>
 
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			<script>window.jQuery || document.write('<script src="js/third-party/jquery/jquery-1.11.3.min.js"><\/script>')</script>
 			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-			<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
 			
+			<script type="text/javascript" src="js/third-party/panelsnap/jquery.panelSnap.js"></script>
 			<script type="text/javascript" src="js/third-party/device/device.js"></script>
 			<script src="js/app.js"></script>
 

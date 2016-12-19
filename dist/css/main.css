@@ -835,12 +835,12 @@
 
   .Navigation-item {
     min-width: 87px;
-    text-align: center
-  }
+    text-align: center;
 
-  .Navigation-item:first-child,
-    .Navigation-item:last-child {
-    display: none;
+    /*&:first-child,
+    &:last-child {
+      display: none;
+    }*/
   }
 
   .Navigation-link {

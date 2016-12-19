@@ -4,19 +4,12 @@ var app = {
 			this.menu();
 			this.expander();
 			this.overlay();
-			this.scrollTo();
+			// this.scrollTo();
+			this.snapTo();
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
-				// Add one-page scroll css & js
-				// $("<link/>", {
-				//    rel: "stylesheet",
-				//    type: "text/css",
-				//    href: "/css/onepage-scroll.css"
-				// }).appendTo("head");
-				// this.onepage();
-
-				// initialise slickjs
+				// initialise carousel & history components
 				this.carousel();
 				this.history();
 			}
@@ -239,9 +232,64 @@ var app = {
 				  }
 				});
 			});
+		},
+
+		'snapTo': function snapTo() {
+			var $container = $('[data-js="scroll"]'),
+					$navLink =$('[data-js="navlink"]'),
+					header = $('[data-js="header"]'),
+  		 		headerClass = $('[data-js="header"]').attr("class"),
+					$continueBtn = $('[data-js="continue"]');
+
+					var options = {
+							$menu: $('[data-js="navitems"]'),
+							menuSelector: '.Navigation-link',
+				      panelSelector: '.Section',
+				      namespace: '.panelSnap',
+							onSnapStart: function($target) {
+								var index = $target.data('section');
+
+								/* Update nav link class when section active */
+								$('[data-js="navlink"]').removeClass('is-active');
+								$('[data-section="' + index +'"]').addClass('is-active');
+								header.attr('class', headerClass);
+
+								/* Update nav container class when section active */
+								var curClass = headerClass + " is-" + index;
+								header.attr('class', curClass);
+
+		          },
+				      onSnapFinish: function(){},
+				      onActivate: function(){},
+				      directionThreshold: 400,
+				      slideSpeed: 400,
+				      easing: 'swing',
+				      offset: 0,
+				      navigation: {
+								keys: {
+									nextKey: 40,
+									prevKey: 38,
+								},
+				        buttons: {
+				          $nextButton: $continueBtn,
+				          $prevButton: false,
+				        },
+				        wrapAround: false
+				      }
+				    };
+
+		    $('body').panelSnap(options);
+
+			/* Slide to section on nav link click */
+			$navLink.on('click', function(event){
+				// event.preventDefault();
+			});
+
+			/* Continue button */
+			$('[data-js="continue"]').on('click', function(event){
+				// event.preventDefault();
+			});
 		}
-
-
 };
 
 
@@ -252,5 +300,4 @@ var app = {
 $(document).ready(function() {
 
 		app.init();
-		console.log("%c   ***** Loaded ******   ", 'background-color: #0f0; color: #fff;');
 });

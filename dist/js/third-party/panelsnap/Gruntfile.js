@@ -1,0 +1,22 @@
+module.exports = function (grunt) {
+
+  // Project configuration.
+  grunt.initConfig({
+    jshint: {
+      files: ['*.js'],
+      options: {
+        browser: true
+      }
+    }
+  });
+
+  // Load JSHint
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+
+  // Only linting for now.
+  grunt.registerTask('default', 'jshint');
+
+  // Travis CI task.
+  grunt.registerTask('ci', 'default');
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy90aGlyZC1wYXJ0eS9wYW5lbHNuYXAvR3J1bnRmaWxlLmpzIl0sIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJncnVudCIsImluaXRDb25maWciLCJqc2hpbnQiLCJmaWxlcyIsIm9wdGlvbnMiLCJicm93c2VyIiwibG9hZE5wbVRhc2tzIiwicmVnaXN0ZXJUYXNrIl0sIm1hcHBpbmdzIjoiQUFBQUEsT0FBT0MsT0FBUCxHQUFpQixVQUFTQyxLQUFULEVBQWdCOztBQUUvQjtBQUNBQSxRQUFNQyxVQUFOLENBQWlCO0FBQ2ZDLFlBQVE7QUFDTkMsYUFBTyxDQUFDLE1BQUQsQ0FERDtBQUVOQyxlQUFTO0FBQ1BDLGlCQUFTO0FBREY7QUFGSDtBQURPLEdBQWpCOztBQVNBO0FBQ0FMLFFBQU1NLFlBQU4sQ0FBbUIsc0JBQW5COztBQUVBO0FBQ0FOLFFBQU1PLFlBQU4sQ0FBbUIsU0FBbkIsRUFBOEIsUUFBOUI7O0FBRUE7QUFDQVAsUUFBTU8sWUFBTixDQUFtQixJQUFuQixFQUF5QixTQUF6QjtBQUNELENBcEJEIiwiZmlsZSI6IkdydW50ZmlsZS5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24oZ3J1bnQpIHtcblxuICAvLyBQcm9qZWN0IGNvbmZpZ3VyYXRpb24uXG4gIGdydW50LmluaXRDb25maWcoe1xuICAgIGpzaGludDoge1xuICAgICAgZmlsZXM6IFsnKi5qcyddLFxuICAgICAgb3B0aW9uczoge1xuICAgICAgICBicm93c2VyOiB0cnVlXG4gICAgICB9XG4gICAgfVxuICB9KTtcbiAgXG4gIC8vIExvYWQgSlNIaW50XG4gIGdydW50LmxvYWROcG1UYXNrcygnZ3J1bnQtY29udHJpYi1qc2hpbnQnKTtcblxuICAvLyBPbmx5IGxpbnRpbmcgZm9yIG5vdy5cbiAgZ3J1bnQucmVnaXN0ZXJUYXNrKCdkZWZhdWx0JywgJ2pzaGludCcpO1xuXG4gIC8vIFRyYXZpcyBDSSB0YXNrLlxuICBncnVudC5yZWdpc3RlclRhc2soJ2NpJywgJ2RlZmF1bHQnKTtcbn07XG4iXX0=

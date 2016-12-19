@@ -105,10 +105,10 @@
     min-width: 87px;
     text-align: center;
 
-    &:first-child,
+    /*&:first-child,
     &:last-child {
       display: none;
-    }
+    }*/
   }
 
   .Navigation-link {
