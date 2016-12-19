@@ -418,6 +418,7 @@
   .Section--02 {
     & .Section-title {
       font: 700 60px/70px var(--sans);
+      max-width: none;
     }
   }
 
@@ -428,7 +429,8 @@
     }
 
     & .Section-intro {
-      font: 300 20px/20px var(--sans);
+      font: 300 20px/26px var(--sans);
+      max-width: 420px;
     }
   }
 
@@ -469,11 +471,17 @@
 
       & p { /* stylelint-disable-line */
         font: 300 20px/30px var(--sans);
+        max-width: 340px;
+      }
+
+      & p:last-child { /* stylelint-disable-line */
+        max-width: 560px;
       }
     }
 
     & .Section-body {
       font: 300 15px/20px var(--sans);
+      max-width: 370px;
     }
   }
 }
