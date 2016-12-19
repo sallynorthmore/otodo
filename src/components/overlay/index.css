@@ -124,8 +124,8 @@
   }
 
   & .Overlay-body {
-    margin: 5px 0 0;
     line-height: 1.4;
+    margin: 5px 0 0;
   }
 }
 
@@ -133,6 +133,26 @@
   & .Overlay-inner {
     background: url("/img/background-overlay-02.jpg") no-repeat top center;
     background-size: cover;
+  }
+}
+
+.Overlay--03 {
+  & .Overlay-inner {
+    background: url("../img/background-overlay-03.jpg") no-repeat top center;
+    background-size: cover;
+  }
+
+  & .Overlay-listItem {
+    background: svg-load(check.svg) no-repeat top left;
+    background-size: 20px;
+    padding-left: 35px;
+  }
+
+  & .Overlay-footer {
+    background: svg-load(spin.svg) no-repeat top center;
+    background-size: 35px;
+    margin-top: 70px;
+    padding-top: 50px;
   }
 }
 
