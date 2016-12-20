@@ -1051,6 +1051,9 @@
 .Overlay--01 .Overlay-content {
   text-align: center;
 }
+.Overlay--01 .Overlay-title {
+  width: 280px;
+}
 .Overlay--01 .Overlay-subtitle {
   margin: 15px 0 0;
   text-align: left;
@@ -1061,7 +1064,10 @@
   text-align: left;
 }
 .Overlay--01 .Overlay-footerBody {
-  display: none;
+  font: 300 14px/16px "Lato", Helvetica, sans-serif;
+  margin: 5px 0 0;
+  text-align: left;
+  text-transform: none;
 }
 .Overlay--02 {
 }
