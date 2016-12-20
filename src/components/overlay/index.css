@@ -84,6 +84,11 @@
   text-transform: uppercase;
 }
 
+.Overlay-items,
+.Overlay-item {
+  outline: none;
+}
+
 .Overlay-body {
   font: 300 14px/18px var(--sans);
   margin: 15px 0 0;
@@ -141,8 +146,12 @@
 
 .Overlay--02 {
   & .Overlay-inner {
-    background: url("/img/background-overlay-02.jpg") no-repeat top center;
+    background: url("../img/background-overlay-02a.jpg") no-repeat top center;
     background-size: cover;
+
+    &.is-second {
+      background: url("../img/background-overlay-02b.jpg") no-repeat top center;
+    }
   }
 }
 
@@ -267,7 +276,6 @@
 
   .Overlay--02 {
     & .Overlay-inner {
-      background: url("../img/background-overlay-02.jpg") no-repeat center center;
       background-size: 110%;
     }
   }

@@ -116,6 +116,15 @@ var app = {
 					    },
 						]
 					});
+
+					// On before slide change
+					$overlayCarousel.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+						if (nextSlide == 1) {
+							$(this).parents('.Overlay-inner').addClass('is-second');
+						} else {
+							$(this).parents('.Overlay-inner').removeClass('is-second');
+						}
+					});
 				}
 			});
 

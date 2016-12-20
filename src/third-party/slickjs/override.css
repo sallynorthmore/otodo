@@ -43,7 +43,7 @@
   font-size: 0;
   height: 400px;
   outline: none;
-  right: 30px;
+  right: 10px;
   top: 0;
   transform: rotate(180deg);
   position: absolute;
@@ -64,7 +64,7 @@
     transition: all var(--transition-arrows);
 
     &:hover {
-      right: 20px;
+      right: 0px;
     }
   }
 
