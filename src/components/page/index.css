@@ -52,6 +52,46 @@
 }
 
 /**
+ * Modifier: privacy
+ */
+
+.Page--privacy {
+  background: var(--colour-purpleDark);
+  height: 100vh;
+  min-height: 100vh;
+
+  & .Page-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
+  & .Page-content {
+    flex: 1;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  & .Page-title {
+    color: white;
+    font: 700 25px/34px var(--sans);
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  & .Page-body {
+    font: 300 14px/18px var(--sans);
+    margin: 20px 0 0;
+    max-width: 550px;
+  }
+
+  & .Page-footer {
+    margin: auto 0 0;
+  }
+}
+
+/**
  * Modifier: 404 page
  */
 
@@ -112,6 +152,32 @@
 @media (--large) {
   .Page-header {
     height: 110px;
+  }
+
+  /**
+   * Modifier: privacy
+   */
+
+  .Page--privacy {
+    & .Page-content {
+      flex: 0 0 30%;
+      margin: auto;
+      padding: 0;
+      width: 50%;
+      text-align: center;
+    }
+
+    & .Page-title {
+      font: 700 50px/58px var(--sans);
+      margin-top: 0;
+    }
+
+    & .Page-body {
+      font: 300 17px/23px var(--sans);
+      margin: 20px auto 0;
+      max-width: 300px;
+      text-align: left;
+    }
   }
 
   /**
