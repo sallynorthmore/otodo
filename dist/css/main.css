@@ -1040,7 +1040,7 @@
 .Overlay--01 {
 }
 .Overlay--01 .Overlay-inner {
-  background: #1B1C39;
+  background: rgb(27, 28, 57);
   max-height: 100vh;
   overflow: scroll;
 }
@@ -1153,8 +1153,8 @@
   }
 
   .Overlay--01 .Overlay-content {
-    background-size: contain;
     background: url("../img/overlay-group-02.png") no-repeat top center;
+    background-size: contain;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1180,7 +1180,7 @@
   }
 
   .Overlay--01 .Overlay-footerTitle {
-    color: #960F7C;
+    color: rgb(150, 15, 124);
     font: 700 22px/22px "Lato", Helvetica, sans-serif;
   }
 
@@ -1192,8 +1192,38 @@
   }
 
   .Overlay--02 .Overlay-inner {
-    background: url("/img/background-overlay-02.jpg") no-repeat center center;
+    background: url("../img/background-overlay-02.jpg") no-repeat center center;
     background-size: 110%;
+  }
+
+  .Overlay--03 {
+  }
+
+  .Overlay--03 .Overlay-inner {
+    background-image: url("../img/background-overlay-03-large.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .Overlay--03 .Overlay-list {
+    margin-left: 0;
+    max-width: 460px;
+  }
+
+  .Overlay--03 .Overlay-listItem {
+    background-position: 0 6px;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  .Overlay--03 .Overlay-footer {
+    background-size: 52px;
+    font: 700 20px/28px "Lato", Helvetica, sans-serif;
+    letter-spacing: 0.08px;
+    max-width: 610px;
+    padding-top: 80px;
+    text-transform: none;
   }
 }
 /** @define Page */
