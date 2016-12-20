@@ -133,6 +133,10 @@
     margin: 5px 0 0;
     text-align: left;
   }
+
+  & .Overlay-footerBody {
+    display: none;
+  }
 }
 
 .Overlay--02 {
@@ -229,11 +233,13 @@
     }
 
     & .Overlay-content {
-      background: url("../img/overlay-group-02.png") no-repeat top center;
       background-size: contain;
+      background: url("../img/overlay-group-02.png") no-repeat top center;
+      display: flex;
+      flex-direction: column;
       margin: 50px auto 0;
       max-width: 990px;
-      min-height: 500px;
+      min-height: 400px;
       width: 100%;
     }
 
@@ -241,6 +247,21 @@
     & .Overlay-subtitle,
     & .Overlay-body {
       display: none;
+    }
+
+    & .Overlay-footer {
+      margin: auto auto 0;
+      max-width: 445px;
+      text-transform: none;
+    }
+
+    & .Overlay-footerTitle {
+      color: #960F7C;
+      font: 700 22px/22px var(--sans);
+    }
+
+    & .Overlay-footerBody {
+      font: 300 13px/20px var(--sans);
     }
   }
 

@@ -1056,6 +1056,9 @@
   margin: 5px 0 0;
   text-align: left;
 }
+.Overlay--01 .Overlay-footerBody {
+  display: none;
+}
 .Overlay--02 {
 }
 .Overlay--02 .Overlay-inner {
@@ -1150,11 +1153,17 @@
   }
 
   .Overlay--01 .Overlay-content {
-    background: url("../img/overlay-group-02.png") no-repeat top center;
     background-size: contain;
+    background: url("../img/overlay-group-02.png") no-repeat top center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 50px auto 0;
     max-width: 990px;
-    min-height: 500px;
+    min-height: 400px;
     width: 100%;
   }
 
@@ -1162,6 +1171,21 @@
     .Overlay--01 .Overlay-subtitle,
     .Overlay--01 .Overlay-body {
     display: none;
+  }
+
+  .Overlay--01 .Overlay-footer {
+    margin: auto auto 0;
+    max-width: 445px;
+    text-transform: none;
+  }
+
+  .Overlay--01 .Overlay-footerTitle {
+    color: #960F7C;
+    font: 700 22px/22px "Lato", Helvetica, sans-serif;
+  }
+
+  .Overlay--01 .Overlay-footerBody {
+    font: 300 13px/20px "Lato", Helvetica, sans-serif;
   }
 
   .Overlay--02 {
