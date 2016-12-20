@@ -163,8 +163,8 @@
       flex: 0 0 30%;
       margin: auto;
       padding: 0;
-      width: 50%;
       text-align: center;
+      width: 50%;
     }
 
     & .Page-title {
