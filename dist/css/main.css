@@ -851,6 +851,7 @@
   background-size: 50%;
   position: absolute;
   right: 0;
+  z-index: 200;
 }
 .Navigation-items {
   display: none
@@ -1322,7 +1323,12 @@
 /** @define Page */
 .Page {
   background: white;
-  position: relative;
+  position: relative
+}
+.Page.has-nav {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
 }
 .Page-inner {
   position: relative;

@@ -47,6 +47,7 @@
     background-size: 50%;
     position: absolute;
     right: 0;
+    z-index: var(--depth-2);
   }
 }
 
