@@ -177,18 +177,18 @@
   }
 
   .Carousel-content--pilot {
-    background: svg-load(icon-pilot.svg) no-repeat 200px center;
-    background-size: 77px;
+    background: svg-load(hub-icon.svg) no-repeat 140px center;
+    background-size: 207px;
   }
 
   .Carousel-content--power {
-    background: svg-load(icon-power.svg) no-repeat 170px center;
-    background-size: 135px;
+    background: svg-load(on-icon.svg) no-repeat 150px center;
+    background-size: 180px;
   }
 
   .Carousel-content--security {
-    background: svg-load(icon-security.svg) no-repeat 170px center;
-    background-size: 140px;
+    background: svg-load(securite-icon.svg) no-repeat 160px center;
+    background-size: 160px;
   }
 
   .Carousel-contentTitle {
