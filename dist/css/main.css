@@ -689,8 +689,8 @@
   .is-large .History-body {
     font-size: 4px;
     line-height: 1.6;
-    margin-top: 10px;
-    max-width: 80px;
+    margin-top: 5px;
+    max-width: 75px;
     opacity: 1;
     transition: opacity 0.2s 0.15s ease-in;
   }
