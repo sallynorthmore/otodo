@@ -1303,8 +1303,14 @@
   .Overlay--01 {
   }
 
+  .Overlay--01 .Overlay-inner {
+    overflow: hidden;
+  }
+
   .Overlay--01 .Overlay-title {
     line-height: 1.2;
+    max-width: 900px;
+    min-width: 900px;
   }
 
   .Overlay--01 .Overlay-content {
@@ -1378,6 +1384,7 @@
     background-position: 0 6px;
     font-size: 26px;
     font-weight: 300;
+    margin-top: 20px;
     text-align: left;
   }
 
@@ -1385,6 +1392,7 @@
     background-size: 52px;
     font: 700 20px/28px "Lato", Helvetica, sans-serif;
     letter-spacing: 0.08px;
+    margin-top: 40px;
     max-width: 610px;
     padding-top: 80px;
     text-transform: none;
@@ -1395,7 +1403,8 @@
   background: white;
   position: relative
 }
-.Page.has-nav {
+.Page.has-nav,
+  .Page.is-overlay {
   height: 100vh;
   overflow: hidden;
   width: 100%;

@@ -4,7 +4,8 @@
   background: white;
   position: relative;
 
-  &.has-nav {
+  &.has-nav,
+  &.is-overlay {
     height: 100vh;
     overflow: hidden;
     width: 100%;
