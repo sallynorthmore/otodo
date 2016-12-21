@@ -1,8 +1,8 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -30,46 +30,17 @@
         <header class="Page-header">
   				<div class="Header">
   					<div class="Header-logo">
-<h1 class="Logo">
-	<a href="./" class="Logo-inner">oToDo</a>
-</h1>
+  						{% include "components/logo/_logo-en.njk" %}
   					</div>
   					<div class="Header-nav">
-<nav class="Navigation">
-	<div class="Navigation-burger" data-js="navbutton">
-		Menu
-	</div>
-	<div class="Navigation-button" data-js="navbutton">
-		Fermer
-	</div>
-	<ul class="Navigation-items" data-js="navitems">
-		<li class="Navigation-item">
-			<a href="./#welcome" class="Navigation-link is-active" data-js="navlink" data-panel="1">Welcome</a>
-		</li>
-		<li class="Navigation-item">
-			<a href="./#hub" class="Navigation-link" data-js="navlink" data-panel="2">Le hub</a>
-		</li>
-		<li class="Navigation-item">
-			<a href="./#details" class="Navigation-link" data-js="navlink" data-panel="3">En d&eacute;tail</a>
-		</li>
-		<li class="Navigation-item">
-			<a href="./#history" class="Navigation-link" data-js="navlink" data-panel="4">Histoire</a>
-		</li>
-		<li class="Navigation-item">
-			<a href="./#team" class="Navigation-link" data-js="navlink" data-panel="5">Team</a>
-		</li>
-		<li class="Navigation-item Navigation-link--reserve">
-			<a href="./#reserve" class="Navigation-link" data-js="navlink" data-panel="7">R&eacute;server</a>
-		</li>
-	</ul>
-</nav>
+  						{% include "components/navigation/_nav-en.njk" %}
   					</div>
   				</div>
         </header>
 
   			<main class="Page-content">
   					<h1 class="Page-title">
-              Page mentions legales
+              Legal Notices Page
             </h1>
             <p class="Page-body">
               Editeur : oToDo SAS<br />
@@ -80,11 +51,11 @@
               RCS PARIS 820 815 835
             </p>
             <p class="Page-body">
-              Directeur de la publication :<br />
+              Publication director :<br />
               Eric Denoyer – Président
             </p>
             <p class="Page-body">
-              Hébergement :<br />
+							Hosting :<br />
               OVH<br />
               2 rue Kellermann<br />
               59100 Roubaix – France<br />
@@ -93,46 +64,14 @@
   			</main>
 
         <div class="Page-footer">
-<div class="Footer">
-  <div class="Footer-inner">
-    <div class="Social">
-      <ul class="Social-items">
-        <li class="Social-item">
-          <a href="#" target="_blank" title="Twitter" class="Social-link Social-link--twitter">
-            Twitter
-          </a>
-        </li>
-        <li class="Social-item">
-          <a href="#" target="_blank" title="Linkedin" class="Social-link  Social-link--linkedin">
-            Linkedin
-          </a>
-        </li>
-        <li class="Social-item">
-          <a href="#" target="_blank" title="Facebook" class="Social-link  Social-link--facebook">
-            Facebook
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <ul class="Footer-items">
-      <li class="Footer-item">
-        copyright Otodo 2016
-      </li>
-      <li class="Footer-item">
-        <a href="./privacy-policy.html" title="Privacy policy" target="_blank" class="Footer-link">
-          Privacy Policy
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
+          {%include "components/footer/_footer.njk" %}
         </div>
       </div>
 
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			<script>window.jQuery || document.write('<script src="js/third-party/jquery/jquery-1.11.3.min.js"><\/script>')</script>
 			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+			<script type="text/javascript" src="js/third-party/panelsnap/jquery.panelSnap.js"></script>
 			<script type="text/javascript" src="js/third-party/device/device.js"></script>
 			<script src="js/app.js"></script>
     </body>

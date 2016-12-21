@@ -1,28 +1,26 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>oToDo Hub</title>
+        <title>404 Page Not Found</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 				<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 				<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 				<link rel="manifest" href="/manifest.json">
 				<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#960f7c">
 				<meta name="theme-color" content="#960f7c">
-
 				<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 				<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 				<link rel="stylesheet" href="css/main.css">
 				<script src="js/third-party/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	  </head>
-    <body class="Page" data-js="page">
+    <body class="Page Page--404" data-js="page">
 
       <!--[if lt IE 9]>
           <p class="Page-error browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -31,26 +29,29 @@
       <header class="Page-header" data-js="header">
 				<div class="Header">
 					<div class="Header-logo">
-						{% include "components/logo/_logo.njk" %}
+						{% include "components/logo/_logo-en.njk" %}
 					</div>
 					<div class="Header-nav">
-						{% include "components/navigation/_nav.njk" %}
+						{% include "components/navigation/_nav-en.njk" %}
 					</div>
 				</div>
       </header>
 
-			<main class="Page-content" data-js="scroll">
-				{% include "components/section/_section01.njk" %}
-				{% include "components/section/_section02.njk" %}
-				{% include "components/section/_section03.njk" %}
-				{% include "components/section/_section04.njk" %}
-				{% include "components/section/_section05.njk" %}
-				{% include "components/section/_section07.njk" %}
+			<main class="Page-content">
+					<img src="img/404-icon.png" alt="404 icon" class="Page-image" />
+          <p class="Page-body">
+						The page you are looking for might have been deleted or never existed
+          </p>
+          <div class="Page-button">
+    				<a class="Button Button--404" href="./" title="Retournez à la page d’accueil">
+              Go back to home page
+    				</a>
+    			</div>
 			</main>
 
-			<div class="Page-footer">
-				{%include "components/footer/_footer.njk" %}
-			</div>
+      <div class="Page-footer">
+        {%include "components/footer/_footer.njk" %}
+      </div>
 
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			<script>window.jQuery || document.write('<script src="js/third-party/jquery/jquery-1.11.3.min.js"><\/script>')</script>
