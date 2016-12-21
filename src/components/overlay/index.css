@@ -251,26 +251,86 @@
     }
 
     & .Overlay-title {
+      font-size: 37px;
       line-height: 1.2;
       max-width: 900px;
       min-width: 900px;
     }
 
     & .Overlay-content {
-      background: url("../img/overlay-group-02.png") no-repeat top center;
-      background-size: contain;
       display: flex;
       flex-direction: column;
       margin: 50px auto 0;
       max-width: 990px;
-      min-height: 400px;
+      min-height: 450px;
       width: 100%;
     }
 
-    & .Overlay-contentImage,
-    & .Overlay-subtitle,
-    & .Overlay-body {
+    & .Overlay-contentIcons {
+      background: svg-load(image.svg) no-repeat center;
+      background-size: contain;
+      height: 280px;
+      margin: 0 auto;
+      width: 350px;
+    }
+
+    & .Overlay-contentImage {
       display: none;
+    }
+
+    & .Overlay-item {
+      left: 5%;
+      max-width: 380px;
+      position: absolute;
+      text-align: center;
+      top: 130px;
+      width: 35%;
+    }
+
+    & .Overlay-item--lighting {
+      max-width: 360px;
+      top: 300px;
+
+      & .Overlay-subtitle {
+        margin-right: 35px;
+      }
+    }
+
+    & .Overlay-item--camera {
+      left: auto;
+      right: 50px;
+      top: 130px;
+
+      & .Overlay-subtitle {
+        text-align: left;
+      }
+    }
+
+    & .Overlay-item--portal {
+      left: auto;
+      right: 40px;
+      top: 300px;
+
+      & .Overlay-subtitle {
+        margin-left: 25px;
+        text-align: left;
+      }
+
+      & .Overlay-body {
+        max-width: 350px;
+      }
+    }
+
+    & .Overlay-subtitle {
+      color: rgb(150, 15, 124);
+      font: 700 20px/20px var(--sans);
+      text-align: right;
+      text-transform: capitalize;
+    }
+
+    & .Overlay-body {
+      font-size: 17px;
+      text-align: center;
     }
 
     & .Overlay-footer {
