@@ -1,0 +1,79 @@
+/** @define House */
+
+.House {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.House-media {
+  background: svg-load(house-w-icons.svg) no-repeat center center;
+  background-size: contain;
+  height: 213px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 274px;
+}
+
+.House-icons {
+  background: svg-load(icons.svg) no-repeat center center;
+  background-size: contain;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: -67px;
+  width: 265px;
+}
+
+@media (--large) {
+  .House-media {
+    height: 332px;
+    left: 0;
+    top: 0;
+    transform-origin: 50% 50% 0;
+    transform: translate3d(0, 0, 0);
+    transition: 6s ease-out;
+    width: 340px;
+
+    @nest .House.is-left & {
+      transform: translate3d(20px, 5px, 0);
+    }
+
+    @nest .House.is-right & {
+      transform: translate3d(-20px, 0, 0);
+    }
+  }
+
+  .House-icons {
+    height: 371px;
+    left: -30px;
+    top: -67px;
+    transform-origin: 50% 50% 0;
+    transform: translate3d(0, 0, 0);
+    transition: 6s ease-out;
+    width: 404px;
+
+    @nest .House.is-left & {
+      transform: translate3d(30px, 5px, 0);
+    }
+
+    @nest .House.is-right & {
+      transform: translate3d(-30px, 0, 0);
+    }
+  }
+
+  /* stylelint-disable */
+  .House-image.is-right {
+    & .House-media {
+      left: -100px;
+    }
+    & .House-icons {
+      left: -100px;
+    }
+  }
+  /* stylelint-enable */
+}

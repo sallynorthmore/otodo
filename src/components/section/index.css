@@ -94,26 +94,6 @@
     position: relative;
     width: 274px;
   }
-
-  & .Section-media {
-    background: svg-load(house-w-icons.svg) no-repeat center center;
-    background-size: contain;
-    height: 213px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 274px;
-  }
-
-  & .Section-icons {
-    background: svg-load(icons.svg) no-repeat center center;
-    background-size: contain;
-    height: 300px;
-    left: 0;
-    position: absolute;
-    top: -67px;
-    width: 265px;
-  }
 }
 
 /* Avec Page */
@@ -289,20 +269,6 @@
       height: 366px;
       margin-top: 20px;
       width: 50%;
-    }
-
-    & .Section-media {
-      height: 332px;
-      left: 0;
-      top: 0;
-      width: 340px;
-    }
-
-    & .Section-icons {
-      height: 371px;
-      left: -14px;
-      top: -67px;
-      width: 374px;
     }
   }
 
