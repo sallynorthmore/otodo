@@ -944,7 +944,11 @@
 
   .Navigation-item {
     min-width: 87px;
-    text-align: center;
+    text-align: center
+  }
+
+  .is-en .Navigation-item {
+    min-width: 100px;
   }
 
   .Navigation-link {

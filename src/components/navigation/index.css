@@ -131,6 +131,10 @@
   .Navigation-item {
     min-width: 87px;
     text-align: center;
+
+    @nest .is-en & {
+      min-width: 100px;
+    }
   }
 
   .Navigation-link {
