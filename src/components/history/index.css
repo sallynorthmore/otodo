@@ -231,3 +231,15 @@
     }
   }
 }
+
+
+/*TODO - Tidy up following is IE11 CSS override */
+@media all and (-ms-high-contrast:none) {
+  .History-item {
+    border: 0px solid rgba(197, 199, 255, 1);
+
+    &.is-large {
+      border: 0px solid rgba(197, 199, 255, 0);
+    }
+  }
+}

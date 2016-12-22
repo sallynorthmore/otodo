@@ -711,6 +711,15 @@
     opacity: 1;
   }
 }
+/*TODO - Tidy up following is IE11 CSS override */
+@media all and (-ms-high-contrast:none) {
+  .History-item {
+    border: 0px solid rgba(197, 199, 255, 1)
+  }
+  .History-item.is-large {
+    border: 0px solid rgba(197, 199, 255, 0);
+  }
+}
 /** @define House */
 .House {
   display: block;
@@ -1329,8 +1338,7 @@
     min-width: 900px;
   }
 
-  .Overlay--01 .Overlay-content {/*display: flex;
-      align-items: center;*//*flex-direction: column;*/
+  .Overlay--01 .Overlay-content {
     margin: 50px auto 0;
     max-width: 990px;
     min-height: 450px;
@@ -2084,8 +2092,8 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 100vh;
     height: 100vh;
+    min-height: 100vh;
     padding-bottom: 0;
   }
   .Section--07 .Section-content {
