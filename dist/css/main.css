@@ -2468,6 +2468,19 @@
     font: 700 14px/18px "Lato", Helvetica, sans-serif;
   }
 }
+@media all and (-ms-high-contrast:none) {
+  .Team-item {
+  }
+  .Team-item::after {
+    height: 124px;
+    left: 0;
+    margin-left: 50px;
+    margin-top: 0px;
+    top: -2px;
+    width: 124px;
+    z-index: 100;
+  }
+}
 /* Third Party */
 .onepage-pagination {
   display: none;
