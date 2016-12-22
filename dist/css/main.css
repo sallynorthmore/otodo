@@ -710,6 +710,10 @@
     line-height: 1;
     opacity: 1;
   }
+
+  .History-item--participate.is-large .History-itemInner {
+    padding-top: 25px;
+  }
 }
 /*TODO - Tidy up following is IE11 CSS override */
 @media all and (-ms-high-contrast:none) {

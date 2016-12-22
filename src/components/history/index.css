@@ -229,6 +229,10 @@
       line-height: 1;
       opacity: 1;
     }
+
+    &.is-large .History-itemInner {
+      padding-top: 25px;
+    }
   }
 }
 
