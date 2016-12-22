@@ -177,8 +177,9 @@
   }
 
   .Carousel-content--pilot {
-    background: svg-load(hub-icon.svg) no-repeat 140px center;
+    background: svg-load(hub-icon.svg) no-repeat 140px 5px;
     background-size: 207px;
+    min-height: 200px;
   }
 
   .Carousel-content--power {
