@@ -11,6 +11,7 @@
     border: 2px solid var(--colour-grey);
     height: 13px;
     width: 14px;
+    text-decoration: none;
 
     &.slick-active {
       background: var(--colour-anotherPurple);
@@ -19,7 +20,16 @@
   }
 
   & button {
+    border: 0;
     font-size: 0;
+    outline: none;
+    text-decoration: none;
+
+    /* Remove excess padding and border in Firefox 4+ */
+    &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
   }
 }
 
