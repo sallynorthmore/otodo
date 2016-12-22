@@ -131,10 +131,10 @@
   }
 
   .Navigation-items {
-    align-items: baseline;
+    align-items: flex-end;
     display: flex;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 
     &::before,
     &::after {
@@ -155,6 +155,7 @@
   .Navigation-link {
     display: inline-block;
     font: 600 18px/18px var(--sans);
+    margin-top: 7px;
     position: relative;
     width: auto;
 
@@ -221,6 +222,7 @@
     margin: 0 0 0 30px;
     max-width: 50px;
     min-width: 50px;
+    position: relative;
 
 
     /* stylelint-disable */
@@ -232,6 +234,7 @@
       font: 700 12px/12px var(--sans);
       height: 30px;
       justify-content: flex-start;
+      top: 6px;
       padding-left: 10px;
       text-align: left;
       text-transform: uppercase;
