@@ -260,8 +260,9 @@
     }
 
     & .Overlay-content {
-      display: flex;
-      flex-direction: column;
+      /*display: flex;
+      align-items: center;*/
+      /*flex-direction: column;*/
       margin: 50px auto 0;
       max-width: 990px;
       min-height: 450px;
@@ -273,7 +274,8 @@
       background-size: contain;
       height: 280px;
       margin: 0 auto;
-      width: 350px;
+      max-width: 350px;
+      width: 30%;
     }
 
     & .Overlay-contentImage {
@@ -336,7 +338,7 @@
     }
 
     & .Overlay-footer {
-      margin: auto auto 0;
+      margin: 5vh auto 0;
       max-width: 445px;
       text-transform: none;
     }
