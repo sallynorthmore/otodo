@@ -929,6 +929,7 @@
 }
 .Navigation-item--reserve {
   background-color: rgb(150, 15, 124)
+
   /* stylelint-disable */
   /* stylelint-enable */
 }
@@ -938,6 +939,9 @@
 .Navigation-item--reserve .Navigation-link.is-active {
   color: white;
 }
+.ios .Navigation-item--reserve .Navigation-link {
+  padding-top: 12px;
+}
 .Navigation-item--lang {
   color: rgb(150, 15, 124);
   font: 300 12px/12px "Lato", Helvetica, sans-serif
@@ -946,6 +950,7 @@
 }
 .Navigation-item--lang .Navigation-link {
   color: rgb(150, 15, 124);
+  padding-top: 10px;
 }
 .Navigation-item--lang .Navigation-link:hover {
   background: rgb(184, 184, 184);

@@ -99,12 +99,17 @@
 
 .Navigation-item--reserve {
   background-color: var(--colour-purple);
+
   /* stylelint-disable */
   & .Navigation-link {
     color: white;
 
     &.is-active {
       color: white;
+    }
+
+    @nest .ios & {
+      padding-top: 12px;
     }
   }
   /* stylelint-enable */
@@ -116,6 +121,7 @@
   /* stylelint-disable */
   & .Navigation-link {
     color: var(--colour-purple);
+    padding-top: 10px;
 
     &:hover {
       background: var(--colour-grey);
