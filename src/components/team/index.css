@@ -82,17 +82,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: -20px auto 0;
+    margin: 0 auto;
     max-width: 850px;
+    width: 850px;
   }
 
   .Team-item {
     display: block;
-    flex: 0 0 110px;
-    margin: 0 0 40px;
-    max-height: 110px;
-    max-width: 110px;
-    padding: 50px 3.3em 0;
+    flex: 0 0 220px;
+    max-width: 220px;
+    min-width: 125px;
     position: relative;
     text-align: center;
     z-index: 0;
@@ -105,7 +104,7 @@
       height: 124px;
       left: 0;
       margin-left: 45px;
-      margin-top: 43px;
+      margin-top: -7px;
       position: absolute;
       top: 0;
       transform: scale(0.5);
@@ -113,6 +112,10 @@
       transition: transform var(--transition-team);
       width: 124px;
       z-index: var(--depth-1);
+    }
+
+    &:first-child {
+      margin-top: 24px;
     }
 
     &:hover {
