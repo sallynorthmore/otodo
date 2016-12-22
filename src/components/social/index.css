@@ -25,11 +25,9 @@
   color: var(--colour-grey);
   display: block;
   font-size: 0;
-  height: 100%;
   height: 30px;
   text-decoration: none;
   text-indent: -1000px;
-  width: 100%;
   width: 30px;
 
   &:hover {
