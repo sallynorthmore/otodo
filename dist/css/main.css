@@ -1239,19 +1239,19 @@
 .Overlay--02 {
 }
 .Overlay--02 .Overlay-inner {
-  background: url("../img/background-overlay-02a.jpg") no-repeat top center;
+  background: url("../img/background-overlay-02a.jpg") no-repeat top center black;
   background-size: cover;
   position: relative;
   z-index: 0;
 }
 .Overlay--02 .Overlay-inner.is-second {
-  background: url("../img/background-overlay-02b.jpg") no-repeat 0 0;
+  background: url("../img/background-overlay-02b.jpg") no-repeat 0 0 black;
   background-size: cover;
 }
 .Overlay--03 {
 }
 .Overlay--03 .Overlay-inner {
-  background: url("../img/background-overlay-03.jpg") no-repeat top center;
+  background: url("../img/background-overlay-03.jpg") no-repeat top center black;
   background-size: cover;
 }
 .Overlay--03 .Overlay-listItem {
