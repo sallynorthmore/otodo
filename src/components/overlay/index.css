@@ -180,8 +180,10 @@
   & .Overlay-footer {
     background: svg-load(spin.svg) no-repeat top center;
     background-size: 35px;
+    line-height: 1.4;
     margin-top: 70px;
     padding-top: 50px;
+    text-transform: none;
   }
 }
 
