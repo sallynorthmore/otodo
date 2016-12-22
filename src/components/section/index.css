@@ -219,6 +219,7 @@
 
     & .Section-inner {
       display: flex;
+      flex-direction: column;
       height: 100vh;
     }
 
@@ -256,6 +257,7 @@
   .Section--02 {
     & .Section-inner {
       display: flex;
+      flex-direction: column;
       height: 100vh;
     }
 
@@ -284,6 +286,7 @@
   .Section--03 {
     & .Section-inner {
       display: flex;
+      flex-direction: column;
       height: 100vh;
     }
 
@@ -308,6 +311,7 @@
   .Section--04 {
     & .Section-inner {
       display: flex;
+      flex-direction: column;
       height: 100vh;
     }
 
@@ -331,6 +335,7 @@
 
     & .Section-inner {
       display: flex;
+      flex-direction: column;
       min-height: 100vh;
     }
 
@@ -367,7 +372,9 @@
   .Section--07 {
     & .Section-inner {
       display: flex;
+      flex-direction: column;
       min-height: 100vh;
+      height: 100vh;
       padding-bottom: 0;
     }
 
