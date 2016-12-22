@@ -182,16 +182,17 @@
   }
 }
 
+/*TODO - Tidy up following is IE11 CSS override */
 @media all and (-ms-high-contrast:none) {
   .Team-item {
 
     &::after {
-      height: 124px;
+      height: 128px;
       left: 0;
       margin-left: 50px;
       margin-top: 0px;
-      top: -2px;
-      width: 124px;
+      top: -6px;
+      width: 128px;
       z-index: var(--depth-1);
     }
   }
