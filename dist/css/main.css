@@ -1932,12 +1932,20 @@
     width: 220px;
   }
 
+  .Section--01 .Section-button {
+    margin-top: 25px;
+  }
+
   .Section--01 .Section-caption {
     color: white;
     display: block;
-    font: 700 50px/58px "Lato", Helvetica, sans-serif;
-    margin: 40px auto 0;
+    font: 700 48px/56px "Lato", Helvetica, sans-serif;
+    margin: 25px auto 0;
     max-width: 600px;
+  }
+
+  .Section--01 .Section-nav {
+    margin-top: 30px;
   }
 
   .Section--02 {

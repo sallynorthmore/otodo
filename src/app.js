@@ -254,8 +254,8 @@ var app = {
 							$('[data-item="1"]').trigger('click');
 						}
 					},
-					directionThreshold: 400,
-					slideSpeed: 400,
+					directionThreshold: 0,
+					slideSpeed: 500,
 					easing: 'swing',
 					offset: 0,
 					navigation: {
