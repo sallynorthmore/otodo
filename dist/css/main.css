@@ -1658,7 +1658,7 @@
 
   .Page--404 .Page-image {
     margin: 0 auto;
-    width: 440px;
+    width: 400px;
   }
 
   .Page--404 .Page-body {
@@ -1669,7 +1669,11 @@
   }
 
   .Page--404 .Page-button {
-    margin: 45px 0 0;
+    margin: 30px 0 0;
+  }
+
+  .Page--404 .Page-footer {
+    left: 0;
   }
 }
 /** @define Partners */
