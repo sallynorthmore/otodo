@@ -56,6 +56,10 @@
     }
   }
 
+  .Footer {
+    display: none;
+  }
+
   .House-internet {
     background: svg-load(internet-icon.svg) no-repeat center center;
     background-size: contain;
