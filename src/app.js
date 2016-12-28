@@ -238,6 +238,10 @@ var app = {
 						if (index == 4) {
 							$('[data-item="1"]').trigger('click');
 						}
+
+						if (index == 2) {
+							$('[data-panel="2"]').addClass('is-animated');
+						}
 					},
 					directionThreshold: 0,
 					slideSpeed: 500,
