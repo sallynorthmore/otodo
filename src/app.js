@@ -4,7 +4,6 @@ var app = {
 			this.menu();
 			this.expander();
 			this.overlay();
-			this.lazyImages();
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
@@ -14,12 +13,6 @@ var app = {
 				this.snapTo();
 				this.hubAnimation();
 			}
-		},
-
-		'lazyImages': function lazyImages(){
-			$(function() {
-			    $('[data-js="lazyload"]').lazyload();
-			});
 		},
 
 		'hubAnimation': function hubAnimation(){

@@ -206,7 +206,7 @@
     }
 
     & .Page-body {
-      font: 300 25px/15px var(--sans);
+      font: 300 20px/20px var(--sans);
       margin-top: 20px;
       max-width: none;
       text-align: center;
