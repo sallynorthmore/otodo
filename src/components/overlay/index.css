@@ -392,6 +392,14 @@
       min-width: 101%;
     }
 
+    & .Overlay-backgroundImage--first {
+      opacity: 1;
+    }
+
+    & .Overlay-backgroundImage--second {
+      opacity: 0;
+    }
+
     & .Overlay-backgroundImage--first,
     & .Overlay-backgroundImage--second {
       display: block;
@@ -400,6 +408,14 @@
     & .Overlay-backgroundImage--firstMobile,
     & .Overlay-backgroundImage--secondMobile {
       display: none;
+    }
+
+    & .is-second .Overlay-backgroundImage--second { /* stylelint-disable-line */
+      opacity: 1;
+    }
+
+    & .is-second .Overlay-backgroundImage--first { /* stylelint-disable-line */
+      opacity: 0;
     }
 
     & .Overlay-title {

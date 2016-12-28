@@ -1948,6 +1948,14 @@
     min-width: 101%;
   }
 
+  .Overlay--02 .Overlay-backgroundImage--first {
+    opacity: 1;
+  }
+
+  .Overlay--02 .Overlay-backgroundImage--second {
+    opacity: 0;
+  }
+
   .Overlay--02 .Overlay-backgroundImage--first,
     .Overlay--02 .Overlay-backgroundImage--second {
     display: block;
@@ -1956,6 +1964,14 @@
   .Overlay--02 .Overlay-backgroundImage--firstMobile,
     .Overlay--02 .Overlay-backgroundImage--secondMobile {
     display: none;
+  }
+
+  .Overlay--02 .is-second .Overlay-backgroundImage--second {/* stylelint-disable-line */
+    opacity: 1;
+  }
+
+  .Overlay--02 .is-second .Overlay-backgroundImage--first {/* stylelint-disable-line */
+    opacity: 0;
   }
 
   .Overlay--02 .Overlay-title {
