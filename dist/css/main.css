@@ -1088,7 +1088,9 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
     line-height: 1;
+    padding-bottom: 4px;
     padding-left: 10px;
+    padding-top: 6px;
     text-align: left;
     text-transform: uppercase;
     top: 6px;
@@ -1244,14 +1246,35 @@
 .Overlay--02 {
 }
 .Overlay--02 .Overlay-inner {
-  background: url("../img/background-overlay-02a.jpg") no-repeat top center black;
-  background-size: cover;
+  background: rgb(27, 28, 57);
   position: relative;
   z-index: 0;
 }
-.Overlay--02 .Overlay-inner.is-second {
-  background: url("../img/background-overlay-02b.jpg") no-repeat 0 0 black;
-  background-size: cover;
+.Overlay--02 .Overlay-backgroundImage {
+  height: 110%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.1s ease-out;
+  width: auto;
+  z-index: 100;
+}
+.Overlay--02 .Overlay-backgroundImage--first {
+  opacity: 1;
+}
+.Overlay--02 .Overlay-backgroundImage--second {
+  opacity: 0;
+}
+.Overlay--02 .is-second .Overlay-backgroundImage--second {
+  opacity: 1;
+}
+.Overlay--02 .Overlay-button {
+  z-index: 300;
+}
+.Overlay--02 .Overlay-content,
+  .Overlay--02 .Overlay-title {
+  position: relative;
+  z-index: 200;
 }
 .Overlay--03 {
 }

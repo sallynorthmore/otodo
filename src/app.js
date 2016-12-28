@@ -4,6 +4,7 @@ var app = {
 			this.menu();
 			this.expander();
 			this.overlay();
+			this.lazyImages();
 
 			// Initialise scroll on desktop & add CSS
 			if ($('html').hasClass('desktop')) {
@@ -13,6 +14,12 @@ var app = {
 				this.snapTo();
 				this.hubAnimation();
 			}
+		},
+
+		'lazyImages': function lazyImages(){
+			$(function() {
+			    $('[data-js="lazyload"]').lazyload();
+			});
 		},
 
 		'hubAnimation': function hubAnimation(){
@@ -95,13 +102,7 @@ var app = {
 				if ( !$(this).hasClass('is-large') ) {
 					$history.children().removeClass('is-large');
 					$(this).addClass('is-large');
-				} else {
-					// $(this).removeClass('is-large');
 				}
-			});
-
-			$(['data-js="participate"']).on('click', function(e){
-
 			});
 		},
 

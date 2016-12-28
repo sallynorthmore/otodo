@@ -242,7 +242,9 @@
       height: 20px;
       justify-content: flex-start;
       line-height: 1;
+      padding-bottom: 4px;
       padding-left: 10px;
+      padding-top: 6px;
       text-align: left;
       text-transform: uppercase;
       top: 6px;

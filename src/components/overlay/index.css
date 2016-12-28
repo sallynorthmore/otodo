@@ -153,15 +153,41 @@
 
 .Overlay--02 {
   & .Overlay-inner {
-    background: url("../img/background-overlay-02a.jpg") no-repeat top center black;
-    background-size: cover;
+    background: var(--colour-purpleDark);
     position: relative;
     z-index: 0;
+  }
 
-    &.is-second {
-      background: url("../img/background-overlay-02b.jpg") no-repeat 0 0 black;
-      background-size: cover;
-    }
+  & .Overlay-backgroundImage {
+    height: 110%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.1s ease-out;
+    width: auto;
+    z-index: var(--depth-1);
+  }
+
+  & .Overlay-backgroundImage--first {
+    opacity: 1;
+  }
+
+  & .Overlay-backgroundImage--second {
+    opacity: 0;
+  }
+
+  & .is-second .Overlay-backgroundImage--second {
+    opacity: 1;
+  }
+
+  & .Overlay-button {
+    z-index: var(--depth-3);
+  }
+
+  & .Overlay-content,
+  & .Overlay-title {
+    position: relative;
+    z-index: var(--depth-2);
   }
 }
 
