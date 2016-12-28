@@ -1907,7 +1907,7 @@
 
   .Overlay--01 .Overlay-footer {
     margin: 5vh auto 0;
-    max-width: 445px;
+    max-width: 470px;
     text-transform: none;
   }
 
@@ -1929,8 +1929,9 @@
   }
 
   .Overlay--02 .Overlay-backgroundImage {
-    height: 110%;
+    height: auto;
     left: 0;
+    min-width: 101%;
   }
 
   .Overlay--02 .Overlay-title {
