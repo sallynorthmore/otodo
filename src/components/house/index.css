@@ -30,7 +30,29 @@
 }
 
 @media (--large) {
+  @keyframes Hub-animateHouse {
+    0% {
+      opacity: 0;
+      transform: scale(0.75);
+    }
+
+    75% {
+      transform: scale(0.75);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   .House-house {
+    animation-delay: 0.5s;
+    animation-direction: normal; /* or: normal */
+    animation-duration: 2s; /* or: Xms */
+    animation-fill-mode: forwards; /* or: backwards, both, none */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
     background: svg-load(logo+house.svg) no-repeat top center;
     height: 332px;
     left: 0;
@@ -42,9 +64,19 @@
     @nest .House:hover & {
       transform: scale(0.75);
     }
+
+    @nest .is-animated & {
+      animation-name: Hub-animateHouse;
+    }
   }
 
   .House-icon {
+    animation-delay: 0.5s;
+    animation-direction: normal; /* or: normal */
+    animation-duration: 2s; /* or: Xms */
+    animation-fill-mode: forwards; /* or: backwards, both, none */
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
     background: no-repeat center center;
     background-size: contain;
     height: 60px;
@@ -65,17 +97,90 @@
     display: none;
   }
 
+  @keyframes Hub-animateHeater {
+    0% {
+      left: 40%;
+      opacity: 0;
+      top: 35%;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      left: -100%;
+      top: -40%;
+    }
+
+    100% {
+      left: -20%;
+      top: 0;
+    }
+  }
+
   .House-icon--heater {
     background-image: svg-load(icon-heater.svg);
     left: -20%;
     top: 0;
     transition-delay: 0.04s;
+
+    @nest .is-animated & {
+      animation-name: Hub-animateHeater;
+    }
+  }
+
+  @keyframes Hub-animateMeteo {
+    0% {
+      left: 40%;
+      opacity: 0;
+      top: 35%;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      left: -100%;
+    }
+
+    100% {
+      left: -35%;
+      top: 30%;
+    }
   }
 
   .House-icon--meteo {
     background-image: svg-load(icon-meteo3.svg);
     left: -35%;
     top: 30%;
+
+    @nest .is-animated & {
+      animation-name: Hub-animateMeteo;
+    }
+  }
+
+  @keyframes Hub-animateLight {
+    0% {
+      left: 40%;
+      opacity: 0;
+      top: 35%;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      left: -100%;
+      top: 80%;
+    }
+
+    100% {
+      left: -20%;
+      top: 60%;
+    }
   }
 
   .House-icon--light {
@@ -83,39 +188,117 @@
     left: -20%;
     top: 60%;
     transition-delay: 0.04s;
+
+    @nest .is-animated & {
+      animation-name: Hub-animateLight;
+    }
+  }
+
+  @keyframes Hub-animateEye {
+    0% {
+      left: 40%;
+      opacity: 0;
+      top: 35%;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      left: 200%;
+      top: -40%;
+    }
+
+    100% {
+      left: 100%;
+      top: 0;
+    }
   }
 
   .House-icon--eye {
     background-image: svg-load(icon-eye.svg);
-    left: auto;
-    right: -20%;
+    left: 100%;
     top: 0;
 
     @nest .House:hover & {
       transform: translate3d(-100%, 0, 0);
     }
+
+    @nest .is-animated & {
+      animation-name: Hub-animateEye;
+    }
+  }
+
+  @keyframes Hub-animateBalace {
+    0% {
+      left: 40%;
+      opacity: 0;
+      top: 35%;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      left: 240%;
+    }
+
+    100% {
+      left: 115%;
+      top: 30%;
+    }
   }
 
   .House-icon--balance {
     background-image: svg-load(icon-balance1.svg);
-    left: auto;
-    right: -35%;
+    left: 115%;
     top: 30%;
     transition-delay: 0.04s;
 
     @nest .House:hover & {
       transform: translate3d(-100%, 0, 0);
     }
+
+    @nest .is-animated & {
+      animation-name: Hub-animateBalace;
+    }
+  }
+
+  @keyframes Hub-animateVolet {
+    0% {
+      left: 40%;
+      opacity: 0;
+      top: 35%;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      left: 200%;
+      top: 80%;
+    }
+
+    100% {
+      left: 100%;
+      top: 60%;
+    }
   }
 
   .House-icon--volet {
     background-image: svg-load(icon-volet.svg);
-    left: auto;
-    right: -20%;
+    left: 100%;
     top: 60%;
 
     @nest .House:hover & {
       transform: translate3d(-100%, 0, 0);
+    }
+
+    @nest .is-animated & {
+      animation-name: Hub-animateVolet;
     }
   }
 }
