@@ -31,6 +31,7 @@
 
 @media (--large) {
   .House-house {
+    background: svg-load(logo+house.svg) no-repeat top center;
     height: 332px;
     left: 0;
     top: 0;
@@ -46,14 +47,14 @@
   .House-icon {
     background: no-repeat center center;
     background-size: contain;
-    height: 50px;
+    height: 60px;
     left: 40%;
     position: absolute;
     top: 30%;
     transform: translate3d(0, 0, 0);
     transform-origin: 50% 50% 0;
     transition: 0.3s;
-    width: 50px;
+    width: 60px;
 
     @nest .House:hover & {
       transform: translate3d(100%, 0, 0);
@@ -68,6 +69,7 @@
     background-image: svg-load(icon-heater.svg);
     left: -20%;
     top: 0;
+    transition-delay: 0.04s;
   }
 
   .House-icon--meteo {
@@ -80,6 +82,7 @@
     background-image: svg-load(icon-light.svg);
     left: -20%;
     top: 60%;
+    transition-delay: 0.04s;
   }
 
   .House-icon--eye {
@@ -98,6 +101,7 @@
     left: auto;
     right: -35%;
     top: 30%;
+    transition-delay: 0.04s;
 
     @nest .House:hover & {
       transform: translate3d(-100%, 0, 0);
