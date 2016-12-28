@@ -159,8 +159,9 @@
   }
 
   & .Overlay-backgroundImage {
-    height: 100%;
-    left: -80%;
+    left: 0%;
+    min-height: 100%;
+    min-width: 100%;
     position: absolute;
     top: 0;
     transition: opacity 0.1s ease-out;
@@ -168,15 +169,20 @@
     z-index: var(--depth-1);
   }
 
-  & .Overlay-backgroundImage--first {
+  & .Overlay-backgroundImage--first,
+  & .Overlay-backgroundImage--second {
+    display: none;
+  }
+
+  & .Overlay-backgroundImage--firstMobile {
     opacity: 1;
   }
 
-  & .Overlay-backgroundImage--second {
+  & .Overlay-backgroundImage--secondMobile {
     opacity: 0;
   }
 
-  & .is-second .Overlay-backgroundImage--second { /* stylelint-disable-line */
+  & .is-second .Overlay-backgroundImage--secondMobile { /* stylelint-disable-line */
     opacity: 1;
   }
 
@@ -187,6 +193,7 @@
   & .Overlay-content,
   & .Overlay-title {
     position: relative;
+    user-select: none;
     z-index: var(--depth-2);
   }
 }
@@ -383,6 +390,16 @@
       height: auto;
       left: 0;
       min-width: 101%;
+    }
+
+    & .Overlay-backgroundImage--first,
+    & .Overlay-backgroundImage--second {
+      display: block;
+    }
+
+    & .Overlay-backgroundImage--firstMobile,
+    & .Overlay-backgroundImage--secondMobile {
+      display: none;
     }
 
     & .Overlay-title {
