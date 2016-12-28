@@ -19,7 +19,7 @@ var app = {
 			var $section = $('[data-panel="2"]'),
 					$house = $('[data-js="house"]');
 
-			
+
 		},
 
 		'carousel': function carousel() {
