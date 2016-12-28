@@ -159,8 +159,8 @@
   }
 
   & .Overlay-backgroundImage {
-    height: 110%;
-    left: 0;
+    height: 100%;
+    left: -80%;
     position: absolute;
     top: 0;
     transition: opacity 0.1s ease-out;
@@ -379,6 +379,11 @@
   }
 
   .Overlay--02 {
+    & .Overlay-backgroundImage {
+      height: 110%;
+      left: 0;
+    }
+
     & .Overlay-title {
       max-width: 540px;
       min-width: 500px;

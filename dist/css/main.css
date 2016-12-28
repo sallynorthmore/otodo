@@ -1251,8 +1251,8 @@
   z-index: 0;
 }
 .Overlay--02 .Overlay-backgroundImage {
-  height: 110%;
-  left: 0;
+  height: 100%;
+  left: -80%;
   position: absolute;
   top: 0;
   transition: opacity 0.1s ease-out;
@@ -1469,6 +1469,11 @@
       max-width: 240px;
       min-width: 100px;
     }
+  }
+
+  .Overlay--02 .Overlay-backgroundImage {
+    height: 110%;
+    left: 0;
   }
 
   .Overlay--02 .Overlay-title {
