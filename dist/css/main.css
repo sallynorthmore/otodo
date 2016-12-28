@@ -1265,7 +1265,7 @@
 .Overlay--02 .Overlay-backgroundImage--second {
   opacity: 0;
 }
-.Overlay--02 .is-second .Overlay-backgroundImage--second {
+.Overlay--02 .is-second .Overlay-backgroundImage--second {/* stylelint-disable-line */
   opacity: 1;
 }
 .Overlay--02 .Overlay-button {
@@ -1407,7 +1407,7 @@
     top: 300px;
   }
 
-  .Overlay--01 .Overlay-item--lighting .Overlay-subtitle {
+  .Overlay--01 .Overlay-item--lighting .Overlay-subtitle {/* stylelint-disable-line */
     margin-right: 35px;
   }
 
@@ -1417,7 +1417,7 @@
     top: 130px;
   }
 
-  .Overlay--01 .Overlay-item--camera .Overlay-subtitle {
+  .Overlay--01 .Overlay-item--camera .Overlay-subtitle {/* stylelint-disable-line */
     text-align: left;
   }
 
@@ -1427,23 +1427,23 @@
     top: 300px;
   }
 
-  .Overlay--01 .Overlay-item--portal .Overlay-subtitle {
+  .Overlay--01 .Overlay-item--portal .Overlay-subtitle {/* stylelint-disable-line */
     margin-left: 25px;
     text-align: left;
   }
 
-  .Overlay--01 .Overlay-item--portal .Overlay-body {
+  .Overlay--01 .Overlay-item--portal .Overlay-body {/* stylelint-disable-line */
     max-width: 350px;
   }
 
-  .Overlay--01 .Overlay-subtitle {
+  .Overlay--01 .Overlay-subtitle {/* stylelint-disable-line */
     color: rgb(150, 15, 124);
     font: 700 20px/20px "Lato", Helvetica, sans-serif;
     text-align: right;
     text-transform: capitalize;
   }
 
-  .Overlay--01 .Overlay-body {
+  .Overlay--01 .Overlay-body {/* stylelint-disable-line */
     font-size: 17px;
     text-align: center;
   }
