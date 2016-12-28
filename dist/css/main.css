@@ -2404,10 +2404,10 @@
 
   .Team-item {
     display: block;
-    -webkit-flex: 0 0 220px;
-        -ms-flex: 0 0 220px;
-            flex: 0 0 220px;
-    max-width: 220px;
+    -webkit-flex: 0 0 180px;
+        -ms-flex: 0 0 180px;
+            flex: 0 0 180px;
+    max-width: 180px;
     min-width: 125px;
     position: relative;
     text-align: center;
@@ -2421,7 +2421,7 @@
     display: block;
     height: 124px;
     left: 0;
-    margin-left: 45px;
+    margin-left: 24px;
     margin-top: -7px;
     position: absolute;
     top: 0;
@@ -2510,7 +2510,8 @@
     font: 700 14px/18px "Lato", Helvetica, sans-serif;
   }
 }
-/*TODO - Tidy up following is IE11 CSS override */
+/* TODO - IE11 CSS override */
+/* stylelint-disable */
 @media all and (-ms-high-contrast:none) {
   .Team-item {
   }
@@ -2524,6 +2525,7 @@
     z-index: 100;
   }
 }
+/* stylelint-enable */
 /* Third Party */
 .onepage-pagination {
   display: none;
