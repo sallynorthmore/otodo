@@ -1083,14 +1083,15 @@
     display: -ms-flexbox;
     display: flex;
     font: 700 12px/12px "Lato", Helvetica, sans-serif;
-    height: 30px;
+    height: 20px;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    top: 6px;
+    line-height: 1;
     padding-left: 10px;
     text-align: left;
     text-transform: uppercase;
+    top: 6px;
     width: 40px;
   }
 
