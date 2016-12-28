@@ -729,6 +729,306 @@
   }
 }
 /** @define House */
+@-webkit-keyframes Hub-animateHouse {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+
+  85% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes Hub-animateHouse {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+
+  85% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes Hub-animateHeater {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: -35%;
+    opacity: 1;
+    top: -10%;
+  }
+
+  100% {
+    left: -20%;
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes Hub-animateHeater {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: -35%;
+    opacity: 1;
+    top: -10%;
+  }
+
+  100% {
+    left: -20%;
+    opacity: 1;
+    top: 0;
+  }
+}
+@-webkit-keyframes Hub-animateMeteo {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: -60%;
+    opacity: 1;
+  }
+
+  100% {
+    left: -35%;
+    opacity: 1;
+    top: 30%;
+  }
+}
+@keyframes Hub-animateMeteo {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: -60%;
+    opacity: 1;
+  }
+
+  100% {
+    left: -35%;
+    opacity: 1;
+    top: 30%;
+  }
+}
+@-webkit-keyframes Hub-animateEye {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: 115%;
+    opacity: 1;
+    top: -10%;
+  }
+
+  100% {
+    left: 100%;
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes Hub-animateEye {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: 115%;
+    opacity: 1;
+    top: -10%;
+  }
+
+  100% {
+    left: 100%;
+    opacity: 1;
+    top: 0;
+  }
+}
+@-webkit-keyframes Hub-animateBalace {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: 130%;
+  }
+
+  100% {
+    left: 115%;
+    opacity: 1;
+    top: 30%;
+  }
+}
+@keyframes Hub-animateBalace {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: 130%;
+  }
+
+  100% {
+    left: 115%;
+    opacity: 1;
+    top: 30%;
+  }
+}
+@-webkit-keyframes Hub-animateLight {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: -30%;
+    opacity: 1;
+    top: 70%;
+  }
+
+  100% {
+    left: -20%;
+    opacity: 1;
+    top: 60%;
+  }
+}
+@keyframes Hub-animateLight {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: -30%;
+    opacity: 1;
+    top: 70%;
+  }
+
+  100% {
+    left: -20%;
+    opacity: 1;
+    top: 60%;
+  }
+}
+@-webkit-keyframes Hub-animateVolet {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: 115%;
+    top: 70%;
+  }
+
+  100% {
+    left: 100%;
+    opacity: 1;
+    top: 60%;
+  }
+}
+@keyframes Hub-animateVolet {
+  0% {
+    left: 40%;
+    opacity: 0;
+    top: 35%;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    left: 115%;
+    top: 70%;
+  }
+
+  100% {
+    left: 100%;
+    opacity: 1;
+    top: 60%;
+  }
+}
 .House {
   display: block;
   height: 100%;
@@ -771,7 +1071,6 @@
     height: 60px;
     left: 50%;
     margin-left: -6px;
-    opacity: 0;
     position: absolute;
     top: 65%;
     -webkit-transform-origin: center;
@@ -790,7 +1089,6 @@
     height: 50px;
     left: 50%;
     margin-left: -25px;
-    opacity: 0;
     position: absolute;
     top: 76%;
     -webkit-transform-origin: center;
@@ -802,40 +1100,6 @@
   .House:hover .House-internet {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
-  }
-
-  @-webkit-keyframes Hub-animateHouse {
-    0% {
-      -webkit-transform: scale(0.75);
-              transform: scale(0.75);
-    }
-
-    85% {
-      -webkit-transform: scale(0.75);
-              transform: scale(0.75);
-    }
-
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-  }
-
-  @keyframes Hub-animateHouse {
-    0% {
-      -webkit-transform: scale(0.75);
-              transform: scale(0.75);
-    }
-
-    85% {
-      -webkit-transform: scale(0.75);
-              transform: scale(0.75);
-    }
-
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
   }
 
   .House-house {
@@ -876,14 +1140,14 @@
   }
 
   .House-icon {
-    -webkit-animation-delay: 0.6s;
-            animation-delay: 0.6s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
     -webkit-animation-direction: normal;
             animation-direction: normal;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards; /* or: backwards, both, none */
+    -webkit-animation-fill-mode: none;
+            animation-fill-mode: none; /* or: backwards, both, none */
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
     -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -892,7 +1156,6 @@
     background-size: contain;
     height: 60px;
     left: 40%;
-    opacity: 0;
     position: absolute;
     top: 30%;
     -webkit-transform: translate3d(0, 0, 0);
@@ -908,54 +1171,6 @@
             transform: translate3d(100%, 0, 0);
   }
 
-  @-webkit-keyframes Hub-animateHeater {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: -35%;
-      opacity: 1;
-      top: -10%;
-    }
-
-    100% {
-      left: -20%;
-      opacity: 1;
-      top: 0;
-    }
-  }
-
-  @keyframes Hub-animateHeater {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: -35%;
-      opacity: 1;
-      top: -10%;
-    }
-
-    100% {
-      left: -20%;
-      opacity: 1;
-      top: 0;
-    }
-  }
-
   .House-icon--heater {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='76' height='77' viewBox='0 0 76 77' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3Cdefs%3E %3Cfilter id='a' width='200%25' height='200%25' x='-50%25' y='-50%25' filterUnits='objectBoundingBox'%3E %3CfeOffset dy='5' in='SourceAlpha' result='shadowOffsetOuter1'/%3E %3CfeGaussianBlur stdDeviation='2' in='shadowOffsetOuter1' result='shadowBlurOuter1'/%3E %3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0' in='shadowBlurOuter1' result='shadowMatrixOuter1'/%3E %3CfeMerge%3E %3CfeMergeNode in='shadowMatrixOuter1'/%3E %3CfeMergeNode in='SourceGraphic'/%3E %3C/feMerge%3E %3C/filter%3E %3C/defs%3E %3Cg fill='none' fill-rule='evenodd' filter='url(%23a)' transform='translate(4.478 .919)'%3E %3Cellipse cx='33.413' cy='33.423' fill='%23960F7C' rx='33.413' ry='33.423'/%3E %3Cg transform='translate(13.417 2.911)'%3E %3Cg fill='%23FFFFFF' transform='translate(2.78 .312)'%3E %3Cpath d='M2.99274433 8.39660094C14.8008393 30.3132044 2.3398045 34.3464522 6.49080051 51.6691398 7.06672103 54.0726591 5.0234102 53.9761507 4.27218453 52.7198178-6.55650071 34.6221906 7.23340461 27.0296201 2.30589301 8.92395054 1.88918405 7.39417714 2.2110558 6.94552786 2.99274433 8.39660094M15.9894657.905134569C27.7987102 22.821738 15.3371006 26.8555603 19.4880967 44.1776734 20.0634424 46.5806183 18.0201316 46.4852587 17.2683311 45.227777 6.44022066 27.1307242 20.230126 19.5387282 15.3026144 1.43190971 14.8864802-.0967147794 15.2083519-.545938513 15.9894657.905134569M28.3209946 8.01229256C40.1296643 29.928896 27.6680547 33.9627183 31.8196255 51.2854058 32.3943965 53.6883507 30.3510857 53.5924167 29.59986 52.3355094 18.7717495 34.2384566 32.5610801 26.6458862 27.6341432 8.54021661 27.2174343 7.00986875 27.5387313 6.56179393 28.3209946 8.01229256'/%3E %3C/g%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
     transition-delay: 0.04s;
@@ -965,52 +1180,9 @@
   .is-animated .House-icon--heater {
     -webkit-animation-name: Hub-animateHeater;
             animation-name: Hub-animateHeater;
-  }
-
-  @-webkit-keyframes Hub-animateMeteo {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: -60%;
-      opacity: 1;
-    }
-
-    100% {
-      left: -35%;
-      opacity: 1;
-      top: 30%;
-    }
-  }
-
-  @keyframes Hub-animateMeteo {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: -60%;
-      opacity: 1;
-    }
-
-    100% {
-      left: -35%;
-      opacity: 1;
-      top: 30%;
-    }
+    left: -20%;
+    opacity: 1;
+    top: 0;
   }
 
   .House-icon--meteo {
@@ -1021,54 +1193,9 @@
   .is-animated .House-icon--meteo {
     -webkit-animation-name: Hub-animateMeteo;
             animation-name: Hub-animateMeteo;
-  }
-
-  @-webkit-keyframes Hub-animateLight {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: -30%;
-      opacity: 1;
-      top: 70%;
-    }
-
-    100% {
-      left: -20%;
-      opacity: 1;
-      top: 60%;
-    }
-  }
-
-  @keyframes Hub-animateLight {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: -30%;
-      opacity: 1;
-      top: 70%;
-    }
-
-    100% {
-      left: -20%;
-      opacity: 1;
-      top: 60%;
-    }
+    left: -35%;
+    opacity: 1;
+    top: 30%;
   }
 
   .House-icon--light {
@@ -1080,54 +1207,9 @@
   .is-animated .House-icon--light {
     -webkit-animation-name: Hub-animateLight;
             animation-name: Hub-animateLight;
-  }
-
-  @-webkit-keyframes Hub-animateEye {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: 115%;
-      opacity: 1;
-      top: -10%;
-    }
-
-    100% {
-      left: 100%;
-      opacity: 1;
-      top: 0;
-    }
-  }
-
-  @keyframes Hub-animateEye {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: 115%;
-      opacity: 1;
-      top: -10%;
-    }
-
-    100% {
-      left: 100%;
-      opacity: 1;
-      top: 0;
-    }
+    left: -20%;
+    opacity: 1;
+    top: 60%;
   }
 
   .House-icon--eye {
@@ -1143,50 +1225,9 @@
   .is-animated .House-icon--eye {
     -webkit-animation-name: Hub-animateEye;
             animation-name: Hub-animateEye;
-  }
-
-  @-webkit-keyframes Hub-animateBalace {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: 130%;
-    }
-
-    100% {
-      left: 115%;
-      opacity: 1;
-      top: 30%;
-    }
-  }
-
-  @keyframes Hub-animateBalace {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: 130%;
-    }
-
-    100% {
-      left: 115%;
-      opacity: 1;
-      top: 30%;
-    }
+    left: 100%;
+    opacity: 1;
+    top: 0;
   }
 
   .House-icon--balance {
@@ -1203,52 +1244,9 @@
   .is-animated .House-icon--balance {
     -webkit-animation-name: Hub-animateBalace;
             animation-name: Hub-animateBalace;
-  }
-
-  @-webkit-keyframes Hub-animateVolet {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: 115%;
-      top: 70%;
-    }
-
-    100% {
-      left: 100%;
-      opacity: 1;
-      top: 60%;
-    }
-  }
-
-  @keyframes Hub-animateVolet {
-    0% {
-      left: 40%;
-      opacity: 0;
-      top: 35%;
-    }
-
-    25% {
-      opacity: 1;
-    }
-
-    50% {
-      left: 115%;
-      top: 70%;
-    }
-
-    100% {
-      left: 100%;
-      opacity: 1;
-      top: 60%;
-    }
+    left: 115%;
+    opacity: 1;
+    top: 30%;
   }
 
   .House-icon--volet {
@@ -1264,6 +1262,9 @@
   .is-animated .House-icon--volet {
     -webkit-animation-name: Hub-animateVolet;
             animation-name: Hub-animateVolet;
+    left: 100%;
+    opacity: 1;
+    top: 60%;
   }
 }
 /** @define Logo */
