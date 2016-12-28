@@ -19,16 +19,7 @@ var app = {
 			var $section = $('[data-panel="2"]'),
 					$house = $('[data-js="house"]');
 
-			$section.on("mousemove", function(event){
-				// detect mouse x
-				if( event.pageX < 510) {
-					$house.addClass("is-right");
-					$house.removeClass("is-left");
-				} else {
-					$house.removeClass("is-right");
-					$house.addClass("is-left");
-				}
-			});
+			
 		},
 
 		'carousel': function carousel() {

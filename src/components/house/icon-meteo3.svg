@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="229" height="232" viewBox="0 0 229 232" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="a" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+      <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <circle id="c" cx="107.5" cy="107.5" r="107.5"/>
+    <filter id="b" width="200%" height="200%" x="-50%" y="-50%" filterUnits="objectBoundingBox">
+      <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(7)">
+    <use fill="black" filter="url(#b)" xlink:href="#c"/>
+    <use fill="#B0097F" xlink:href="#c"/>
+    <g fill="#FFFFFF" transform="translate(50.64 52.417)">
+      <path d="M113.138991,67.6917661 C113.138991,56.3527701 103.92407,47.1591674 92.5493772,47.1591674 C92.1401919,47.1591674 91.744206,47.197008 91.3432704,47.2216866 C88.195183,37.6529691 79.1766057,30.7347337 68.5278867,30.7347337 C55.2607113,30.7347337 44.5030962,41.4617003 44.5030962,54.6894322 C44.5030962,55.0020279 44.537745,55.3047521 44.5476446,55.6140572 C36.740124,56.9022804 30.7755874,63.6477655 30.7755874,71.7982859 C30.7755874,80.871786 38.1508235,88.2243649 47.2469481,88.2243649 L93.9204782,88.2243649 L93.9204782,88.1552648 C104.651694,87.4478114 113.138991,78.5717401 113.138991,67.6917661"/>
+      <rect width="5.489" height="13.688" x="39.015" y=".62"/>
+      <rect width="13.724" height="5.475" x=".58" y="38.946"/>
+      <rect width="5.493" height="13.69" x="14.746" y="10.64" transform="rotate(-45.032 17.493 17.485)"/>
+      <rect width="5.491" height="13.688" x="14.75" y="59.04" transform="rotate(-134.927 17.496 65.884)"/>
+      <rect width="5.493" height="13.692" x="63.286" y="10.642" transform="rotate(-135.032 66.033 17.488)"/>
+      <path d="M30.7491883,57.3777548 C33.0195071,54.7947276 35.8821547,52.7200796 39.1919362,51.4318564 C40.3237957,41.2626263 46.6711187,32.6448577 55.493353,28.2948424 C52.0070277,24.7345424 47.1446517,22.520049 41.7592444,22.520049 C31.1451741,22.520049 22.5423819,31.1016223 22.5423819,41.6838078 C22.540732,48.1808616 25.7927656,53.9128788 30.7491883,57.3777548"/>
+    </g>
+  </g>
+</svg>

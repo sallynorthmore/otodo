@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-.House-media {
+.House-house {
   background: svg-load(house-w-icons.svg) no-repeat center center;
   background-size: contain;
   height: 213px;
@@ -30,50 +30,88 @@
 }
 
 @media (--large) {
-  .House-media {
+  .House-house {
     height: 332px;
     left: 0;
     top: 0;
-    transform-origin: 50% 50% 0;
-    transform: translate3d(0, 0, 0);
-    transition: 6s ease-out;
+    transform-origin: center;
+    transition: 0.3s;
     width: 340px;
 
-    @nest .House.is-left & {
-      transform: translate3d(20px, 5px, 0);
+    @nest .House:hover & {
+      transform: scale(0.75);
     }
+  }
 
-    @nest .House.is-right & {
-      transform: translate3d(-20px, 0, 0);
+  .House-icon {
+    background: no-repeat center center;
+    background-size: contain;
+    height: 50px;
+    left: 40%;
+    position: absolute;
+    top: 30%;
+    transform: translate3d(0, 0, 0);
+    transform-origin: 50% 50% 0;
+    transition: 0.3s;
+    width: 50px;
+
+    @nest .House:hover & {
+      transform: translate3d(100%, 0, 0);
     }
   }
 
   .House-icons {
-    height: 371px;
-    left: -30px;
-    top: -67px;
-    transform-origin: 50% 50% 0;
-    transform: translate3d(0, 0, 0);
-    transition: 6s ease-out;
-    width: 404px;
+    display: none;
+  }
 
-    @nest .House.is-left & {
-      transform: translate3d(30px, 5px, 0);
-    }
+  .House-icon--heater {
+    background-image: svg-load(icon-heater.svg);
+    left: -20%;
+    top: 0;
+  }
 
-    @nest .House.is-right & {
-      transform: translate3d(-30px, 0, 0);
+  .House-icon--meteo {
+    background-image: svg-load(icon-meteo3.svg);
+    left: -35%;
+    top: 30%;
+  }
+
+  .House-icon--light {
+    background-image: svg-load(icon-light.svg);
+    left: -20%;
+    top: 60%;
+  }
+
+  .House-icon--eye {
+    background-image: svg-load(icon-eye.svg);
+    left: auto;
+    right: -20%;
+    top: 0;
+
+    @nest .House:hover & {
+      transform: translate3d(-100%, 0, 0);
     }
   }
 
-  /* stylelint-disable */
-  .House-image.is-right {
-    & .House-media {
-      left: -100px;
-    }
-    & .House-icons {
-      left: -100px;
+  .House-icon--balance {
+    background-image: svg-load(icon-balance1.svg);
+    left: auto;
+    right: -35%;
+    top: 30%;
+
+    @nest .House:hover & {
+      transform: translate3d(-100%, 0, 0);
     }
   }
-  /* stylelint-enable */
+
+  .House-icon--volet {
+    background-image: svg-load(icon-volet.svg);
+    left: auto;
+    right: -20%;
+    top: 60%;
+
+    @nest .House:hover & {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
 }
