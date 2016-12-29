@@ -1435,6 +1435,10 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 690px;
     margin-right: 20px;
     margin-top: 20px
   }
@@ -1446,12 +1450,14 @@
   }
 
   .Navigation-item {
-    min-width: 87px;
+    /*min-width: 87px;*/
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
     text-align: center
   }
 
-  .is-en .Navigation-item {
-    min-width: 100px;
+  .is-en .Navigation-item {/*min-width: 100px;*/
   }
 
   .Navigation-link {
@@ -1517,10 +1523,19 @@
     color: white;
   }
 
+  .Navigation-item--team {
+
+  }
+
   .Navigation-item--reserve {
     background: transparent;
     height: 42px;
-    min-width: 112px;
+    margin-left: 10px;
+    min-width: 90px
+  }
+
+  .is-en .Navigation-item--reserve {
+    min-width: 100px;
   }
 
   .Navigation-item--lang {
@@ -1546,14 +1561,13 @@
     display: flex;
     font: 700 12px/12px "Lato", Helvetica, sans-serif;
     height: 20px;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     line-height: 1;
-    padding-bottom: 4px;
-    padding-left: 10px;
+    padding-bottom: 4px;/*padding-left: 10px;*/
     padding-top: 6px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     top: 6px;
     width: 40px;

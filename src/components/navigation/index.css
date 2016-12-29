@@ -140,6 +140,8 @@
   .Navigation-items {
     align-items: flex-end;
     display: flex;
+    justify-content: space-between;
+    min-width: 690px;
     margin-right: 20px;
     margin-top: 20px;
 
@@ -151,11 +153,12 @@
   }
 
   .Navigation-item {
-    min-width: 87px;
+    /*min-width: 87px;*/
+    flex: auto;
     text-align: center;
 
     @nest .is-en & {
-      min-width: 100px;
+      /*min-width: 100px;*/
     }
   }
 
@@ -218,10 +221,19 @@
     }
   }
 
+  .Navigation-item--team {
+
+  }
+
   .Navigation-item--reserve {
     background: transparent;
     height: 42px;
-    min-width: 112px;
+    margin-left: 10px;
+    min-width: 90px;
+
+    @nest .is-en & {
+      min-width: 100px;
+    }
   }
 
   .Navigation-item--lang {
@@ -240,12 +252,12 @@
       display: flex;
       font: 700 12px/12px var(--sans);
       height: 20px;
-      justify-content: flex-start;
+      justify-content: center;
       line-height: 1;
       padding-bottom: 4px;
-      padding-left: 10px;
+      /*padding-left: 10px;*/
       padding-top: 6px;
-      text-align: left;
+      text-align: center;
       text-transform: uppercase;
       top: 6px;
       width: 40px;
